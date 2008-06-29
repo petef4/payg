@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link rel=stylesheet href="../default.css" type="text/css">
+    <title>STL test suite</title>
+  </head>
+
+  <body>
+
+    <h1>STL test suite</h1>
+
+    <p>This is a set of 225 tests to check conformance of C++ compilers and
+      libraries to the ISO Standard.  The specific area covered is STL.</p>
+
+    <p>This testsuite is derived from the
+      <a href="http://www.stlport.org">STLport</a> testsuite, which is derived
+      from the Cygnus Solutions STL testsuite, which is based on ObjectSpace STL
+      examples.  Unlike the STLport version, STLport is not needed to run
+      this.</p>
+
+    <h3>Download</h3>
+    <p><a href="stltest-1.00.tar.gz">stltest-1.00.tar.gz</a> (83601 bytes)</p>
+
+    <h3>Installation and running</h3>
+
+    <p>This requires only modest know-how.  Basically you unpack it, copy (and
+      edit) a suitable .mak to Makefile, and then
+      <br>
+      <br><code>make check</code>
+
+    <p>A perfect compiler would complete the checks.  For each failure of
+      <code>foo1</code> a manual skip is required.
+      <br>
+      <br><code>make dummy FUNC=foo1</code></p>
+
+    <p>That might be automated in a future version.</p>
+
+    <p>The result of <code>make check</code> is the file
+      <code>stl_test.out</code>.  Compare that with the expected results in
+      <code>stl_test.exp</code>.  See the end of README.txt for some expected
+      differences, especially those due to different random number generators.
+      </p>
+
+    <h3>Links</h3>
+    <ul>
+      <li><a href="http://www.stlport.org">STLport</a> - multiplatform STL
+        implementation based on SGI STL.</li>
+      <li><a href="http://www.cetus-links.org">Cetus</a> - links to information
+        on C++, STL, and all things OO.</li>
+      <li><a href="http://www.cuj.com/roundup/">C++ Conformance Roundup</a>
+        - C/C++ Users Journal</li>
+    </ul>
+    <hr>
+    <address>Pete Forman&nbsp;&nbsp;&nbsp;
+      <a href="mailto:pete.forman@westerngeco.com">Mail</a>&nbsp;&nbsp;&nbsp;
+      <a href="..">Home</a>
+      <br>
+<!-- Created: Fri Jun 30 10:34:35 BST 2000 -->
+<!-- hhmts start -->
+Last modified: 2005-07-01T13:02:31+01:00
+<!-- hhmts end -->
+    </address>
+  </body>
+</html>

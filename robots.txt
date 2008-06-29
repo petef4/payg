@@ -1,0 +1,4 @@
+# all robots/spiders/crawlers are allowed
+
+User-agent: *
+Disallow:
