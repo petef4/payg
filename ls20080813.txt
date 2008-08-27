@@ -1,0 +1,146 @@
+Connected to ftp.byethost13.com (209.190.85.248).
+220---------- Welcome to Pure-FTPd [privsep] [TLS] ----------
+220-You are user number 94 of 500 allowed.
+220-Local time is now 06:09. Server port: 21.
+220-This is a private system - No anonymous login
+220 You will be disconnected after 5 minutes of inactivity.
+331 User b13_1581328 OK. Password required
+230-Your bandwidth usage is restricted
+230-User b13_1581328 has group access to:  1581328
+230 OK. Current restricted directory is /
+passive
+Passive mode off.
+type image
+200 TYPE is now 8-bit binary
+cd /petef.22web.net/htdocs
+250 OK. Current directory is /petef.22web.net/htdocs
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> cd cpp
+250 OK. Current directory is /petef.22web.net/htdocs/cpp
+ftp> ls
+200 PORT command successful
+150 Connecting to port 36403
+-rwxr-x---    1 b13_1581 1581328      2375 Feb 29 11:22 stltest.html
+226-Options: -l
+226 1 matches total
+ftp> lcd cpp
+Local directory now /home/pforman/share/private/isp/byethost/cpp
+ftp> put stltest-1.00.tar.gz
+local: stltest-1.00.tar.gz remote: stltest-1.00.tar.gz
+200 PORT command successful
+150 Connecting to port 36404
+226-File successfully transferred
+226 4.091 seconds (measured here), 19.95 Kbytes per second
+83601 bytes sent in 0.028 secs (2.9e+03 Kbytes/sec)
+ftp> ls
+200 PORT command successful
+150 Connecting to port 36405
+-rwxr-x---    1 b13_1581 1581328     83601 Aug 13 10:09 stltest-1.00.tar.gz
+-rwxr-x---    1 b13_1581 1581328      2375 Feb 29 11:22 stltest.html
+226-Options: -l
+226 2 matches total
+ftp> cd /
+250 OK. Current directory is /
+ftp> ls -aR
+200 PORT command successful
+150 Connecting to port 36410
+drwxr-xr-x    4 0        0             144 Aug 12 16:32 .
+drwxr-xr-x    4 0        0             144 Aug 12 16:32 ..
+-rw-r--r--    1 0        0               0 Feb 14  2008 DO NOT UPLOAD FILES HERE
+drwxr-x--x    2 b13_1581 1581328       280 Feb 29 11:30 htdocs
+drwx--x--x    3 b13_1581 1581328        72 Feb 14  2008 petef.22web.net
+
+
+./htdocs:
+
+drwxr-x--x    2 b13_1581 1581328       280 Feb 29 11:30 .
+drwxr-xr-x    4 0        0             144 Aug 12 16:32 ..
+-rw-r--r--    1 0        0               0 Feb 14  2008 .override
+-rwxr-x---    1 b13_1581 1581328       692 Feb 14  2008 default.css
+-rw-r--r--    1 0        0               0 Feb 14  2008 files for petef.byethost13.com  should be uploaded here!
+-rwxr-x--x    1 b13_1581 1581328      1691 Feb 14  2008 index.htm.orig
+-rwxr-x---    1 b13_1581 1581328      1358 Feb 29 10:01 index.html
+-rwxr-x---    1 b13_1581 1581328        67 Feb 29 11:30 robots.txt
+
+
+./petef.22web.net:
+
+drwx--x--x    3 b13_1581 1581328        72 Feb 14  2008 .
+drwxr-xr-x    4 0        0             144 Aug 12 16:32 ..
+drwx--x--x    6 b13_1581 1581328       736 Aug 12 16:40 htdocs
+
+
+./petef.22web.net/htdocs:
+
+drwx--x--x    6 b13_1581 1581328       736 Aug 12 16:40 .
+drwx--x--x    3 b13_1581 1581328        72 Feb 14  2008 ..
+-rw-r--r--    1 b13_1581 1581328       290 Feb 14  2008 .htaccess
+-rwxr-x---    1 b13_1581 1581328       881 Feb 14  2008 404.html
+drwxr-x--x    2 b13_1581 1581328       160 Feb 29 11:20 c
+-rwxr-x---    1 b13_1581 1581328       612 Feb 29 11:28 circle01.png
+-rwxr-x---    1 b13_1581 1581328       585 Feb 29 11:28 circle01.svg
+drwxr-x--x    2 b13_1581 1581328       408 Feb 29 11:25 clean_html
+drwxr-x--x    2 b13_1581 1581328       120 Aug 13 10:09 cpp
+-rwxr-x---    1 b13_1581 1581328       692 Feb 14  2008 default.css
+-rwxr-x---    1 b13_1581 1581328      2745 Feb 14  2008 default.css.html
+-rwxr-x---    1 b13_1581 1581328      7406 Mar 11 14:17 favicon.ico
+-rwxr-x---    1 b13_1581 1581328      2032 Mar 11 12:29 index.html
+-rwxr-x---    1 b13_1581 1581328     21805 May 16 11:03 links.html
+-rwxr-x---    1 b13_1581 1581328     14269 Feb 29 11:28 man_pages.html
+drwxr-x--x    2 b13_1581 1581328       216 May 30 12:30 opera
+-rwxr-x---    1 b13_1581 1581328      7406 Mar 11 12:26 papertape.ico
+-rwxr-x---    1 b13_1581 1581328       886 Mar 11 13:16 papertape_r32.png
+-rwxr-x---    1 b13_1581 1581328      4714 Mar 11 14:42 papertape_r32.svg
+-rwxr-x---    1 b13_1581 1581328     15406 Aug 12 16:40 payg.html
+-rwxr-x---    1 b13_1581 1581328        19 Feb 14  2008 phpinfo.php
+-rwxr-x---    1 b13_1581 1581328        67 Feb 29 11:29 robots.txt
+-rwxr-x---    1 b13_1581 1581328      3077 Mar 11 14:25 shopping.html
+-rwxr-x---    1 b13_1581 1581328      6236 Mar 11 15:15 svg_in_html.html
+
+
+./petef.22web.net/htdocs/c:
+
+drwxr-x--x    2 b13_1581 1581328       160 Feb 29 11:20 .
+drwx--x--x    6 b13_1581 1581328       736 Aug 12 16:40 ..
+-rwxr-x---    1 b13_1581 1581328      3765 Feb 29 11:19 align.c
+-rwxr-x---    1 b13_1581 1581328     57950 Feb 29 11:19 dtoa.c
+-rwxr-x---    1 b13_1581 1581328      3567 Feb 29 11:20 iec60559.c
+-rwxr-x---    1 b13_1581 1581328    248610 Feb 29 11:20 portability.txt
+
+
+./petef.22web.net/htdocs/clean_html:
+
+drwxr-x--x    2 b13_1581 1581328       408 Feb 29 11:25 .
+drwx--x--x    6 b13_1581 1581328       736 Aug 12 16:40 ..
+-rwxr-x---    1 b13_1581 1581328      1504 Feb 29 11:22 ConditionalComment.html
+-rwxr-x---    1 b13_1581 1581328       198 Feb 29 11:23 bare.html
+-rwxr-x---    1 b13_1581 1581328       335 Feb 29 11:23 bare.xhtml
+-rwxr-x---    1 b13_1581 1581328       837 Feb 29 11:23 empty_strict.html
+-rwxr-x---    1 b13_1581 1581328       853 Feb 29 11:24 empty_transitional.html
+-rwxr-x---    1 b13_1581 1581328      2359 Feb 29 11:24 index.html
+-rwxr-x---    1 b13_1581 1581328       384 Feb 29 11:24 standard.html
+-rwxr-x---    1 b13_1581 1581328       432 Feb 29 11:24 standard.xhtml
+-rwxr-x---    1 b13_1581 1581328       629 Feb 29 11:24 standardx.html
+-rwxr-x---    1 b13_1581 1581328      1388 Feb 29 11:25 twometa_transitional.html
+
+
+./petef.22web.net/htdocs/cpp:
+
+drwxr-x--x    2 b13_1581 1581328       120 Aug 13 10:09 .
+drwx--x--x    6 b13_1581 1581328       736 Aug 12 16:40 ..
+-rwxr-x---    1 b13_1581 1581328     83601 Aug 13 10:09 stltest-1.00.tar.gz
+-rwxr-x---    1 b13_1581 1581328      2375 Feb 29 11:22 stltest.html
+
+
+./petef.22web.net/htdocs/opera:
+
+drwxr-x--x    2 b13_1581 1581328       216 May 30 12:30 .
+drwx--x--x    6 b13_1581 1581328       736 Aug 12 16:40 ..
+-rwxr-x---    1 b13_1581 1581328       402 Feb 29 11:26 go.png
+-rwxr-x---    1 b13_1581 1581328       741 Feb 29 11:26 image_bug.html
+-rwxr-x---    1 b13_1581 1581328       535 Feb 29 11:26 nowhere.html
+-rwxr-x---    1 b13_1581 1581328     13424 May 30 12:30 payg_20080520.html
+-rwxr-x---    1 b13_1581 1581328     15674 May 30 12:30 payg_20080530.html
+226-Options: -a -l -R
+226 69 matches total
