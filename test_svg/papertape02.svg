@@ -1,0 +1,94 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="32px" width="48px" xmlns="http://www.w3.org/2000/svg"
+  version="1.1" viewBox="0 0 96 64">
+  <title>Paper Tape</title>
+  <g>
+    <title>Background</title>
+    <rect width="96" height="64" fill="#F5F5DC"/>
+  </g>
+  <g transform="translate(0, 16)">
+    <title>Tape</title>
+    <rect width="96" height="48" fill="#FFFF88"/>
+    <g transform="translate(4, 0)">
+      <title>Column 1</title>
+      <circle r="2.0" transform="translate(0, 20)" fill="#000000"/>
+    </g>
+    <g transform="translate(12, 0)">
+      <title>Column 2</title>
+      <text y="-3.0" x="0" fill="#FF0000" font-family="monospace" text-anchor="middle">P</text>
+      <circle r="2.0" transform="translate(0, 20)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 12)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 28)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 44)" fill="#000000"/>
+    </g>
+    <g transform="translate(20, 0)">
+      <title>Column 3</title>
+      <text y="-3.0" x="0" fill="#FF0000" font-family="monospace" text-anchor="middle">E</text>
+      <circle r="2.0" transform="translate(0, 20)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 4)" fill="#000000"/>
+    </g>
+    <g transform="translate(28, 0)">
+      <title>Column 4</title>
+      <text y="-3.0" x="0" fill="#FF0000" font-family="monospace" text-anchor="middle">T</text>
+      <circle r="2.0" transform="translate(0, 20)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 44)" fill="#000000"/>
+    </g>
+    <g transform="translate(36, 0)">
+      <title>Column 5</title>
+      <text y="-3.0" x="0" fill="#FF0000" font-family="monospace" text-anchor="middle">E</text>
+      <circle r="2.0" transform="translate(0, 20)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 4)" fill="#000000"/>
+    </g>
+    <g transform="translate(44, 0)">
+      <title>Column 6</title>
+      <circle r="2.0" transform="translate(0, 20)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 28)" fill="#000000"/>
+    </g>
+    <g transform="translate(52, 0)">
+      <title>Column 7</title>
+      <text y="-3.0" x="0" fill="#FF0000" font-family="monospace" text-anchor="middle">F</text>
+      <circle r="2.0" transform="translate(0, 20)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 4)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 28)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 36)" fill="#000000"/>
+    </g>
+    <g transform="translate(60, 0)">
+      <title>Column 8</title>
+      <text y="-3.0" x="0" fill="#FF0000" font-family="monospace" text-anchor="middle">O</text>
+      <circle r="2.0" transform="translate(0, 20)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 36)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 44)" fill="#000000"/>
+    </g>
+    <g transform="translate(68, 0)">
+      <title>Column 9</title>
+      <text y="-3.0" x="0" fill="#FF0000" font-family="monospace" text-anchor="middle">R</text>
+      <circle r="2.0" transform="translate(0, 20)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 12)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 36)" fill="#000000"/>
+    </g>
+    <g transform="translate(76, 0)">
+      <title>Column 10</title>
+      <text y="-3.0" x="0" fill="#FF0000" font-family="monospace" text-anchor="middle">M</text>
+      <circle r="2.0" transform="translate(0, 20)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 28)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 36)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 44)" fill="#000000"/>
+    </g>
+    <g transform="translate(84, 0)">
+      <title>Column 11</title>
+      <text y="-3.0" x="0" fill="#FF0000" font-family="monospace" text-anchor="middle">A</text>
+      <circle r="2.0" transform="translate(0, 20)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 4)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 12)" fill="#000000"/>
+    </g>
+    <g transform="translate(92, 0)">
+      <title>Column 12</title>
+      <text y="-3.0" x="0" fill="#FF0000" font-family="monospace" text-anchor="middle">N</text>
+      <circle r="2.0" transform="translate(0, 20)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 28)" fill="#000000"/>
+      <circle r="3.8" transform="translate(0, 36)" fill="#000000"/>
+    </g>
+  </g>
+</svg>
