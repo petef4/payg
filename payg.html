@@ -10,7 +10,7 @@
       p.modified { text-align: right; font-size: 0.75em; font-style: italic; }
       td { text-align: center }
       table { border-collapse: collapse; }
-      tr, td, th { border: 0.1em solid black; }
+      tr, td, th, span { border: 0.1em solid black; }
       .good { background: #80ff80; }
       .okay { background: #ffff80; }
       .poor { background: #ffa500; }
@@ -48,15 +48,13 @@
     <table>
       <tbody>
         <tr>
-          <th rowspan="3">Operator</th>
-          <th rowspan="3">Plan</th>
-          <th colspan="3">Main Rate per min</th>
-          <th colspan="3">Cheap Rate per min</th>
-          <th rowspan="3">Minimum Charge</th>
-          <th colspan="2">Main SMS per text</th>
-          <th>Cheap SMS per text</th>
-          <th rowspan="3">Network</th>
-          <th rowspan="3">Checked</th>
+          <th rowspan="2">Operator</th>
+          <th rowspan="2">Plan</th>
+          <th colspan="3">Rate per min</th>
+          <th rowspan="2">Minimum Charge</th>
+          <th colspan="2">SMS per text</th>
+          <th rowspan="2">Network</th>
+          <th rowspan="2">Checked</th>
         </tr>
         <tr>
           <th>Same</th>
@@ -64,92 +62,68 @@
           <th>Land</th>
           <th>Same</th>
           <th>Other</th>
-          <th>Land</th>
-          <th>Same</th>
-          <th>Other</th>
-          <th>All</th>
-        </tr>
-        <tr>
-          <th colspan="6">Conditions</th>
-          <th colspan="3">Conditions</th>
         </tr>
         <tr>
           <td rowspan="2"><a href="http://www.o2.co.uk/">O2</a></td>
           <td rowspan="2"><a href="http://www.o2.co.uk/mobilestariffs/tariffs/paygo/talkalot">Talkalot</a></td>
           <td class="poor" colspan="3">25p</td>
-          <td class="good">5p</td>
-          <td class="poor">25p</td>
-          <td class="good">5p</td>
           <td class="bad" rowspan="2">[1 min]</td>
           <td class="okay" rowspan="2" colspan="2">10p</td>
-          <td class="na" rowspan="2">n/a</td>
           <td rowspan="2"><a href="http://www.webmap.o2.co.uk/?Search=Search">O2</a></td>
           <td rowspan="2">2008-09-02</td>
         </tr>
         <tr>
-          <td colspan="6">after first 3 minutes use per day</td>
+          <td colspan="3"><span class="good">5p</span><span class="poor">25p</span><span class="good">5p</span> after first 3 minutes use per day</td>
         </tr>
         <tr>
           <td rowspan="4"><a href="http://www.orange.co.uk/">Orange</a></td>
           <td><a href="http://www.orange.co.uk/service_plans/payasyougo/payg_racoon_costs.html">Racoon</a></td>
           <td class="good" colspan="3">15p</td>
-          <td colspan="3" class="na">n/a</td>
           <td class="poor">15p</td>
           <td class="okay" colspan="2">10p</td>
-          <td class="na">n/a</td>
           <td rowspan="4"><a href="http://coverage.orange.co.uk/uk/UKCoverageSearch.htm">Orange</a></td>
           <td>2008-09-18</td>
         </tr>
         <tr>
           <td><a href="http://www.orange.co.uk/service_plans/payasyougo/payg_camel_costs.html">Camel</a></td>
           <td class="okay" colspan="3">20p</td>
-          <td colspan="3" class="na">n/a</td>
           <td class="bad">20p</td>
           <td class="okay" colspan="2">10p</td>
-          <td class="na">n/a</td>
           <td>2008-09-18</td>
         </tr>
         <tr>
           <td><a href="http://www.orange.co.uk/service_plans/payasyougo/payg_dolphin_costs.html">Dolphin</a></td>
           <td class="okay" colspan="3">20p</td>
-          <td colspan="3" class="na">n/a</td>
           <td class="bad">20p</td>
           <td class="okay" colspan="2">10p</td>
-          <td class="na">n/a</td>
           <td>2008-09-18</td>
         </tr>
         <tr>
           <td><a href="http://www.orange.co.uk/service_plans/payasyougo/payg_canary_costs.html">Canary</a></td>
           <td class="okay" colspan="3">20p</td>
-          <td colspan="3" class="na">n/a</td>
           <td class="bad">20p</td>
           <td class="okay" colspan="2">10p</td>
-          <td class="na">n/a</td>
           <td>2008-09-18</td>
         </tr>
         <tr>
           <td rowspan="2"><a href="http://www.t-mobile.co.uk/">T-Mobile</a></td>
           <td rowspan="2"><a href="http://www.t-mobile.co.uk/shop/mobile-phones/price-plans/pay-as-you-go/">PAYG</a></td>
           <td class="okay" colspan="3">20p</td>
-          <td class="good" colspan="3">10p</td>
           <td class="bad" rowspan="2">[1 min]</td>
           <td class="okay" colspan="2" rowspan="2">10p</td>
-          <td class="na" rowspan="2">n/a</td>
           <td rowspan="2"><a href="http://www.t-mobile.co.uk/services/coverage/street-check/">T-Mobile</a></td>
           <td rowspan="2">2008-09-02</td>
         </tr>
         <tr>
-          <td colspan="6">after first 2 minutes use per day</td>
+          <td colspan="3"><span class="good">10p</span> after first 2 minutes use per day</td>
         </tr>
         <tr>
           <td><a href="http://www.vodafone.co.uk">Vodafone</a></td>
           <td><a
               href="http://online.vodafone.co.uk/dispatch/Portal/appmanager/vodafone/wrp?_nfpb=true&amp;_pageLabel=template10&amp;pageID=PPP_0034">Simply</a></td>
           <td class="okay" colspan="3">20p</td>
-          <td class="na" colspan="3">n/a</td>
           <td class="bad">20p</td>
           <td class="okay" colspan="2">10p</td>
-          <td class="na">n/a</td>
           <td><a href="http://maps.vodafone.co.uk/">Vodafone</a></td>
           <td>2008-09-02</td>
         </tr>
@@ -158,22 +132,18 @@
           <td><a
               href="http://www.three.co.uk/personal/price_plans_/pay_as_you_go_/what_it_costs.omp">Flat12</a></td>
           <td class="good" colspan="3">12p</td>
-          <td colspan="3" class="na">n/a</td>
           <td class="okay">12p</td>
-          <td class="okay" colspan="2">12p</td>
-          <td class="na">n/a</td>
+          <td class="poor" colspan="2">12p</td>
           <td><a href="http://www.three.co.uk/personal/coverage_/coverageChecker.do">3</a>
             (and <a href="http://coverage.orange.co.uk/uk/UKCoverageSearch.htm">Orange</a>)</td>
           <td>2008-09-02</td>
         </tr>
         <tr class="first">
-          <td><a href="http://www.asda-mobile.com/">Asda</a>
-          <td><a href="http://www.asda-mobile.com/?node_id=1.2">PAYG</a></td>
+          <td class="good"><a href="http://www.asda-mobile.com/">Asda</a>
+          <td class="good"><a href="http://www.asda-mobile.com/?node_id=1.2">PAYG</a></td>
           <td class="good" colspan="3">8p</td>
-          <td class="na" colspan="3">n/a</td>
           <td class="good">8p</td>
           <td class="good" colspan="2">4p</td>
-          <td class="na">n/a</td>
           <td><a href="http://maps.vodafone.co.uk/">Vodafone</a></td>
           <td>2008-09-02</td>
         </tr>
@@ -182,10 +152,8 @@
           <td><a
               href="http://www.productsandservices.bt.com/consumerProducts/displayTopic.do?topicId=22037">Pre-Pay</a></td>
           <td class="okay" colspan="3">20p</td>
-          <td colspan="3" class="na">n/a</td>
           <td class="poor">15p</td>
           <td class="poor" colspan="2">12p</td>
-          <td class="na">n/a</td>
           <td><a href="http://maps.vodafone.co.uk/">Vodafone</a></td>
           <td>2008-09-02</td>
         </tr>
@@ -193,10 +161,8 @@
           <td><a href="http://www.familymobile.co.uk/">Family Mobile</a></td>
           <td><a href="http://www.familymobile.co.uk/infopages/uk-price-sheet">PAYG</a></td>
           <td class="good" colspan="3">9p</td>
-          <td colspan="3" class="na">n/a</td>
           <td class="okay">9p</td>
           <td class="good" colspan="2">6p</td>
-          <td class="na">n/a</td>
           <td><a href="http://www.t-mobile.co.uk/services/coverage/street-check/">T-Mobile</a></td>
           <td>2008-08-12</td>
         </tr>
@@ -204,24 +170,20 @@
           <td rowspan="3"><a href="http://www.talktalkmobile.co.uk/">TalkTalk</a></td>
           <td rowspan="2"><a href="http://www.talktalkmobile.co.uk/commerce/servlet/gben-server-PageServer?ARTICLE=MAIN.UK.INTERNET.PORTAL.TTMOBILE.STATIC.TARIFF&amp;NODE_ID=10467">Take 5</a></td>
           <td class="bad" colspan="3">35p</td>
-          <td colspan="3" class="good">Free</td>
           <td rowspan="2" class="bad">?</td>
           <td rowspan="2" class="okay" colspan="2">10p</td>
-          <td rowspan="2" class="na">n/a</td>
           <td rowspan="3"><a href="http://www.t-mobile.co.uk/services/coverage/street-check/">T-Mobile</a></td>
           <td rowspan="2">2008-09-18</td>
         </tr>
         <tr>
-          <td colspan="6">5 minutes free per day after 5 minutes paid use
+          <td colspan="3">5 minutes <span class="good">free</span> per day after 5 minutes paid use
           (i.e. mins 6 - 10 are free)</td>
         </tr>
         <tr>
           <td><a href="http://www.carphonewarehouse.com/commerce/servlet/gben-server-PageServer?ARTICLE=MAIN.UK.INTERNET.STATIC.MOBILEWORLD.TARIFFS">Mobile World</a></td>
           <td class="okay" colspan="3">15p</td>
-          <td colspan="3" class="na">n/a</td>
           <td class="okay">?</td>
           <td class="okay" colspan="2">7p</td>
-          <td class="na">n/a</td>
           <td>2008-09-18</td>
         </tr>
         <tr>
@@ -229,33 +191,29 @@
           <td rowspan="2"><a
               href="http://www.tesco.com/mobilenetwork/shop/?page=standardtariff">PAYG</a></td>
           <td class="okay" colspan="3">20p</td>
-          <td class="good" colspan="3">10p</td>
           <td class="okay" rowspan="2">10p</td>
           <td class="okay" colspan="2">10p</td>
-          <td class="good">5p</td>
           <td rowspan="2"><a href="http://www.webmap.o2.co.uk/?Search=Search">O2</a></td>
           <td rowspan="2">2008-07-23</td>
         </tr>
         <tr>
-          <td colspan="6">calls to favourite 5 numbers</td>
-          <td colspan="3">texts to favourite 5 numbers</td>
+          <td colspan="3"><span class="good">10p</span> to favourite 5 numbers</td>
+          <td colspan="2"><span class="good">5p</span> to favourite 5 numbers</td>
         </tr>
         <tr>
           <td rowspan="6"><a href="http://www.virginmobile.com/">Virgin Mobile</a></td>
           <td rowspan="2"><a href="http://www.virginmobile.com/vm/genericContent.do?contentId=payasyougo.tariff.howdoi.sm131">Daily Bonus</a></td>
           <td class="good" colspan="3">15p</td>
-          <td class="good" colspan="3">Free</td>
           <td class="poor" rowspan="2">15p</td>
           <td class="good">5p</td>
           <td class="okay">10p</td>
-          <td class="good">Free</td>
           <td rowspan="6"><a href="http://www.t-mobile.co.uk/services/coverage/street-check/">T-Mobile</a></td>
           <td rowspan="2">2008-09-02</td>
         </tr>
         <tr>
-          <td colspan="6">5 minutes free per day after 5 minutes paid use
+          <td colspan="3">5 minutes <span class="good">free</span> per day after 5 minutes paid use
           (i.e. mins 6 - 10 are free)</td>
-          <td colspan="3">5 texts free per day after 5 paid texts (i.e. texts 6
+          <td colspan="2">5 texts <span class="good">free</span> per day after 5 paid texts (i.e. texts 6
           - 10 are free)</td>
         </tr>
         <tr>
@@ -263,17 +221,13 @@
           <td class="good">15p</td>
           <td class="bad">40p</td>
           <td class="good">15p</td>
-          <td class="good">5p</td>
-          <td class="bad">40p</td>
-          <td class="good">5p</td>
           <td class="okay" rowspan="2">10p <span class="poor">(15p from 2008-10-13)</span></td>
           <td class="good" rowspan="2">3p</td>
           <td class="poor" rowspan="2">12p</td>
-          <td class="na" rowspan="2">n/a</td>
           <td rowspan="2">2008-09-02</td>
         </tr>
         <tr>
-          <td colspan="6">after first 5 minutes use per day</td>
+          <td colspan="3"><span class="good">5p</span><span class="bad">40p</span><span class="good">5p</span> after first 5 minutes use per day</td>
         </tr>
         <tr>
           <td rowspan="2"><a
@@ -281,17 +235,13 @@
           <td class="good">15p</td>
           <td class="bad">40p</td>
           <td class="good">15p</td>
-          <td class="good">5p</td>
-          <td class="bad">40p</td>
-          <td class="good">5p</td>
           <td class="okay" rowspan="2">10p<br></td>
           <td class="good" rowspan="2">3p</td>
           <td class="poor" rowspan="2">12p</td>
-          <td class="na" rowspan="2">n/a</td>
           <td rowspan="2">2008-09-02</td>
         </tr>
         <tr>
-          <td colspan="6">after first 5 minutes use per day</td>
+          <td colspan="3"><span class="good">5p</span><span class="bad">40p</span><span class="good">5p</span> after first 5 minutes use per day</td>
         </tr>
         <tr class="first">
           <td><a href="http://www.globalcell.eu">GlobalCell</a></td>
@@ -299,10 +249,8 @@
               href="http://www.globalcell.eu/index.php?option=com_content&amp;view=article&amp;id=53&amp;Itemid=59&amp;lang=en">PAYG</a></td>
           <td class="okay">10p</td>
           <td class="good" colspan="2">14p</td>
-          <td class="na" colspan="3">n/a</td>
           <td class="poor">[1min]</td>
           <td class="okay" colspan="2">10p</td>
-          <td class="na">n/a</td>
           <td><a href="http://coverage.orange.co.uk/uk/UKCoverageSearch.htm">Orange</a></td>
           <td>2008-09-18</td>
         </tr>
@@ -311,10 +259,8 @@
           <td><a href="http://www.idtmobile.co.uk/rates/">PAYG</a></td>
           <td class="good">8p</td>
           <td class="good" colspan="2">15p</td>
-          <td class="na" colspan="3">n/a</td>
           <td class="poor">?</td>
           <td class="okay" colspan="2">10p</td>
-          <td class="na">n/a</td>
           <td><a href="http://coverage.orange.co.uk/uk/UKCoverageSearch.htm">Orange</a></td>
           <td>2008-09-18</td>
         </tr>
@@ -323,10 +269,8 @@
           <td><a
               href="http://www.lebara-mobile.co.uk/en/nationaltariffs.php">PAYG</a></td>
           <td class="good" colspan="3">10p</td>
-          <td class="na" colspan="3">n/a</td>
           <td class="okay">10p</td>
           <td class="okay" colspan="2">10p</td>
-          <td class="na">n/a</td>
           <td><a href="http://maps.vodafone.co.uk/">Vodafone</a></td>
           <td>2008-09-18</td>
         </tr>
@@ -336,25 +280,21 @@
           <td class="good">0.5p</td>
           <td class="good">10p</td>
           <td class="good">8p</td>
-          <td class="na" colspan="3">n/a</td>
           <td class="okay" rowspan="2">[1min]</td>
           <td class="okay" rowspan="2" colspan="2">10p</td>
-          <td class="na" rowspan="2">n/a</td>
           <td rowspan="2"><a href="http://coverage.orange.co.uk/uk/UKCoverageSearch.htm">Orange</a></td>
           <td rowspan="2">2008-09-18</td>
         </tr>
         <tr>
-          <td colspan="6">calls to Lycamobile are 15p for 30min, then 9p/min</td>
+          <td colspan="3">calls to Lycamobile are <span class="good">15p for 30min</span>, then <span class="okay">9p/min</span></td>
         </tr>
         <tr>
           <td><a href="http://www.nomi-mobile.com">Nomi</a></td>
           <td><a href="http://www.nomi-mobile.com/nomi_rates.php?q=u">PAYG</a></td>
           <td class="okay">9p</td>
           <td class="good" colspan="2">13p</td>
-          <td class="na" colspan="3">n/a</td>
           <td class="poor">[1min]</td>
           <td class="okay" colspan="2">9p</td>
-          <td class="na">n/a</td>
           <td><a href="http://maps.vodafone.co.uk/">Vodafone</a></td>
           <td>2008-09-18</td>
         </tr>
@@ -362,27 +302,23 @@
           <td rowspan="4"><a href="http://www.talkmobile.co.uk/">TalkMobile</a></td>
           <td rowspan="2"><a href="http://www.talkmobile.co.uk/prepay.html">Prepay</a></td>
           <td class="okay" colspan="3">15p</td>
-          <td class="good" colspan="3">10p</td>
           <td rowspan="2" class="okay">10p</td>
           <td rowspan="2" class="okay" colspan="2">10p</td>
-          <td rowspan="2" class="na">n/a</td>
           <td rowspan="4"><a href="http://maps.vodafone.co.uk/">Vodafone</a></td>
           <td rowspan="2">2008-09-18</td>
         </tr>
         <tr>
-          <td colspan="6">after first 3 minutes use per day</td>
+          <td colspan="3"><span class="good">10p</span> after first 3 minutes use per day</td>
         </tr>
         <tr>
           <td rowspan="2"><a href="http://www.talkmobile.co.uk/world.html">World</a></td>
           <td class="okay" colspan="3">20p</td>
-          <td class="okay" colspan="3">15p</td>
           <td rowspan="2" class="okay">10p</td>
           <td rowspan="2" class="okay" colspan="2">10p</td>
-          <td rowspan="2" class="na">n/a</td>
           <td rowspan="2">2008-09-18</td>
         </tr>
         <tr>
-          <td colspan="6">after first 3 minutes use per day</td>
+          <td colspan="3"><span class="okay">15p</span> after first 3 minutes use per day</td>
         </tr>
         <tr>
           <th rowspan="4">Key</th>
@@ -390,11 +326,7 @@
           <td class="good">8p</td>
           <td class="good">15p</td>
           <td class="good">15p</td>
-          <td class="good">5p</td>
-          <td class="good">10p</td>
-          <td class="good">10p</td>
           <td class="good">8p</td>
-          <td class="good">5p</td>
           <td class="good">5p</td>
           <td class="good">5p</td>
           <td rowspan="4" colspan="2"></td>
@@ -405,10 +337,6 @@
           <td class="okay">20p</td>
           <td class="okay">20p</td>
           <td class="okay">10p</td>
-          <td class="okay">15p</td>
-          <td class="okay">15p</td>
-          <td class="okay">10p</td>
-          <td class="okay">10p</td>
           <td class="okay">10p</td>
           <td class="okay">10p</td>
         </tr>
@@ -417,11 +345,7 @@
           <td class="poor">25p</td>
           <td class="poor">25p</td>
           <td class="poor">25p</td>
-          <td class="poor">25p</td>
-          <td class="poor">25p</td>
-          <td class="poor">25p</td>
           <td class="poor">15p</td>
-          <td class="poor">12p</td>
           <td class="poor">12p</td>
           <td class="poor">12p</td>
         </tr>
@@ -430,10 +354,6 @@
           <td class="bad">40p</td>
           <td class="bad">40p</td>
           <td class="bad">40p</td>
-          <td class="bad">40p</td>
-          <td class="bad">40p</td>
-          <td class="bad">40p</td>
-          <td class="bad">20p</td>
           <td class="bad">20p</td>
           <td class="bad">20p</td>
           <td class="bad">20p</td>
@@ -455,7 +375,7 @@
     <p class="modified">
 <!-- Created: 2008-02-07T13:09:42+00:00 -->
 <!-- hhmts start -->
-Last modified: 2008-09-18T19:01:29+01:00
+Last modified: 2008-10-01T16:42:19+01:00
 <!-- hhmts end -->
     </p>
   </body>
