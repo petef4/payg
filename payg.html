@@ -16,6 +16,7 @@
       .poor { background: #ffa500; }
       .bad { background: #ff5050; }
       .na { background: #c0c0c0; }
+      tr.first { border-top: 0.3em solid black; }
     </style>
   </head>
 
@@ -23,15 +24,26 @@
     <h1>PAYG Tariffs</h1>
 
     <p>These are the rates for true pay as you go tariffs only.  Some other
-    plans are labelled PAYG but require monthly top-ups, etc.</p>
+    plans are labelled PAYG but require monthly top-ups, etc.  Plans which are
+    not open to new customers are also excluded.</p>
 
     <p>Details such as voice mail and rates for non-geographic numbers
     (e.g. 0845) are not included here.  Discounts are often available when
     committing to some usage.  Extra services are available, some of which are
     free.</p>
 
-    <p>There are other PAYG plans which focus on international calls.  They are
-    not listed here.  Neither are plans which are not open to new customers.</p>
+    <p>The five main operators who operate their own networks are O2, Orange,
+    T-Mobile and 3.  The first four operate <a
+    href="http://en.wikipedia.org/wiki/2G">2G</a> services primarily and are
+    moving towards <a href="http://en.wikipedia.org/wiki/3G">3G</a>.  3 operates
+    3G and uses Orange to provide its 2G coverage.</p>
+
+    <p><a href="http://en.wikipedia.org/wiki/MVNO">MVNO</a>s are operators who
+    do not run their own network.  The ones who target domestic usage are Asda,
+    BT, Family (IKEA), TalkTalk (CPW), Tesco, and Virgin.  Those geared towards
+    international plans include GlobalCell, IDT, Lycamobile, Nomi, and
+    Talkmobile (CPW).</p>
+    
 
     <table>
       <tbody>
@@ -78,15 +90,42 @@
           <td colspan="6">after first 3 minutes use per day</td>
         </tr>
         <tr>
-          <td><a href="http://www.orange.co.uk/">Orange</a></td>
+          <td rowspan="4"><a href="http://www.orange.co.uk/">Orange</a></td>
           <td><a href="http://www.orange.co.uk/service_plans/payasyougo/payg_racoon_costs.html">Racoon</a></td>
           <td class="good" colspan="3">15p</td>
           <td colspan="3" class="na">n/a</td>
           <td class="poor">15p</td>
           <td class="okay" colspan="2">10p</td>
           <td class="na">n/a</td>
-          <td><a href="http://coverage.orange.co.uk/uk/UKCoverageSearch.htm">Orange</a></td>
-          <td>2008-09-02</td>
+          <td rowspan="4"><a href="http://coverage.orange.co.uk/uk/UKCoverageSearch.htm">Orange</a></td>
+          <td>2008-09-18</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.orange.co.uk/service_plans/payasyougo/payg_camel_costs.html">Camel</a></td>
+          <td class="okay" colspan="3">20p</td>
+          <td colspan="3" class="na">n/a</td>
+          <td class="bad">20p</td>
+          <td class="okay" colspan="2">10p</td>
+          <td class="na">n/a</td>
+          <td>2008-09-18</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.orange.co.uk/service_plans/payasyougo/payg_dolphin_costs.html">Dolphin</a></td>
+          <td class="okay" colspan="3">20p</td>
+          <td colspan="3" class="na">n/a</td>
+          <td class="bad">20p</td>
+          <td class="okay" colspan="2">10p</td>
+          <td class="na">n/a</td>
+          <td>2008-09-18</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.orange.co.uk/service_plans/payasyougo/payg_canary_costs.html">Canary</a></td>
+          <td class="okay" colspan="3">20p</td>
+          <td colspan="3" class="na">n/a</td>
+          <td class="bad">20p</td>
+          <td class="okay" colspan="2">10p</td>
+          <td class="na">n/a</td>
+          <td>2008-09-18</td>
         </tr>
         <tr>
           <td rowspan="2"><a href="http://www.t-mobile.co.uk/">T-Mobile</a></td>
@@ -105,7 +144,7 @@
         <tr>
           <td><a href="http://www.vodafone.co.uk">Vodafone</a></td>
           <td><a
-              href="http://online.vodafone.co.uk/dispatch/Portal/appmanager/vodafone/wrp?_nfpb=true&_pageLabel=template10&pageID=PPP_0034">Simply</a></td>
+              href="http://online.vodafone.co.uk/dispatch/Portal/appmanager/vodafone/wrp?_nfpb=true&amp;_pageLabel=template10&amp;pageID=PPP_0034">Simply</a></td>
           <td class="okay" colspan="3">20p</td>
           <td class="na" colspan="3">n/a</td>
           <td class="bad">20p</td>
@@ -127,7 +166,7 @@
             (and <a href="http://coverage.orange.co.uk/uk/UKCoverageSearch.htm">Orange</a>)</td>
           <td>2008-09-02</td>
         </tr>
-        <tr>
+        <tr class="first">
           <td><a href="http://www.asda-mobile.com/">Asda</a>
           <td><a href="http://www.asda-mobile.com/?node_id=1.2">PAYG</a></td>
           <td class="good" colspan="3">8p</td>
@@ -162,16 +201,28 @@
           <td>2008-08-12</td>
         </tr>
         <tr>
-          <td><a href="http://www.freshmobile.co.uk/">Fresh</a></td>
-          <td><a
-              href="http://www.talktalkmobile.co.uk/commerce/servlet/gben-server-PageServer?ARTICLE=MAIN.UK.INTERNET.PORTAL.TTMOBILE.STATIC.FRESH.TARIFF">PAYG</a></td>
-          <td class="good" colspan="3">15p</td>
+          <td rowspan="3"><a href="http://www.talktalkmobile.co.uk/">TalkTalk</a></td>
+          <td rowspan="2"><a href="http://www.talktalkmobile.co.uk/commerce/servlet/gben-server-PageServer?ARTICLE=MAIN.UK.INTERNET.PORTAL.TTMOBILE.STATIC.TARIFF&amp;NODE_ID=10467">Take 5</a></td>
+          <td class="bad" colspan="3">35p</td>
+          <td colspan="3" class="good">Free</td>
+          <td rowspan="2" class="bad">?</td>
+          <td rowspan="2" class="okay" colspan="2">10p</td>
+          <td rowspan="2" class="na">n/a</td>
+          <td rowspan="3"><a href="http://www.t-mobile.co.uk/services/coverage/street-check/">T-Mobile</a></td>
+          <td rowspan="2">2008-09-18</td>
+        </tr>
+        <tr>
+          <td colspan="6">5 minutes free per day after 5 minutes paid use
+          (i.e. mins 6 - 10 are free)</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.carphonewarehouse.com/commerce/servlet/gben-server-PageServer?ARTICLE=MAIN.UK.INTERNET.STATIC.MOBILEWORLD.TARIFFS">Mobile World</a></td>
+          <td class="okay" colspan="3">15p</td>
           <td colspan="3" class="na">n/a</td>
-          <td class="poor">15p</td>
-          <td class="good" colspan="2">5p</td>
+          <td class="okay">?</td>
+          <td class="okay" colspan="2">7p</td>
           <td class="na">n/a</td>
-          <td><a href="http://www.t-mobile.co.uk/services/coverage/street-check/">T-Mobile</a></td>
-          <td>2008-09-02</td>
+          <td>2008-09-18</td>
         </tr>
         <tr>
           <td rowspan="2"><a href="http://www.tescomobile.com">Tesco</a></td>
@@ -241,6 +292,97 @@
         </tr>
         <tr>
           <td colspan="6">after first 5 minutes use per day</td>
+        </tr>
+        <tr class="first">
+          <td><a href="http://www.globalcell.eu">GlobalCell</a></td>
+          <td><a
+              href="http://www.globalcell.eu/index.php?option=com_content&amp;view=article&amp;id=53&amp;Itemid=59&amp;lang=en">PAYG</a></td>
+          <td class="okay">10p</td>
+          <td class="good" colspan="2">14p</td>
+          <td class="na" colspan="3">n/a</td>
+          <td class="poor">[1min]</td>
+          <td class="okay" colspan="2">10p</td>
+          <td class="na">n/a</td>
+          <td><a href="http://coverage.orange.co.uk/uk/UKCoverageSearch.htm">Orange</a></td>
+          <td>2008-09-18</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.idtmobile.co.uk/">IDT</a></td>
+          <td><a href="http://www.idtmobile.co.uk/rates/">PAYG</a></td>
+          <td class="good">8p</td>
+          <td class="good" colspan="2">15p</td>
+          <td class="na" colspan="3">n/a</td>
+          <td class="poor">?</td>
+          <td class="okay" colspan="2">10p</td>
+          <td class="na">n/a</td>
+          <td><a href="http://coverage.orange.co.uk/uk/UKCoverageSearch.htm">Orange</a></td>
+          <td>2008-09-18</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.lebara-mobile.co.uk/en/">Lebara</a></td>
+          <td><a
+              href="http://www.lebara-mobile.co.uk/en/nationaltariffs.php">PAYG</a></td>
+          <td class="good" colspan="3">10p</td>
+          <td class="na" colspan="3">n/a</td>
+          <td class="okay">10p</td>
+          <td class="okay" colspan="2">10p</td>
+          <td class="na">n/a</td>
+          <td><a href="http://maps.vodafone.co.uk/">Vodafone</a></td>
+          <td>2008-09-18</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><a href="http://www.lycamobile.co.uk">Lycamobile</a></td>
+          <td rowspan="2"><a href="http://www.lycamobile.co.uk/rates.aspx">PAYG</a></td>
+          <td class="good">0.5p</td>
+          <td class="good">10p</td>
+          <td class="good">8p</td>
+          <td class="na" colspan="3">n/a</td>
+          <td class="okay" rowspan="2">[1min]</td>
+          <td class="okay" rowspan="2" colspan="2">10p</td>
+          <td class="na" rowspan="2">n/a</td>
+          <td rowspan="2"><a href="http://coverage.orange.co.uk/uk/UKCoverageSearch.htm">Orange</a></td>
+          <td rowspan="2">2008-09-18</td>
+        </tr>
+        <tr>
+          <td colspan="6">calls to Lycamobile are 15p for 30min, then 9p/min</td>
+        </tr>
+        <tr>
+          <td><a href="http://www.nomi-mobile.com">Nomi</a></td>
+          <td><a href="http://www.nomi-mobile.com/nomi_rates.php?q=u">PAYG</a></td>
+          <td class="okay">9p</td>
+          <td class="good" colspan="2">13p</td>
+          <td class="na" colspan="3">n/a</td>
+          <td class="poor">[1min]</td>
+          <td class="okay" colspan="2">9p</td>
+          <td class="na">n/a</td>
+          <td><a href="http://maps.vodafone.co.uk/">Vodafone</a></td>
+          <td>2008-09-18</td>
+        </tr>
+        <tr>
+          <td rowspan="4"><a href="http://www.talkmobile.co.uk/">TalkMobile</a></td>
+          <td rowspan="2"><a href="http://www.talkmobile.co.uk/prepay.html">Prepay</a></td>
+          <td class="okay" colspan="3">15p</td>
+          <td class="good" colspan="3">10p</td>
+          <td rowspan="2" class="okay">10p</td>
+          <td rowspan="2" class="okay" colspan="2">10p</td>
+          <td rowspan="2" class="na">n/a</td>
+          <td rowspan="4"><a href="http://maps.vodafone.co.uk/">Vodafone</a></td>
+          <td rowspan="2">2008-09-18</td>
+        </tr>
+        <tr>
+          <td colspan="6">after first 3 minutes use per day</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><a href="http://www.talkmobile.co.uk/world.html">World</a></td>
+          <td class="okay" colspan="3">20p</td>
+          <td class="okay" colspan="3">15p</td>
+          <td rowspan="2" class="okay">10p</td>
+          <td rowspan="2" class="okay" colspan="2">10p</td>
+          <td rowspan="2" class="na">n/a</td>
+          <td rowspan="2">2008-09-18</td>
+        </tr>
+        <tr>
+          <td colspan="6">after first 3 minutes use per day</td>
         </tr>
         <tr>
           <th rowspan="4">Key</th>
@@ -313,7 +455,7 @@
     <p class="modified">
 <!-- Created: 2008-02-07T13:09:42+00:00 -->
 <!-- hhmts start -->
-Last modified: 2008-09-02T18:04:41+01:00
+Last modified: 2008-09-18T19:01:29+01:00
 <!-- hhmts end -->
     </p>
   </body>
