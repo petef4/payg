@@ -1,2 +1,3 @@
 # ignore files with __1 suffixes from OmniWorks
 __\d+$
+arcit/.*
