@@ -1,5 +1,3 @@
-php_value error_log "php_error.log"
-
 ErrorDocument 404 /404.html
 
 <Files .htaccess>
@@ -13,11 +11,3 @@ Deny from all
 <FilesMatch "\.log">
 Deny from all
 </FilesMatch>
-
-<Files php_error.log>
-Deny from all
-</Files>
-
-<Files defines.php>
-Deny from all
-</Files>
