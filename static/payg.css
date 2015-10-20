@@ -1,0 +1,42 @@
+div.leftplain {
+    padding-left: 1em; padding-right: 1em;
+}
+address a {
+    padding-left: 1em;
+}
+p.modified {
+    text-align: right;
+    font-size: 0.75em;
+    font-style: italic;
+}
+.fine-print {
+    font-size: 0.75em;
+    font-weight: bold;
+}
+td {
+    text-align: center
+}
+table {
+    border-collapse: collapse;
+}
+tr, td, th {
+    border: 0.1em solid black;
+}
+tr.first {
+    border-top: 0.3em solid black;
+}
+span.good, span.okay, span.poor, span.bad {
+    border: 0.1em solid black;
+}
+.good { background: #80ff80; }
+.okay { background: #ffff80; }
+.poor { background: #ffa500; }
+.bad { background: #ff5050; }
+.na { background: #c0c0c0; }
+.bigger {
+    font-size: 18px;
+    font-weight: bold;
+}
+.iffy {
+    font-style: italic;
+}
