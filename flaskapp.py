@@ -21,6 +21,12 @@ def links():
     return render_template('links.html', http=http)
 
 
+@app.route('/shopping')
+def shopping():
+    http = request.environ.get('HTTP_X_FORWARDED_PROTO', 'http')
+    return render_template('shopping.html', http=http)
+
+
 @app.route('/test')
 def test():
     return repr(request.environ)
