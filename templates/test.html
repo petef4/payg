@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel=stylesheet href="/static/site.css" type="text/css">
+    <link href="/static/papertape.ico" type="image/x-icon" rel="shortcut icon">
+    <title>Pete Forman's Test Page</title>
+  </head>
+
+  <body>
+
+    <h1>Pete Forman's Test Page</h1>
+
+    <table>
+      <tbody>
+        {% for key, value in env.items() %}
+        <tr>
+          <th> {{ key }} </th>
+          <td> {{ value }} </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
