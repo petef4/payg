@@ -1,0 +1,49 @@
+{
+    "min_": {
+        "good": 100,
+        "okay" : 150,
+        "poor" : 210,
+        "bad": 260
+    },
+    "charge_min": {
+        "good": 80,
+        "okay" : 110,
+        "poor" : 160,
+        "bad": 260
+    },
+    "sms_": {
+        "good": 60,
+        "okay" : 110,
+        "poor" : 120,
+        "bad": 200
+    },
+    "bill_per": {
+        "good": 1,
+        "okay": 2
+    },
+    "voicemail": {
+        "good": 0,
+        "okay": 90,
+        "poor": 160,
+        "bad": 360
+    },
+    "08x": {
+        "good": 80,
+        "okay": 120,
+        "poor": 210,
+        "bad": 300
+    },
+    "mms": {
+        "good": 200,
+        "okay": 250,
+        "poor": 310,
+        "bad": 360
+    },
+    "data": {
+        "MB / day": 10,
+        "good": 200,
+        "okay": 600,
+        "poor": 2000,
+        "bad": 5000
+    }
+}

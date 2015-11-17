@@ -1,3 +1,28 @@
+{%- macro pence(num) -%}
+  {%- if num is number -%}
+    {%- if num >= 100 -%}
+      £{{ num // 100 }}
+      {%- if num % 100 != 0 -%}
+        {{ '.%02d'|format( num % 100) }}
+      {%- endif -%}
+    {%- else -%}
+      {{ num }}p
+    {%- endif -%}
+  {%- else -%}
+    {{ num }}
+  {%- endif -%}
+{%- endmacro %}
+{% macro td(r, c) -%}
+<td {% if r.get(c + '.grade') -%}
+    class="{{ r.get(c + '.grade') }}"
+    {%- endif -%} sorttable_customkey="{{ r.get(c + '.key') }}">
+    {%- if r.get(c + '.url') -%}
+      <a href="{{ r.get(c + '.url') }}">{{ r.get(c) }}</a>
+    {%- else -%}
+      {{ pence(r.get(c)) }}
+    {%- endif -%}
+  </td>
+{%- endmacro -%}
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
         "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
@@ -166,7 +191,8 @@ min. Texts will be 4p and Internet 2p / MB."><sup>4</sup></a>
       lists 54, though not all offer PAYG.
     </p>
     <p>
-      There are 40 operators listed here offering 44 PAYG plans.
+      There are {{ counts.operator }} operators listed here offering
+      {{ counts.plan }} PAYG plans.
     </p>
     <p>
       <span class="bigger">Coverage maps</span> are linked to in the Network
@@ -197,15 +223,15 @@ min. Texts will be 4p and Internet 2p / MB."><sup>4</sup></a>
         <tr>
           <th>Operator</th>
           <th>Plan</th>
-          <th>Same per min</th>
-          <th>Other per min</th>
-          <th>Land per min</th>
+          <th>Same / min</th>
+          <th>Other / min</th>
+          <th>Land / min</th>
           <th>Minimum Charge</th>
           <th>Bill per</th>
-          <th>Same per text</th>
-          <th>Other per text</th>
+          <th>Same / text</th>
+          <th>Other / text</th>
           <th>Voice mail</th>
-          <th>08x per min</th>
+          <th>08x / min</th>
           <th>MMS</th>
           <th>Internet</th>
           <th>Network</th>
@@ -215,21 +241,9 @@ min. Texts will be 4p and Internet 2p / MB."><sup>4</sup></a>
       <tbody>
         {% for row in data %}
         <tr>
-          <td><a href="{{ row['operator_url'] }}">{{ row['operator'] }}</a></td>
-          <td><a href="{{ row['plan_url'] }}">{{ row['plan'] }}</a></td>
-          <td class="na">{{ row['min_same'] }}</td>
-          <td class="na">{{ row['min_other'] }}</td>
-          <td class="na">{{ row['min_land'] }}</td>
-          <td class="na">{{ row['charge_min'] }}</td>
-          <td class="na">{{ row['bill_per'] }}</td>
-          <td class="na">{{ row['sms_same'] }}</td>
-          <td class="na">{{ row['sms_other'] }}</td>
-          <td class="na">{{ row['voicemail'] }}</td>
-          <td class="na">{{ row['08x'] }}</td>
-          <td class="na">{{ row['mms'] }}</td>
-          <td class="na">{{ row['data'] }}</td>
-          <td class="na">{{ row['network'] }}</td>
-          <td class="na">{{ row['checked'] }}</td>
+          {% for col in cols %}
+          {{ td(row, col) }}
+          {% endfor %}
         </tr>
         {% endfor %}
       </tbody>
@@ -237,48 +251,48 @@ min. Texts will be 4p and Internet 2p / MB."><sup>4</sup></a>
         <tr>
           <th rowspan="4">Key</th>
           <th class="good">Good</th>
-          <td class="good" colspan="3">10p</td>
-          <td class="good">8p</td>
+          <td class="good" colspan="3">{{ pence(grading.min_.good // 10) }}</td>
+          <td class="good">{{ pence(grading.charge_min.good // 10) }}</td>
           <td class="good">sec</td>
-          <td class="good" colspan="2">6p</td>
+          <td class="good" colspan="2">{{ pence(grading.sms_.good // 10) }}</td>
           <td class="good">Free</td>
-          <td class="good">8p</td>
-          <td class="good">20p</td>
-          <td class="good">20p / MB or 30p / day</td>
-          <td rowspan="4" colspan="2"></td>
+          <td class="good">{{ pence(grading.get('08x').good // 10) }}</td>
+          <td class="good">{{ pence(grading.mms.good // 10) }}</td>
+          <td class="good">{{ pence(grading.data.good // 10) }} / day</td>
+          <td rowspan="4" colspan="2">Internet grading assumes {{ grading.data.get('MB / day') }}&nbsp;MB / day</td>
         </tr>
         <tr>
           <th class="okay">Okay</th>
-          <td class="okay" colspan="3">15p</td>
-          <td class="okay">11p</td>
+          <td class="okay" colspan="3">{{ pence(grading.min_.okay // 10) }}</td>
+          <td class="okay">{{ pence(grading.charge_min.okay // 10) }}</td>
           <td class="okay">min</td>
-          <td class="okay" colspan="2">11p</td>
-          <td class="okay">9p</td>
-          <td class="okay">12p</td>
-          <td class="okay">25p</td>
-          <td class="okay">60p / MB or £1 / day</td>
+          <td class="okay" colspan="2">{{ pence(grading.sms_.okay // 10) }}</td>
+          <td class="okay">{{ pence(grading.voicemail.okay // 10) }}</td>
+          <td class="okay">{{ pence(grading.get('08x').okay // 10) }}</td>
+          <td class="okay">{{ pence(grading.mms.okay // 10) }}</td>
+          <td class="okay">{{ pence(grading.data.okay // 10) }} / day</td>
         </tr>
         <tr>
           <th class="poor">Poor</th>
-          <td class="poor" colspan="3">21p</td>
-          <td class="poor">16p</td>
+          <td class="poor" colspan="3">{{ pence(grading.min_.poor // 10) }}</td>
+          <td class="poor">{{ pence(grading.charge_min.poor // 10) }}</td>
           <td> </td>
-          <td class="poor" colspan="2">12p</td>
-          <td class="poor">16p</td>
-          <td class="poor">21p</td>
-          <td class="poor">21p</td>
-          <td class="poor">£2 / MB or £2 / day</td>
+          <td class="poor" colspan="2">{{ pence(grading.sms_.poor // 10) }}</td>
+          <td class="poor">{{ pence(grading.voicemail.poor // 10) }}</td>
+          <td class="poor">{{ pence(grading.get('08x').poor // 10) }}</td>
+          <td class="poor">{{ pence(grading.mms.poor // 10) }}</td>
+          <td class="poor">{{ pence(grading.data.poor // 10) }} / day</td>
         </tr>
         <tr>
           <th class="bad">Bad</th>
-          <td class="bad" colspan="3">26p</td>
-          <td class="bad">26p</td>
+          <td class="bad" colspan="3">{{ pence(grading.min_.bad // 10) }}</td>
+          <td class="bad">{{ pence(grading.charge_min.bad // 10) }}</td>
           <td> </td>
-          <td class="bad" colspan="2">20p</td>
-          <td class="bad">36p</td>
-          <td class="bad">30p</td>
-          <td class="bad">45p</td>
-          <td class="bad">£5 / MB</td>
+          <td class="bad" colspan="2">{{ pence(grading.sms_.bad // 10) }}</td>
+          <td class="bad">{{ pence(grading.voicemail.bad // 10) }}</td>
+          <td class="bad">{{ pence(grading.get('08x').bad // 10) }}</td>
+          <td class="bad">{{ pence(grading.mms.bad // 10) }}</td>
+          <td class="bad">{{ pence(grading.data.bad // 10) }} / day</td>
         </tr>
       </tfoot>
     </table>
