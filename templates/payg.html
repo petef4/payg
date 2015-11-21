@@ -15,7 +15,7 @@
 {% macro td(r, c) -%}
 <td {% if r.get(c + '.grade') -%}
     class="{{ r.get(c + '.grade') }}"
-    {%- endif -%} sorttable_customkey="{{ r.get(c + '.key') }}">
+    {%- endif %} sorttable_customkey="{{ r.get(c + '.key') }}">
     {%- if r.get(c + '.url') -%}
       <a href="{{ r.get(c + '.url') }}">{{ r.get(c) }}</a>
     {%- else -%}
@@ -230,7 +230,7 @@ min. Texts will be 4p and Internet 2p / MB."><sup>4</sup></a>
           <th>Bill per</th>
           <th>Same / text</th>
           <th>Other / text</th>
-          <th>Voice mail</th>
+          <th>Voice mail / min</th>
           <th>08x / min</th>
           <th>MMS</th>
           <th>Internet</th>
@@ -360,7 +360,7 @@ min. Texts will be 4p and Internet 2p / MB."><sup>4</sup></a>
     </address>
     <p class="modified">
 <!-- Created: 2008-02-07T13:09:42+00:00 -->
-<!-- hhmts start -->Last modified: 2015-11-09T22:03:48+00:00<!-- hhmts end -->
+<!-- hhmts start -->Last modified: 2015-11-21T15:33:18+00:00<!-- hhmts end -->
     </p>
   </body>
 </html>
