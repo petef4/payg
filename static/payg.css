@@ -1,3 +1,4 @@
+@charset: "utf-8";
 div.leftplain {
     padding-left: 1em; padding-right: 1em;
 }
@@ -40,6 +41,6 @@ span.good, span.okay, span.poor, span.bad {
 .iffy {
     font-style: italic;
 }
-table.sortable thead th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
-    content: " \25B4\25BE" 
+table.sortable thead th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+    content: " ▴▾"
 }

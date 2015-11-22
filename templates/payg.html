@@ -12,8 +12,8 @@
     {{ num }}
   {%- endif -%}
 {%- endmacro %}
-{% macro td(r, c) -%}
-<td {% if r.get(c + '.grade') -%}
+{%- macro td(r, c) %}
+          <td {% if r.get(c + '.grade') -%}
     class="{{ r.get(c + '.grade') }}"
     {%- endif %} sorttable_customkey="{{ r.get(c + '.key') }}">
     {%- if r.get(c + '.url') -%}
@@ -34,7 +34,7 @@
     <link rel=stylesheet href="/static/site.css" type="text/css">
     <link rel=stylesheet href="/static/payg.css" type="text/css">
     <link href="/static/papertape.ico" type="image/x-icon" rel="shortcut icon">
-    <script src="/static/sorttable.js"></script>
+    <script src="/static/sorttable.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -238,15 +238,6 @@ min. Texts will be 4p and Internet 2p / MB."><sup>4</sup></a>
           <th>Checked</th>
         </tr>
       </thead>
-      <tbody>
-        {% for row in data %}
-        <tr>
-          {% for col in cols %}
-          {{ td(row, col) }}
-          {% endfor %}
-        </tr>
-        {% endfor %}
-      </tbody>
       <tfoot>
         <tr>
           <th rowspan="4">Key</th>
@@ -295,6 +286,15 @@ min. Texts will be 4p and Internet 2p / MB."><sup>4</sup></a>
           <td class="bad">{{ pence(grading.data.bad // 10) }} / day</td>
         </tr>
       </tfoot>
+      <tbody>
+        {%- for row in data %}
+        <tr>
+          {%- for col in cols -%}
+          {{ td(row, col) }}
+          {%- endfor %}
+        </tr>
+        {%- endfor %}
+      </tbody>
     </table>
     <p>
       <span class="bigger">Footnotes</span>
