@@ -29,6 +29,7 @@ else:
             'charge_min', 'bill_per', 'sms_same', 'sms_other', 'voicemail',
             '08x', 'mms', 'data', 'network', 'checked']
 
+
 @app.route('/')
 def payg():
     http = request.environ.get('HTTP_X_FORWARDED_PROTO', 'http')

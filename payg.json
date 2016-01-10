@@ -456,6 +456,25 @@
     "checked": "2015-07-05"
   },
   {
+    "operator": "Fonome",
+    "operator.url": "https://fonome.com/",
+    "plan": "PAYG",
+    "plan.url": "https://fonome.com/?p=rates",
+    "min_same": "Free",
+    "min_other": "5p",
+    "min_land": "5p",
+    "charge_min": "[1 min]",
+    "bill_per": "[min]",
+    "sms_same": "Free",
+    "sms_other": "5p",
+    "voicemail": "Free",
+    "08x": "n/a",
+    "mms": "n/a",
+    "data": "2p / MB",
+    "network": "O2",
+    "checked": "2016-01-10"
+  },
+  {
     "operator": "Globe UK",
     "operator.url": "http://www.ukglobetel.com/",
     "plan": "PAYG",
