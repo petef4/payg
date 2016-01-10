@@ -14,7 +14,7 @@
     "voicemail": 30,
     "08x": 44,
     "mms": 40,
-    "data": "Add-ons start from \u00a31 / 100 MB",
+    "data": "Add-ons start from £1 / 100 MB",
     "network": "EE",
     "checked": "2015-07-05"
   },
@@ -33,7 +33,7 @@
     "voicemail": "20p / call",
     "08x": 25,
     "mms": 25,
-    "data": "\u00a33 / MB capped at \u00a31 / day",
+    "data": "£3 / MB capped at £1 / day",
     "network": "O2",
     "checked": "2015-07-05"
   },
@@ -52,7 +52,7 @@
     "voicemail": 30,
     "08x": 45,
     "mms": 36,
-    "data": "\u00a32 / day for 50 MB then 10p / MB",
+    "data": "£2 / day for 50 MB then 10p / MB",
     "network": "Vodafone",
     "checked": "2015-07-05"
   },
@@ -209,23 +209,23 @@
     "checked": "2015-07-05"
   },
   {
-    "operator": "The People\u2019s Operator",
+    "operator": "The People’s Operator",
     "operator.url": "https://www.thepeoplesoperator.com/",
     "plan": "PAYG",
     "plan.url": "https://www.thepeoplesoperator.com/tpo_payg_rates",
-    "min_same": "Free",
-    "min_other": 5,
-    "min_land": 5,
+    "min_same": 4,
+    "min_other": 4,
+    "min_land": 4,
     "charge_min": "[1 min]",
     "bill_per": "min",
-    "sms_same": "Free",
+    "sms_same": 3,
     "sms_other": 3,
-    "voicemail": 5,
+    "voicemail": 4,
     "08x": 5,
     "mms": 30,
-    "data": "1p / MB",
+    "data": "2p / MB",
     "network": "EE",
-    "checked": "2015-07-05"
+    "checked": "2016-01-10"
   },
   {
     "operator": "Post Office Mobile",
@@ -356,7 +356,7 @@
     "voicemail": "26p / call",
     "08x": 36,
     "mms": 30,
-    "data": "\u00a31 / day for 100 MB then \u00a31 / 100 MB",
+    "data": "£1 / day for 100 MB then £1 / 100 MB",
     "network": "EE",
     "checked": "2015-07-05"
   },
@@ -375,7 +375,7 @@
     "voicemail": "26p / call",
     "08x": 36,
     "mms": 30,
-    "data": "\u00a31 / day for 100 MB then \u00a31 / 100 MB",
+    "data": "£1 / day for 100 MB then £1 / 100 MB",
     "network": "EE",
     "checked": "2015-07-05"
   },
@@ -394,7 +394,7 @@
     "voicemail": "26p / call",
     "08x": 36,
     "mms": 30,
-    "data": "\u00a31 / day for 100 MB then \u00a31 / 100 MB",
+    "data": "£1 / day for 100 MB then £1 / 100 MB",
     "network": "EE",
     "checked": "2015-07-05"
   },
@@ -495,22 +495,22 @@
   },
   {
     "operator": "Jadoo",
-    "operator.url": "http://www.jadoo.com/",
+    "operator.url": "http://www.jadoomobile.com/",
     "plan": "PAYG",
-    "plan.url": "http://www.jadoo.com/tariff",
-    "min_same": 4,
-    "min_other": 4,
-    "min_land": 4,
+    "plan.url": "http://www.jadoomobile.com/tariff",
+    "min_same": 8,
+    "min_other": 8,
+    "min_land": 8,
     "charge_min": "[1 min]",
     "bill_per": "[min]",
-    "sms_same": 4,
-    "sms_other": 4,
-    "voicemail": 4,
+    "sms_same": 8,
+    "sms_other": 8,
+    "voicemail": 8,
     "08x": "n/a",
     "mms": "?",
     "data": "10p / MB",
     "network": "O2",
-    "checked": "2015-07-12"
+    "checked": "2016-01-10"
   },
   {
     "operator": "Kingdom mobile",

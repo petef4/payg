@@ -240,6 +240,9 @@
           <th>Land / min</th>
           <th>Minimum Charge</th>
           <th>Bill per</th>
+          {% if do_average -%}
+          <th>Avg / min</th>
+          {%- endif %}
           <th>Same / text</th>
           <th>Other / text</th>
           <th>Voice mail / min</th>
@@ -257,9 +260,12 @@
           <td class="good" colspan="3">{{ pence(grading.min_.good // 10) }}</td>
           <td class="good">{{ pence(grading.charge_min.good // 10) }}</td>
           <td class="good">sec</td>
+          <td class="good">{{ pence(grading.min_.good // 10) }}</td>
           <td class="good" colspan="2">{{ pence(grading.sms_.good // 10) }}</td>
           <td class="good">Free</td>
+          {% if do_average -%}
           <td class="good">{{ pence(grading.get('08x').good // 10) }}</td>
+          {%- endif %}
           <td class="good">{{ pence(grading.mms.good // 10) }}</td>
           <td class="good">{{ pence(grading.data.good // 10) }} / day</td>
           <td rowspan="4" colspan="2">Internet grading assumes {{ grading.data.get('MB / day') }}&nbsp;MB / day</td>
@@ -269,6 +275,9 @@
           <td class="okay" colspan="3">{{ pence(grading.min_.okay // 10) }}</td>
           <td class="okay">{{ pence(grading.charge_min.okay // 10) }}</td>
           <td class="okay">min</td>
+          {% if do_average -%}
+          <td class="okay">{{ pence(grading.min_.okay // 10) }}</td>
+          {%- endif %}
           <td class="okay" colspan="2">{{ pence(grading.sms_.okay // 10) }}</td>
           <td class="okay">{{ pence(grading.voicemail.okay // 10) }}</td>
           <td class="okay">{{ pence(grading.get('08x').okay // 10) }}</td>
@@ -280,6 +289,9 @@
           <td class="poor" colspan="3">{{ pence(grading.min_.poor // 10) }}</td>
           <td class="poor">{{ pence(grading.charge_min.poor // 10) }}</td>
           <td> </td>
+          {% if do_average -%}
+          <td class="poor">{{ pence(grading.min_.poor // 10) }}</td>
+          {%- endif %}
           <td class="poor" colspan="2">{{ pence(grading.sms_.poor // 10) }}</td>
           <td class="poor">{{ pence(grading.voicemail.poor // 10) }}</td>
           <td class="poor">{{ pence(grading.get('08x').poor // 10) }}</td>
@@ -291,6 +303,9 @@
           <td class="bad" colspan="3">{{ pence(grading.min_.bad // 10) }}</td>
           <td class="bad">{{ pence(grading.charge_min.bad // 10) }}</td>
           <td> </td>
+          {% if do_average -%}
+          <td class="bad">{{ pence(grading.min_.bad // 10) }}</td>
+          {%- endif %}
           <td class="bad" colspan="2">{{ pence(grading.sms_.bad // 10) }}</td>
           <td class="bad">{{ pence(grading.voicemail.bad // 10) }}</td>
           <td class="bad">{{ pence(grading.get('08x').bad // 10) }}</td>
@@ -372,7 +387,7 @@
     <p class="modified">
 <!-- Created: 2008-02-07T13:09:42+00:00 -->
 <!-- hhmts start -->
-Last modified: 2015-12-15T22:58:05+00:00
+Last modified: 2016-01-10T11:34:09+00:00
 <!-- hhmts end -->
     </p>
   </body>

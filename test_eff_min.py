@@ -1,5 +1,61 @@
-TOL = 6  # tolerance, compare to this number of decimal places
+import eff_min
 
+import pytest
+
+TOL = 6  # tolerance, compare to this number of decimal places
+MEAN_PER_CALL_DATA = (
+    # (maximum, minimum, per_minute, charge_interval, connection=0)
+    (30, 60, 20, 60), (60, 60, 20, 60),
+    (120, 60, 20, 60), (180, 60, 20, 60),
+    (30, 60, 20, 1), (60, 60, 20, 1),
+    (120, 60, 20, 1), (180, 60, 20, 1),
+    (30, 1, 20, 1), (60, 1, 20, 1),
+    (120, 1, 20, 1), (180, 1, 20, 1),
+    (30, 6, 20, 6), (60, 6, 20, 6),
+    (120, 6, 20, 6), (180, 6, 20, 6),
+    (30, 0, 0, 600, 10), (60, 0, 0, 600, 10),
+    (120, 0, 0, 600, 10), (180, 0, 0, 600, 10),
+    (30, 600, 0, 600, 10), (60, 600, 0, 600, 10),
+    (120, 600, 0, 600, 10), (180, 600, 0, 600, 10))
+
+
+def test_smart_mean_per_minute():
+    for args in MEAN_PER_CALL_DATA:
+        assert round(eff_min.smart_mean_per_minute(*args) -
+                     60.0 / args[0] * mean_per_call(*args), TOL) == 0
+
+def test_max_minute():
+    row = {'min_same': 'Free', 'min_other': '25p', 'min_land': '10p'}
+    assert eff_min.max_minute(row) == 25.0
+    row = {'min_same': '20p', 'min_other': '15p', 'min_land': '10p'}
+    assert eff_min.max_minute(row) == 20.0
+    row = {'min_same': '10p', 'min_other': '?', 'min_land': '?'}
+    assert eff_min.max_minute(row) == 10.0
+    row = {'min_same': 'n/a', 'min_other': 'n/a', 'min_land': 'Free'}
+    assert eff_min.max_minute(row) == 0.0
+    row = {'min_same': '?', 'min_other': '?', 'min_land': '?'}
+    with pytest.raises(ValueError):
+        assert eff_min.max_minute(row) == '?'
+
+
+def test_pence():
+    assert eff_min.pence(0) == 0
+    assert eff_min.pence(0.0) == 0
+    assert eff_min.pence(10) == 10
+    assert eff_min.pence(10.0) == 10
+    assert eff_min.pence('0p') == 0.0
+    assert eff_min.pence('10p') == 10.0
+    assert eff_min.pence('1.5p') == 1.5
+    assert eff_min.pence('£1') == 100.0
+    assert eff_min.pence('Free') == 0.0
+    assert eff_min.pence('?') == '?'
+    assert eff_min.pence('n/a') == 'n/a'
+    with pytest.raises(ValueError) as excinfo:
+        eff_min.pence('foo')
+    assert str(excinfo.value) == 'String format not handled: foo'
+
+
+# remaining tests are for functions in this test file
 
 def test__charge_per_call():
     assert round(20 - charge_per_call(1, 0, 20, 60), TOL) == 0
@@ -64,22 +120,6 @@ def test__mean_per_call():
     assert round(10 - mean_per_call(180, 600, 0, 600, 10), TOL) == 0
 
 
-MEAN_PER_CALL_DATA = (
-    # (maximum, minimum, per_minute, charge_interval, connection=0)
-    (30, 60, 20, 60), (60, 60, 20, 60),
-    (120, 60, 20, 60), (180, 60, 20, 60),
-    (30, 60, 20, 1), (60, 60, 20, 1),
-    (120, 60, 20, 1), (180, 60, 20, 1),
-    (30, 1, 20, 1), (60, 1, 20, 1),
-    (120, 1, 20, 1), (180, 1, 20, 1),
-    (30, 6, 20, 6), (60, 6, 20, 6),
-    (120, 6, 20, 6), (180, 6, 20, 6),
-    (30, 0, 0, 600, 10), (60, 0, 0, 600, 10),
-    (120, 0, 0, 600, 10), (180, 0, 0, 600, 10),
-    (30, 600, 0, 600, 10), (60, 600, 0, 600, 10),
-    (120, 600, 0, 600, 10), (180, 600, 0, 600, 10))
-
-
 def test__excel_mean_per_call():
     for args in MEAN_PER_CALL_DATA:
         assert round(excel_mean_per_call(*args) - mean_per_call(*args), TOL) == 0
@@ -95,7 +135,7 @@ def excel_mean_per_call(
     """Returns the mean charge for a call.
 
     Args:
-        maximum (seconds): maximum length of call
+        maximum (seconds): maximum length of call to average (the minimum is 1)
         minimum (seconds): calls are effectively at least this long
         per_minute: charge for a call of one minute
         charge_interval (seconds): call length rounded up to a multiple of this
@@ -135,7 +175,7 @@ def smart_mean_per_call(
     """Returns the mean charge for a call.
 
     Args:
-        maximum (seconds): maximum length of call
+        maximum (seconds): maximum length of call to average (the minimum is 1)
         minimum (seconds): calls are effectively at least this long
         per_minute: charge for a call of one minute
         charge_interval (seconds): call length rounded up to a multiple of this
