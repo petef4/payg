@@ -26,22 +26,22 @@
     "min_same": 30,
     "min_other": 30,
     "min_land": 30,
-    "charge_min": "[1 min]",
+    "charge_min": 30,
     "bill_per": "min",
     "sms_same": 14,
     "sms_other": 14,
     "voicemail": "20p / call",
-    "08x": 25,
-    "mms": 25,
+    "08x": 45,
+    "mms": 35,
     "data": "£3 / MB capped at £1 / day",
     "network": "O2",
-    "checked": "2015-07-05"
+    "checked": "2016-02-20"
   },
   {
     "operator": "Vodafone",
     "operator.url": "http://www.vodafone.co.uk",
     "plan": "PAYG",
-    "plan.url": "http://www.vodafone.co.uk/shop/pay-as-you-go/call-charges/index.htm",
+    "plan.url": "http://www.vodafone.co.uk/explore/costs/call-charges/index.htm#tab_0_1",
     "min_same": 30,
     "min_other": 30,
     "min_land": 30,
@@ -54,7 +54,7 @@
     "mms": 36,
     "data": "£2 / day for 50 MB then 10p / MB",
     "network": "Vodafone",
-    "checked": "2015-07-05"
+    "checked": "2016-02-20"
   },
   {
     "operator": "3",
@@ -69,11 +69,11 @@
     "sms_same": 2,
     "sms_other": 2,
     "voicemail": 3,
-    "08x": 25,
-    "mms": 31,
+    "08x": 45,
+    "mms": 17,
     "data": "1p / MB and each top up gives 150 MB free",
     "network": "3",
-    "checked": "2015-07-05"
+    "checked": "2016-02-20"
   },
   {
     "operator": "allpay Mobile",
@@ -93,6 +93,25 @@
     "data": "25p / MB",
     "network": "Vodafone",
     "checked": "2015-07-05"
+  },
+  {
+    "operator": "As You Go",
+    "operator.url": "https://asyougomobile.com/",
+    "plan": "As You Go",
+    "plan.url": "https://asyougomobile.com/pages/rates",
+    "min_same": 6,
+    "min_other": 6,
+    "min_land": 6,
+    "charge_min": 6,
+    "bill_per": "min",
+    "sms_same": 5,
+    "sms_other": 5,
+    "voicemail": "Free",
+    "08x": 20,
+    "mms": "?",
+    "data": "3p / MB",
+    "network": "O2",
+    "checked": "2016-02-20"
   },
   {
     "operator": "Asda",
@@ -172,9 +191,9 @@
   },
   {
     "operator": "Delight Mobile",
-    "operator.url": "http://www.delightmobile.co.uk/",
+    "operator.url": "https://www.delightmobile.co.uk/",
     "plan": "1 2 3",
-    "plan.url": "http://www.delightmobile.co.uk/view/rates/UKRates.aspx",
+    "plan.url": "https://www.delightmobile.co.uk/national-rates",
     "min_same": "Free",
     "min_other": 3,
     "min_land": 3,
@@ -187,7 +206,7 @@
     "mms": 25,
     "data": "1p / MB",
     "network": "EE",
-    "checked": "2015-07-05"
+    "checked": "2016-02-20"
   },
   {
     "operator": "giffgaff",
@@ -202,11 +221,11 @@
     "sms_same": "Free",
     "sms_other": 6,
     "voicemail": "8p / call",
-    "08x": 15,
+    "08x": 25,
     "mms": 16,
     "data": "20p / day for 20 MB then 20p / MB",
     "network": "O2",
-    "checked": "2015-07-05"
+    "checked": "2016-02-20"
   },
   {
     "operator": "The People’s Operator",
@@ -244,7 +263,7 @@
     "mms": 40,
     "data": "10p / MB",
     "network": "EE",
-    "checked": "2015-07-05"
+    "checked": "2016-02-20"
   },
   {
     "operator": "Talkmobile",
@@ -572,21 +591,21 @@
   {
     "operator": "Lebara",
     "operator.url": "http://www.lebara-mobile.co.uk/en/",
-    "plan": "PAYG",
+    "plan": "Saver",
     "plan.url": "http://www.lebara-mobile.co.uk/prepay/rates",
     "min_same": "Free",
-    "min_other": 19,
-    "min_land": 19,
+    "min_other": 15,
+    "min_land": 9,
     "charge_min": "[1 min]",
     "bill_per": "[min]",
     "sms_same": "Free",
     "sms_other": 19,
     "voicemail": 19,
-    "08x": 25,
+    "08x": 45,
     "mms": 45,
-    "data": "1 MB / day free then 19p / MB",
+    "data": "19p / MB",
     "network": "Vodafone",
-    "checked": "2015-07-11"
+    "checked": "2016-02-20"
   },
   {
     "operator": "Lomo Mobile",
