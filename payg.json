@@ -214,18 +214,18 @@
     "plan": "PAYG",
     "plan.url": "http://giffgaff.com/index/pricing",
     "min_same": "Free",
-    "min_other": 10,
-    "min_land": 10,
+    "min_other": 15,
+    "min_land": 15,
     "charge_min": "[1 min]",
     "bill_per": "sec",
     "sms_same": "Free",
-    "sms_other": 6,
+    "sms_other": 5,
     "voicemail": "8p / call",
     "08x": 25,
     "mms": 16,
-    "data": "20p / day for 20 MB then 20p / MB",
+    "data": "5p / MB",
     "network": "O2",
-    "checked": "2016-02-20"
+    "checked": "2016-03-28"
   },
   {
     "operator": "The People’s Operator",
