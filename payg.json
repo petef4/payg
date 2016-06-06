@@ -247,25 +247,6 @@
     "checked": "2016-01-10"
   },
   {
-    "operator": "Post Office Mobile",
-    "operator.url": "http://mobile.postoffice.co.uk/",
-    "plan": "PAYG",
-    "plan.url": "http://mobile.postoffice.co.uk/call-rates/",
-    "min_same": 8,
-    "min_other": 8,
-    "min_land": 8,
-    "charge_min": 8,
-    "bill_per": "min",
-    "sms_same": 10,
-    "sms_other": 10,
-    "voicemail": 8,
-    "08x": 30,
-    "mms": 40,
-    "data": "10p / MB",
-    "network": "EE",
-    "checked": "2016-02-20"
-  },
-  {
     "operator": "Talkmobile",
     "operator.url": "http://talkmobile.co.uk/",
     "plan": "Happy Hour",
@@ -680,8 +661,8 @@
     "08x": "n/a",
     "mms": "?",
     "data": "5p / MB",
-    "network": "Vodafone?",
-    "checked": "2015-07-11"
+    "network": "EE",
+    "checked": "2016-06-06"
   },
   {
     "operator": "Talk Home",
@@ -864,14 +845,14 @@
     "min_land": 3,
     "charge_min": 3,
     "bill_per": "[min]",
-    "sms_same": 7,
-    "sms_other": 7,
+    "sms_same": 5,
+    "sms_other": 5,
     "voicemail": "Free",
     "08x": "n/a",
     "mms": "?",
     "data": "15p / MB",
     "network": "O2",
-    "checked": "2015-07-05"
+    "checked": "2016-06-06"
   },
   {
     "operator": "Truphone",
