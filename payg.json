@@ -3,7 +3,7 @@
     "operator": "EE",
     "operator.url": "http://ee.co.uk",
     "plan": "PAYG",
-    "plan.url": "http://shop.ee.co.uk/mobile-tariffs/sim-only-plans",
+    "plan.url": "http://shop.ee.co.uk/mobile-tariffs/sim-only",
     "min_same": 30,
     "min_other": 30,
     "min_land": 30,
@@ -70,10 +70,10 @@
     "sms_other": 2,
     "voicemail": 3,
     "08x": 45,
-    "mms": 17,
+    "mms": 40,
     "data": "1p / MB and each top up gives 150 MB free",
     "network": "3",
-    "checked": "2016-02-20"
+    "checked": "2016-07-10"
   },
   {
     "operator": "allpay Mobile",
@@ -192,6 +192,7 @@
   {
     "operator": "Delight Mobile",
     "operator.url": "https://www.delightmobile.co.uk/",
+    "operator.grade": "poor",
     "plan": "1 2 3",
     "plan.url": "https://www.delightmobile.co.uk/national-rates",
     "min_same": "Free",
@@ -210,9 +211,9 @@
   },
   {
     "operator": "giffgaff",
-    "operator.url": "http://giffgaff.com/",
+    "operator.url": "https://giffgaff.com/",
     "plan": "PAYG",
-    "plan.url": "http://giffgaff.com/index/pricing",
+    "plan.url": "https://giffgaff.com/index/pricing",
     "min_same": "Free",
     "min_other": 15,
     "min_land": 15,
@@ -243,8 +244,8 @@
     "08x": 5,
     "mms": 30,
     "data": "2p / MB",
-    "network": "EE",
-    "checked": "2016-01-10"
+    "network": "EE but soon 3",
+    "checked": "2016-07-10"
   },
   {
     "operator": "Talkmobile",
@@ -296,12 +297,12 @@
     "bill_per": "[min]",
     "sms_same": 3,
     "sms_other": 3,
-    "voicemail": "?",
-    "08x": "n/a",
+    "voicemail": "Free",
+    "08x": 15,
     "mms": "?",
     "data": "1p / MB",
     "network": "3",
-    "checked": "2015-07-05"
+    "checked": "2016-07-10"
   },
   {
     "operator": "Tesco",
@@ -345,7 +346,7 @@
     "operator": "Virgin Mobile",
     "operator.url": "http://www.virginmobile.com/vm/home.do",
     "plan": "Big Data & Texts",
-    "plan.url": "http://store.virginmedia.com/virgin-media-mobile/pay-as-you-go/call-charges.html#big data",
+    "plan.url": "http://store.virginmedia.com/virgin-media-mobile/pay-as-you-go/call-charges.html#big%20data",
     "min_same": 35,
     "min_other": 35,
     "min_land": 35,
@@ -364,7 +365,7 @@
     "operator": "Virgin Mobile",
     "operator.url": "http://www.virginmobile.com/vm/home.do",
     "plan": "Big Talk",
-    "plan.url": "http://store.virginmedia.com/virgin-media-mobile/pay-as-you-go/call-charges.html#big talk",
+    "plan.url": "http://store.virginmedia.com/virgin-media-mobile/pay-as-you-go/call-charges.html#big%20talk",
     "min_same": 35,
     "min_other": 35,
     "min_land": 35,
@@ -686,6 +687,7 @@
   {
     "operator": "Vectone",
     "operator.url": "http://www.vectonemobile.co.uk/",
+    "operator.grade": "poor",
     "plan": "Mobile",
     "plan.url": "http://www.vectonemobile.co.uk/pay-as-you-go/vm-rates/standard/national-rates.aspx",
     "min_same": "Free",

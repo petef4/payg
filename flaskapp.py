@@ -8,6 +8,13 @@ from grader import Grader
 app = Flask(__name__)
 app.config.from_pyfile('flaskapp.cfg')
 
+
+@app.after_request
+def gnu_terry_pratchett(resp):
+    resp.headers.add("X-Clacks-Overhead", "GNU Terry Pratchett")
+    return resp
+
+
 with open('payg.json', encoding='UTF-8') as f:
     data = load(f)
 if app.config['DO_AVERAGE']:
