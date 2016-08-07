@@ -95,25 +95,6 @@
     "checked": "2015-07-05"
   },
   {
-    "operator": "As You Go",
-    "operator.url": "https://asyougomobile.com/",
-    "plan": "As You Go",
-    "plan.url": "https://asyougomobile.com/pages/rates",
-    "min_same": 6,
-    "min_other": 6,
-    "min_land": 6,
-    "charge_min": 6,
-    "bill_per": "min",
-    "sms_same": 5,
-    "sms_other": 5,
-    "voicemail": "Free",
-    "08x": 20,
-    "mms": "?",
-    "data": "3p / MB",
-    "network": "O2",
-    "checked": "2016-02-20"
-  },
-  {
     "operator": "Asda",
     "operator.url": "https://mobile.asda.com/",
     "plan": "PAYG",
@@ -244,8 +225,8 @@
     "08x": 5,
     "mms": 30,
     "data": "2p / MB",
-    "network": "EE but soon 3",
-    "checked": "2016-07-10"
+    "network": "3",
+    "checked": "2016-08-07"
   },
   {
     "operator": "Talkmobile",
@@ -438,25 +419,6 @@
     "checked": "2015-07-12"
   },
   {
-    "operator": "Econet",
-    "operator.url": "http://www.econetmobile.com/",
-    "plan": "PAYG",
-    "plan.url": "http://www.econetmobile.com/#national_panel",
-    "min_same": 3,
-    "min_other": 10,
-    "min_land": 5,
-    "charge_min": "[1 min]",
-    "bill_per": "[min]",
-    "sms_same": 10,
-    "sms_other": 10,
-    "voicemail": 15,
-    "08x": "n/a",
-    "mms": "?",
-    "data": "10p / MB",
-    "network": "EE",
-    "checked": "2015-07-05"
-  },
-  {
     "operator": "Fonome",
     "operator.url": "https://fonome.com/",
     "plan": "PAYG",
@@ -476,25 +438,6 @@
     "checked": "2016-01-10"
   },
   {
-    "operator": "Globe UK",
-    "operator.url": "http://www.ukglobetel.com/",
-    "plan": "PAYG",
-    "plan.url": "http://www.ukglobetel.com/tariffs-new/uk-sim/domestic/",
-    "min_same": "Free",
-    "min_other": 10,
-    "min_land": 5,
-    "charge_min": "[1 min]",
-    "bill_per": "[min]",
-    "sms_same": "Free",
-    "sms_other": 10,
-    "voicemail": 10,
-    "08x": 10,
-    "mms": 45,
-    "data": "10p / MB",
-    "network": "EE",
-    "checked": "2015-07-05"
-  },
-  {
     "operator": "GT Mobile",
     "operator.url": "http://www.gtmobile.co.uk/en",
     "plan": "PAYG",
@@ -512,44 +455,6 @@
     "data": "9p / MB",
     "network": "O2",
     "checked": "2015-07-20"
-  },
-  {
-    "operator": "Jadoo",
-    "operator.url": "http://www.jadoomobile.com/",
-    "plan": "PAYG",
-    "plan.url": "http://www.jadoomobile.com/tariff",
-    "min_same": 8,
-    "min_other": 8,
-    "min_land": 8,
-    "charge_min": "[1 min]",
-    "bill_per": "[min]",
-    "sms_same": 8,
-    "sms_other": 8,
-    "voicemail": 8,
-    "08x": "n/a",
-    "mms": "?",
-    "data": "10p / MB",
-    "network": "O2",
-    "checked": "2016-01-10"
-  },
-  {
-    "operator": "Kingdom mobile",
-    "operator.url": "http://kingdommobile.co.uk/",
-    "plan": "PAYG",
-    "plan.url": "http://kingdommobile.co.uk/rates",
-    "min_same": "Free",
-    "min_other": 10,
-    "min_land": 5,
-    "charge_min": "[1 min]",
-    "bill_per": "[min]",
-    "sms_same": "Free",
-    "sms_other": 10,
-    "voicemail": "Free",
-    "08x": "n/a",
-    "mms": 45,
-    "data": "10p / MB",
-    "network": "EE",
-    "checked": "2015-07-12"
   },
   {
     "operator": "Kontakt Mobile",
