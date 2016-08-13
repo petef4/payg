@@ -153,9 +153,9 @@
   },
   {
     "operator": "The co-operative mobile",
-    "operator.url": "http://payg.thephone.coop",
+    "operator.url": "https://payg.thephone.coop/",
     "plan": "PAYG",
-    "plan.url": "http://payg.thephone.coop/tariffs-and-bundles/",
+    "plan.url": "https://payg.thephone.coop/our-prices/",
     "min_same": 4,
     "min_other": 8,
     "min_land": 8,
@@ -166,9 +166,9 @@
     "voicemail": 4,
     "08x": 21,
     "mms": 25,
-    "data": "5p / MB",
+    "data": "10p / MB",
     "network": "EE",
-    "checked": "2015-07-05"
+    "checked": "2018-08-13"
   },
   {
     "operator": "Delight Mobile",
