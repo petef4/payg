@@ -48,6 +48,9 @@ class Grader:
                 row['voicemail'])
             row['08x.key'] = row['08x.score'] = decipence(row['08x'])
             row['mms.key'] = row['mms.score'] = decipence(row['mms'])
+            row['4G.key'] = row['4G.score'] = yes_no_score(row['4G'])
+            row['tether.key'] = row['tether.score'] = yes_no_score(
+                row['tether'])
             row['data.key'] = row['data.score'] = data_score(MB_per_day,
                                                              row['data'])
             network = network_scores[row['network']]
@@ -113,6 +116,20 @@ def voicemail_score(voicemail):
     except AttributeError:  # voicemail is an int
         pence = voicemail
     return decipence(pence)
+
+YES_NO = {
+    'Yes': 1,
+    'No': 2,
+    '[No]': 2,
+    'n/a': None,
+    '?': None}
+
+
+def yes_no_score(yes_no):
+    try:
+        return YES_NO[yes_no]
+    except IndexError:
+        raise ValueError('String format not handled: ' + yes_no)
 
 _FLT = r'\d+\.?\d*'
 FLOAT = '(' + _FLT + ')'

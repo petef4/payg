@@ -39,6 +39,14 @@
         "poor": 310,
         "bad": 360
     },
+    "4G": {
+        "good": 1,
+        "okay": 2
+    },
+    "tether": {
+        "good": 1,
+        "okay": 2
+    },
     "data": {
         "MB / day": 10,
         "good": 200,

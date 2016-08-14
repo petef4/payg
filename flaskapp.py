@@ -30,11 +30,12 @@ counts = {'operator': len(set(r['operator'] for r in data)),
 if app.config['DO_AVERAGE']:
     cols = ['operator', 'plan', 'min_same', 'min_other', 'min_land',
             'charge_min', 'bill_per', 'eff_min', 'sms_same', 'sms_other',
-            'voicemail', '08x', 'mms', 'data', 'network', 'checked']
+            'voicemail', '08x', 'mms', '4G', 'tether', 'data', 'network',
+            'checked']
 else:
     cols = ['operator', 'plan', 'min_same', 'min_other', 'min_land',
             'charge_min', 'bill_per', 'sms_same', 'sms_other', 'voicemail',
-            '08x', 'mms', 'data', 'network', 'checked']
+            '08x', 'mms', '4G', 'tether', 'data', 'network', 'checked']
 
 
 @app.route('/')

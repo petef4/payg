@@ -14,6 +14,8 @@
     "voicemail": 30,
     "08x": 44,
     "mms": 40,
+    "4G": "Yes",
+    "tether": "Yes",
     "data": "Add-ons start from £1 / 100 MB",
     "network": "EE",
     "checked": "2015-07-05"
@@ -21,8 +23,8 @@
   {
     "operator": "O2",
     "operator.url": "http://www.o2.co.uk/",
-    "plan": "Pay & Go",
-    "plan.url": "http://www.o2.co.uk/tariffs/payandgo",
+    "plan": "Simply PAYG",
+    "plan.url": "http://www.o2.co.uk/termsandconditions/mobile/pay-as-you-go-charges-terms-simply-pay-as-you-go",
     "min_same": 30,
     "min_other": 30,
     "min_land": 30,
@@ -33,9 +35,11 @@
     "voicemail": "20p / call",
     "08x": 45,
     "mms": 35,
+    "4G": "Yes",
+    "tether": "No",
     "data": "£3 / MB capped at £1 / day",
     "network": "O2",
-    "checked": "2016-02-20"
+    "checked": "2016-08-14"
   },
   {
     "operator": "Vodafone",
@@ -52,6 +56,8 @@
     "voicemail": 30,
     "08x": 45,
     "mms": 36,
+    "4G": "Yes",
+    "tether": "Yes",
     "data": "£2 / day for 50 MB then 10p / MB",
     "network": "Vodafone",
     "checked": "2016-02-20"
@@ -71,6 +77,8 @@
     "voicemail": 3,
     "08x": 45,
     "mms": 40,
+    "4G": "Yes",
+    "tether": "No",
     "data": "1p / MB and each top up gives 150 MB free",
     "network": "3",
     "checked": "2016-07-10"
@@ -90,6 +98,8 @@
     "voicemail": 25,
     "08x": "n/a",
     "mms": 30,
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "25p / MB",
     "network": "Vodafone",
     "checked": "2015-07-05"
@@ -109,6 +119,8 @@
     "voicemail": 8,
     "08x": 8,
     "mms": 25,
+    "4G": "No",
+    "tether": "Yes",
     "data": "5p / MB",
     "network": "EE",
     "checked": "2015-07-05"
@@ -128,6 +140,8 @@
     "voicemail": "Free",
     "08x": 23,
     "mms": 16,
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "10p / MB",
     "network": "O2",
     "checked": "2015-12-15"
@@ -147,6 +161,8 @@
     "voicemail": "Free",
     "08x": "n/a",
     "mms": 45,
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "15p / MB",
     "network": "EE",
     "checked": "2015-07-12"
@@ -166,6 +182,8 @@
     "voicemail": 4,
     "08x": 21,
     "mms": 25,
+    "4G": "No",
+    "tether": "Yes",
     "data": "10p / MB",
     "network": "EE",
     "checked": "2018-08-13"
@@ -186,6 +204,8 @@
     "voicemail": 5,
     "08x": "n/a",
     "mms": 25,
+    "4G": "[No]",
+    "tether": "No",
     "data": "1p / MB",
     "network": "EE",
     "checked": "2016-02-20"
@@ -205,6 +225,8 @@
     "voicemail": "8p / call",
     "08x": 25,
     "mms": 16,
+    "4G": "Yes",
+    "tether": "Yes",
     "data": "5p / MB",
     "network": "O2",
     "checked": "2016-03-28"
@@ -224,6 +246,8 @@
     "voicemail": 4,
     "08x": 5,
     "mms": 30,
+    "4G": "[No]",
+    "tether": "No",
     "data": "2p / MB",
     "network": "3",
     "checked": "2016-08-07"
@@ -243,6 +267,8 @@
     "voicemail": 8,
     "08x": 15,
     "mms": 30,
+    "4G": "No",
+    "tether": "Yes",
     "data": "2p / MB",
     "network": "Vodafone",
     "checked": "2015-12-01"
@@ -262,6 +288,8 @@
     "voicemail": 7,
     "08x": "n/a",
     "mms": 30,
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "7p / MB",
     "network": "Vodafone",
     "checked": "2015-07-05"
@@ -281,6 +309,8 @@
     "voicemail": "Free",
     "08x": 15,
     "mms": "?",
+    "4G": "Yes",
+    "tether": "Yes",
     "data": "1p / MB",
     "network": "3",
     "checked": "2016-07-10"
@@ -300,6 +330,8 @@
     "voicemail": 15,
     "08x": 25,
     "mms": 25,
+    "4G": "Yes",
+    "tether": "Yes",
     "data": "10p / MB",
     "network": "O2",
     "checked": "2015-07-05"
@@ -319,6 +351,8 @@
     "voicemail": 8,
     "08x": 25,
     "mms": 25,
+    "4G": "Yes",
+    "tether": "Yes",
     "data": "10p / MB",
     "network": "O2",
     "checked": "2015-07-05"
@@ -338,6 +372,8 @@
     "voicemail": "26p / call",
     "08x": 36,
     "mms": 30,
+    "4G": "No",
+    "tether": "No",
     "data": "£1 / day for 100 MB then £1 / 100 MB",
     "network": "EE",
     "checked": "2015-07-05"
@@ -357,6 +393,8 @@
     "voicemail": "26p / call",
     "08x": 36,
     "mms": 30,
+    "4G": "No",
+    "tether": "No",
     "data": "£1 / day for 100 MB then £1 / 100 MB",
     "network": "EE",
     "checked": "2015-07-05"
@@ -376,6 +414,8 @@
     "voicemail": "26p / call",
     "08x": 36,
     "mms": 30,
+    "4G": "No",
+    "tether": "No",
     "data": "£1 / day for 100 MB then £1 / 100 MB",
     "network": "EE",
     "checked": "2015-07-05"
@@ -395,6 +435,8 @@
     "voicemail": 10,
     "08x": "n/a",
     "mms": 40,
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "10p / MB",
     "network": "3",
     "checked": "2015-07-05"
@@ -414,6 +456,8 @@
     "voicemail": 8,
     "08x": 8,
     "mms": 45,
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "5p / MB",
     "network": "EE",
     "checked": "2015-07-12"
@@ -433,6 +477,8 @@
     "voicemail": "Free",
     "08x": "n/a",
     "mms": "n/a",
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "2p / MB",
     "network": "O2",
     "checked": "2016-01-10"
@@ -452,6 +498,8 @@
     "voicemail": "Free",
     "08x": "n/a",
     "mms": "?",
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "9p / MB",
     "network": "O2",
     "checked": "2015-07-20"
@@ -471,6 +519,8 @@
     "voicemail": 9,
     "08x": "n/a",
     "mms": "28p",
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "9p / MB",
     "network": "Vodafone",
     "checked": "2015-07-05"
@@ -490,6 +540,8 @@
     "voicemail": 19,
     "08x": 45,
     "mms": 45,
+    "4G": "No",
+    "tether": "No",
     "data": "19p / MB",
     "network": "Vodafone",
     "checked": "2016-02-20"
@@ -509,6 +561,8 @@
     "voicemail": "Free",
     "08x": "n/a",
     "mms": 25,
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "9p / MB",
     "network": "EE",
     "checked": "2015-07-05"
@@ -517,7 +571,7 @@
     "operator": "Lycamobile",
     "operator.url": "http://www.lycamobile.co.uk",
     "plan": "PAYG",
-    "plan.url": "http://www.lycamobile.co.uk/en/nationalrates",
+    "plan.url": "http://www.lycamobile.co.uk/en/national-rates",
     "min_same": "Free",
     "min_other": 19,
     "min_land": 12,
@@ -528,9 +582,11 @@
     "voicemail": "Free",
     "08x": 23,
     "mms": "?",
+    "4G": "Yes",
+    "tether": "No",
     "data": "9p / MB",
     "network": "O2",
-    "checked": "2015-07-05"
+    "checked": "2018-08-14"
   },
   {
     "operator": "Now Mobile",
@@ -547,6 +603,8 @@
     "voicemail": "Free",
     "08x": "n/a",
     "mms": 25,
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "15p / MB",
     "network": "EE",
     "checked": "2015-07-05"
@@ -566,6 +624,8 @@
     "voicemail": "?",
     "08x": "n/a",
     "mms": "?",
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "5p / MB",
     "network": "EE",
     "checked": "2016-06-06"
@@ -585,6 +645,8 @@
     "voicemail": "Free",
     "08x": "n/a",
     "mms": 25,
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "8p / MB",
     "network": "EE",
     "checked": "2015-07-05"
@@ -605,6 +667,8 @@
     "voicemail": 10,
     "08x": "n/a",
     "mms": 25,
+    "4G": "[No]",
+    "tether": "No",
     "data": "9p / MB",
     "network": "EE",
     "checked": "2015-07-05"
@@ -624,6 +688,8 @@
     "voicemail": "Free",
     "08x": 8,
     "mms": "?",
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "2.5p / MB",
     "network": "EE",
     "checked": "2015-07-05"
@@ -643,6 +709,8 @@
     "voicemail": "?",
     "08x": "n/a",
     "mms": "?",
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "6p / MB (EE) or 45p / MB (O2)",
     "network": "EE and O2",
     "checked": "2015-07-12"
@@ -662,6 +730,8 @@
     "voicemail": "?",
     "08x": "n/a",
     "mms": "?",
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "20p / MB",
     "network": "EE, O2, Vodafone, 3",
     "checked": "2015-07-12"
@@ -681,6 +751,8 @@
     "voicemail": 16,
     "08x": "n/a",
     "mms": "?",
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "16p / MB",
     "network": "EE, O2, Vodafone, 3",
     "checked": "2015-07-12"
@@ -700,6 +772,8 @@
     "voicemail": 22,
     "08x": "n/a",
     "mms": "?",
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "22p / MB",
     "network": "EE, O2, Vodafone, 3",
     "checked": "2015-07-12"
@@ -719,6 +793,8 @@
     "voicemail": "?",
     "08x": "n/a",
     "mms": "?",
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "8p / MB",
     "network": "O2 and Vodafone",
     "checked": "2015-07-05"
@@ -738,6 +814,8 @@
     "voicemail": "Free",
     "08x": 25,
     "mms": "?",
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "25p / MB",
     "network": "O2 and Vodafone, EE",
     "checked": "2015-07-20"
@@ -757,6 +835,8 @@
     "voicemail": "Free",
     "08x": "n/a",
     "mms": "?",
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "15p / MB",
     "network": "O2",
     "checked": "2016-06-06"
@@ -776,6 +856,8 @@
     "voicemail": "?",
     "08x": "n/a",
     "mms": "?",
+    "4G": "[No]",
+    "tether": "[No]",
     "data": "6p / MB",
     "network": "Vodafone",
     "checked": "2015-07-05"

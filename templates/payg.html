@@ -87,7 +87,7 @@
         </ul>
         <p>
           The plan which I use is
-          <a href="http://talkmobile.co.uk/help/payg/payg-charges/">Talkmobile Happy Hour</a><a href="#footnote5"><sup>5</sup></a>
+          <a href="http://talkmobile.co.uk/help/payg/payg-charges/">Talkmobile Happy Hour</a><a href="#footnote3"><sup>3</sup></a>
         </p>
       </div>
     </div>
@@ -123,6 +123,8 @@ to the service charge.
 0800, 0808 and 116 are
 always free. See notes.">08x / min</th>
           <th title="Picture message">MMS</th>
+          <th title="4G">4G</th>
+          <th title="Tethering">Tether</th>
           <th title="Data">Internet</th>
           <th title="Use this to assess coverage">Network</th>
           <th title="Date this operator last checked">Checked</th>
@@ -142,6 +144,8 @@ always free. See notes.">08x / min</th>
           <td class="good">{{ pence(grading.get('08x').good // 10) }}</td>
           {%- endif %}
           <td class="good">{{ pence(grading.mms.good // 10) }}</td>
+          <td class="good">Yes</td>
+          <td class="good">Yes</td>
           <td class="good">{{ pence(grading.data.good // 10) }} / day</td>
           <td rowspan="4" colspan="2">Internet grading assumes {{ grading.data.get('MB / day') }}&nbsp;MB / day</td>
         </tr>
@@ -157,6 +161,8 @@ always free. See notes.">08x / min</th>
           <td class="okay">{{ pence(grading.voicemail.okay // 10) }}</td>
           <td class="okay">{{ pence(grading.get('08x').okay // 10) }}</td>
           <td class="okay">{{ pence(grading.mms.okay // 10) }}</td>
+          <td class="okay">No</td>
+          <td class="okay">No</td>
           <td class="okay">{{ pence(grading.data.okay // 10) }} / day</td>
         </tr>
         <tr>
@@ -171,6 +177,8 @@ always free. See notes.">08x / min</th>
           <td class="poor">{{ pence(grading.voicemail.poor // 10) }}</td>
           <td class="poor">{{ pence(grading.get('08x').poor // 10) }}</td>
           <td class="poor">{{ pence(grading.mms.poor // 10) }}</td>
+          <td> </td>
+          <td> </td>
           <td class="poor">{{ pence(grading.data.poor // 10) }} / day</td>
         </tr>
         <tr>
@@ -185,6 +193,8 @@ always free. See notes.">08x / min</th>
           <td class="bad">{{ pence(grading.voicemail.bad // 10) }}</td>
           <td class="bad">{{ pence(grading.get('08x').bad // 10) }}</td>
           <td class="bad">{{ pence(grading.mms.bad // 10) }}</td>
+          <td> </td>
+          <td> </td>
           <td class="bad">{{ pence(grading.data.bad // 10) }} / day</td>
         </tr>
       </tfoot>
@@ -318,7 +328,7 @@ always free. See notes.">08x / min</th>
       Aether, Auracall, GO-SIM, Maxroam, Pebble, toggle and Truphone pitch
       themselves as roaming MVNOs. It is not possible to port numbers in and
       out, except for toggle. Other UK numbers may be charged extra to call some
-      of these operators<a href="#footnote7"><sup>7</sup></a>.
+      of these operators<a href="#footnote5"><sup>5</sup></a>.
     </p>
     <p>
       There are {{ counts.operator }} operators listed here offering {{
@@ -338,13 +348,13 @@ always free. See notes.">08x / min</th>
       <a href="http://maps.ofcom.org.uk/check-coverage/">Ofcom</a> and
       <a href="http://maps.mobileworldlive.com/network.php?cid=39&amp;cname=United%20Kingdom">GSMA</a>
       have coverage maps for most of the 2G, 3G and 4G networks. Several MVNOs
-      do not provide access to 4G, others charge a premium for it.
+      do not provide access to 4G.
     </p>
     <p>
       <span class="bigger">Free credit</span> is given by many plans on each
       top-up. It generally lasts for 30 days, though often restricted to their
       own numbers. The footnotes show exceptions. Best is
-      Kontakt<a href="#footnote6"><sup>6</sup></a>. Next best is Tesco which
+      Kontakt<a href="#footnote4"><sup>4</sup></a>. Next best is Tesco which
       offers triple credit. Tesco has a minimum top-up of £10 and the bonus
       credit expires after 1 month.
     </p>
@@ -369,6 +379,11 @@ always free. See notes.">08x / min</th>
       <span class="poor">Delight and Vectone whose call credits expire after 90
       days</span>. (Other operators’ free or bonus credit tends to expire after
       30 days.)
+    </p>
+    <p>
+      <span class="bigger">Tethering</span> (aka hotspots) is using your phone
+      to provide mobile internet access to other devices such as laptops. Not
+      all operators allow this.
     </p>
     <p>
       <span class="bigger">Defunct</span> operators or those that no longer
@@ -398,34 +413,26 @@ always free. See notes.">08x / min</th>
       <span class="bigger">Footnotes</span>
     </p>
     <p id="footnote1">
-      <sup>1</sup> O2 do not list a simple PAYG plan on their web site, only
-      those with a monthly allowance.
+      <sup>1</sup> 3 gives you 150 MB of data for free with each top-up. That
+      lasts for 30 days.
     </p>
     <p id="footnote2">
-      <sup>2</sup> 3 gives you 150 MB of data for free with each top-up. That
-      lasts for 30 days. Their MMS will cost 40p from 2016-06-13.
-    </p>
-    <p id="footnote3">
-      <sup>3</sup> giffgaff free calls and texts to giffgaff numbers lasts for 3
+      <sup>2</sup> giffgaff free calls and texts to giffgaff numbers lasts for 3
       months from each top up.
     </p>
-    <p id="footnote4">
-      <sup>4</sup> The People’s Operator will move networks from EE to 3 in
-      2016-07.
-    </p>
-    <p id="footnote5">
-      <sup>5</sup> Talkmobile Happy Hour has a flat 10p connection charge but
+    <p id="footnote3">
+      <sup>3</sup> Talkmobile Happy Hour has a flat 10p connection charge but
       then the rest of the call is free for up to 60 min. It is 8p / min after
       the hour is up.
     </p>
-    <p id="footnote6">
-      <sup>6</sup> <a href="https://www.kontaktmobile.co.uk/shop">Kontakt</a>
+    <p id="footnote4">
+      <sup>4</sup> <a href="https://www.kontaktmobile.co.uk/shop">Kontakt</a>
       Top Up doubles up the credit with the bonus lasting two months, Flex
       Package quadruples it with the bonus lasting one month. The bundles also
       include free internet of 250 MB and 500 MB respectively.
     </p>
-    <p id="footnote7">
-      <sup>7</sup> Aether, Auracall and GO-SIM have mobile numbers issued in the
+    <p id="footnote5">
+      <sup>5</sup> Aether, Auracall and GO-SIM have mobile numbers issued in the
       Isle of Man or Jersey. Those are not UK 07 numbers and most other
       operators charge extra to call them, the calls are not in most inclusive
       plans or contracts.
@@ -439,7 +446,7 @@ always free. See notes.">08x / min</th>
     <p class="modified">
 <!-- Created: 2008-02-07T13:09:42+00:00 -->
 <!-- hhmts start -->
-Last modified: 2016-08-13T14:47:29+01:00
+Last modified: 2016-08-14T13:41:39+01:00
 <!-- hhmts end -->
     </p>
   </body>
