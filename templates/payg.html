@@ -12,17 +12,22 @@
     {{ num }}
   {%- endif -%}
 {%- endmacro %}
+
 {%- macro td(r, c) %}
-          <td {% if r.get(c + '.grade') -%}
-    class="{{ r.get(c + '.grade') }}"
+          <td
+    {%- if r.get(c + '.grade') %} class="{{ r.get(c + '.grade') }}"
     {%- endif %} sorttable_customkey="{{ r.get(c + '.key') }}">
     {%- if r.get(c + '.url') -%}
-      <a href="{{ r.get(c + '.url') }}">{{ r.get(c) }}</a>
+      <a href="{{ r.get(c + '.url') }}">
+      {%- if r.get(c + '.logo') -%}
+        <img width="16" height="16" src="/static/logos/{{ r.get(c + '.logo') }}" alt="{{ r.get(c) }}"/> {% endif -%}
+      {{ r.get(c) }}</a>
     {%- else -%}
       {{ pence(r.get(c)) }}
     {%- endif -%}
   </td>
 {%- endmacro -%}
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
         "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
@@ -66,7 +71,6 @@
             <a href="https://www.c4cmobile.com/tariffs/rates/">C4C</a>,
             <a href="http://secure.callandgive.com/CallAndGive/rates.jsp">Call&amp;Give</a>,
             <a href="https://fonome.com/">Fonome</a>,
-            <a href="http://www.gtmobile.co.uk/en/national-rates">GT</a>,
             <a href="http://www.lomomobile.com/">Lomo</a>,
             <a href="http://www.lycamobile.co.uk">Lycamobile</a>,
             <a href="http://www.nowmobile.co.uk/home.jsp">Now</a>,
@@ -320,8 +324,8 @@ always free. See notes.">08x / min</th>
       Call&amp;Give, co-operative mobile, Delight Mobile, giffgaff, Mobile by
       The People’s Operator, Talkmobile, talkxtra, Tello, Tesco and Virgin
       Mobile. Those geared towards international plans include AfriMobile,
-      CTExcelbiz, Fonome, GT Mobile, Kontakt, Lebara, Lomo Mobile, Lycamobile,
-      Now Mobile, SMART UK, Talk Home, Vectone and White Mobile.
+      CTExcel, Fonome, Kontakt, Lebara, Lomo Mobile, Lycamobile, Now Mobile,
+      SMART UK, Talk Home, Vectone and White Mobile.
     </p>
     <p>
       Aether, Auracall, GO-SIM, Maxroam, Pebble, toggle and Truphone pitch
@@ -389,11 +393,11 @@ always free. See notes.">08x / min</th>
       accept new customers include Alpha Mobile, Banana Mobile, Boy Better Know,
       C Mobile, Dalya Mobile, DiDa Mobile, Dialog Vizz, DobryTel, Donate Mobile,
       easyMobile, Econet, Family Mobile, Free As You Go (aka As You Go), Freedom
-      Talk, Fresh, GlobalCell, Globe UK, iCard, IDT, Jadoo, Kingdom Mobile,
-      Kite, Nomi, Orange (now EE), Ovivo, Post Office Mobile, Priyomobile,
-      RSPCA, Sainsbury’s, SMART Pinoy (now SMART UK), Shebang, Simfiniti,
-      SimpleCall, Soccertel, T-Mobile (now EE), Utility Warehouse, Victory
-      Mobile, Wolves Mobile and WWF Wildlife Mobile.
+      Talk, Fresh, GlobalCell, Globe UK, GT Mobile, iCard, IDT, Jadoo, Kingdom
+      Mobile, Kite, Nomi, Orange (now EE), Ovivo, Post Office Mobile,
+      Priyomobile, RSPCA, Sainsbury’s, SMART Pinoy (now SMART UK), Shebang,
+      Simfiniti, SimpleCall, Soccertel, T-Mobile (now EE), Utility Warehouse,
+      Victory Mobile, Wolves Mobile and WWF Wildlife Mobile.
     </p>
     <p>
       <span class="bigger">Contract only</span> operators or those with minimum spends include
@@ -445,7 +449,7 @@ always free. See notes.">08x / min</th>
     <p class="modified">
 <!-- Created: 2008-02-07T13:09:42+00:00 -->
 <!-- hhmts start -->
-Last modified: 2016-08-18T00:16:36+01:00
+Last modified: 2016-10-08T11:13:04+01:00
 <!-- hhmts end -->
     </p>
   </body>

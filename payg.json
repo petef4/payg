@@ -2,6 +2,7 @@
   {
     "operator": "EE",
     "operator.url": "http://ee.co.uk",
+    "operator.logo": "ee_16.png",
     "plan": "PAYG",
     "plan.url": "http://shop.ee.co.uk/mobile-tariffs/sim-only",
     "min_same": 30,
@@ -23,6 +24,7 @@
   {
     "operator": "O2",
     "operator.url": "http://www.o2.co.uk/",
+    "operator.logo": "o2_16.png",
     "plan": "Simply PAYG",
     "plan.url": "http://www.o2.co.uk/termsandconditions/mobile/pay-as-you-go-charges-terms-simply-pay-as-you-go",
     "min_same": 30,
@@ -44,6 +46,7 @@
   {
     "operator": "Vodafone",
     "operator.url": "http://www.vodafone.co.uk",
+    "operator.logo": "vodafone_16.png",
     "plan": "PAYG",
     "plan.url": "http://www.vodafone.co.uk/explore/costs/call-charges/index.htm#tab_0_1",
     "min_same": 30,
@@ -65,6 +68,7 @@
   {
     "operator": "3",
     "operator.url": "http://www.three.co.uk/",
+    "operator.logo": "3_16.png",
     "plan": "Pay As You Go on Three",
     "plan.url": "http://www.three.co.uk/Store/Pay_As_You_Go_Price_Plans",
     "min_same": 3,
@@ -86,6 +90,7 @@
   {
     "operator": "allpay Mobile",
     "operator.url": "http://www.allpaymobile.net/",
+    "operator.logo": "allpay_16.png",
     "plan": "PAYG",
     "plan.url": "http://www.allpaymobile.net/standard-rates",
     "min_same": 5,
@@ -107,6 +112,7 @@
   {
     "operator": "Asda",
     "operator.url": "https://mobile.asda.com/",
+    "operator.logo": "asda_16.png",
     "plan": "PAYG",
     "plan.url": "https://mobile.asda.com/pages/rates-and-services",
     "min_same": 8,
@@ -128,6 +134,7 @@
   {
     "operator": "C4C Mobile",
     "operator.url": "https://www.c4cmobile.com/",
+    "operator.logo": "c4c_16.png",
     "plan": "PAYG",
     "plan.url": "https://www.c4cmobile.com/tariffs/rates/",
     "min_same": "Free",
@@ -149,6 +156,7 @@
   {
     "operator": "Call&Give",
     "operator.url": "http://www.callandgive.com",
+    "operator.logo": "c+g_16.png",
     "plan": "PAYG",
     "plan.url": "http://secure.callandgive.com/CallAndGive/rates.jsp",
     "min_same": 10,
@@ -170,6 +178,7 @@
   {
     "operator": "The co-operative mobile",
     "operator.url": "https://payg.thephone.coop/",
+    "operator.logo": "coop_16.png",
     "plan": "PAYG",
     "plan.url": "https://payg.thephone.coop/our-prices/",
     "min_same": 4,
@@ -191,6 +200,7 @@
   {
     "operator": "Delight Mobile",
     "operator.url": "https://www.delightmobile.co.uk/",
+    "operator.logo": "delight_16.png",
     "operator.grade": "poor",
     "plan": "1 2 3",
     "plan.url": "https://www.delightmobile.co.uk/national-rates",
@@ -213,6 +223,7 @@
   {
     "operator": "giffgaff",
     "operator.url": "https://giffgaff.com/",
+    "operator.logo": "gg_16.png",
     "plan": "PAYG",
     "plan.url": "https://giffgaff.com/index/pricing",
     "min_same": "Free",
@@ -234,6 +245,7 @@
   {
     "operator": "The People’s Operator",
     "operator.url": "https://www.thepeoplesoperator.com/",
+    "operator.logo": "tpo_16.png",
     "plan": "PAYG",
     "plan.url": "https://www.thepeoplesoperator.com/tpo_payg_rates",
     "min_same": 4,
@@ -255,6 +267,7 @@
   {
     "operator": "Talkmobile",
     "operator.url": "http://talkmobile.co.uk/",
+    "operator.logo": "talkmobile_16.png",
     "plan": "Happy Hour",
     "plan.url": "http://talkmobile.co.uk/help/payg/payg-charges/",
     "min_same": 0,
@@ -276,6 +289,7 @@
   {
     "operator": "talkxtra",
     "operator.url": "http://www.talkxtramobile.co.uk",
+    "operator.logo": "talkxtra_16.png",
     "plan": "PAYG",
     "plan.url": "http://www.talkxtramobile.co.uk/rates/",
     "min_same": 7,
@@ -297,6 +311,7 @@
   {
     "operator": "Tello",
     "operator.url": "https://tello.co.uk",
+    "operator.logo": "tello_16.png",
     "plan": "PAYG",
     "plan.url": "https://tello.co.uk/rates/pay_as_you_go",
     "min_same": 3,
@@ -318,6 +333,7 @@
   {
     "operator": "Tesco",
     "operator.url": "http://www.tescomobile.com",
+    "operator.logo": "tesco_16.png",
     "plan": "PAYG",
     "plan.url": "http://www.tescomobile.com/help-and-support/1818-call-charges/1819-pay-as-you-go/call-charges-for-pay-as-you-go",
     "min_same": 25,
@@ -339,6 +355,7 @@
   {
     "operator": "Tesco",
     "operator.url": "http://www.tescomobile.com",
+    "operator.logo": "tesco_16.png",
     "plan": "PAYG Lite",
     "plan.url": "http://www.tescomobile.com/help-and-support/1818-call-charges/1819-pay-as-you-go/pay-as-you-go-lite-call-charges",
     "min_same": 8,
@@ -360,6 +377,7 @@
   {
     "operator": "Virgin Mobile",
     "operator.url": "http://www.virginmobile.com/vm/home.do",
+    "operator.logo": "virgin_16.png",
     "plan": "Big Data & Texts",
     "plan.url": "http://store.virginmedia.com/virgin-media-mobile/pay-as-you-go/call-charges.html#big%20data",
     "min_same": 35,
@@ -381,6 +399,7 @@
   {
     "operator": "Virgin Mobile",
     "operator.url": "http://www.virginmobile.com/vm/home.do",
+    "operator.logo": "virgin_16.png",
     "plan": "Big Talk",
     "plan.url": "http://store.virginmedia.com/virgin-media-mobile/pay-as-you-go/call-charges.html#big%20talk",
     "min_same": 35,
@@ -402,6 +421,7 @@
   {
     "operator": "Virgin Mobile",
     "operator.url": "http://www.virginmobile.com/vm/home.do",
+    "operator.logo": "virgin_16.png",
     "plan": "Starter",
     "plan.url": "http://store.virginmedia.com/virgin-media-mobile/pay-as-you-go/call-charges.html#starter",
     "min_same": 40,
@@ -423,6 +443,7 @@
   {
     "operator": "AfriMobile",
     "operator.url": "http://sim.afrimobile.co.uk/",
+    "operator.logo": "afri_16.png",
     "plan": "PAYG",
     "plan.url": "http://sim.afrimobile.co.uk/#rates_page",
     "min_same": "Free",
@@ -442,8 +463,9 @@
     "checked": "2015-07-05"
   },
   {
-    "operator": "CTExcelbiz",
-    "operator.url": "http://www.ctexcel.com/index.jsp",
+    "operator": "CTExcel",
+    "operator.url": "http://www.ctexcel.com/international.jspx?language=en",
+    "operator.logo": "ctexcel_16.png",
     "plan": "PAYG",
     "plan.url": "http://www.ctexcel.com/rates.jsp",
     "min_same": "Free",
@@ -460,11 +482,12 @@
     "tether": "[No]",
     "data": "5p / MB",
     "network": "EE",
-    "checked": "2015-07-12"
+    "checked": "2016-09-26"
   },
   {
     "operator": "Fonome",
     "operator.url": "https://fonome.com/",
+    "operator.logo": "fonome_16.png",
     "plan": "PAYG",
     "plan.url": "https://fonome.com/?p=rates",
     "min_same": "Free",
@@ -484,29 +507,9 @@
     "checked": "2016-01-10"
   },
   {
-    "operator": "GT Mobile",
-    "operator.url": "http://www.gtmobile.co.uk/en",
-    "plan": "PAYG",
-    "plan.url": "http://www.gtmobile.co.uk/en/national-rates",
-    "min_same": "Free",
-    "min_other": 19,
-    "min_land": 12,
-    "charge_min": "[1 min]",
-    "bill_per": "[min]",
-    "sms_same": "Free",
-    "sms_other": 19,
-    "voicemail": "Free",
-    "08x": "n/a",
-    "mms": "?",
-    "4G": "[No]",
-    "tether": "[No]",
-    "data": "9p / MB",
-    "network": "O2",
-    "checked": "2015-07-20"
-  },
-  {
     "operator": "Kontakt Mobile",
     "operator.url": "http://www.kontaktmobile.co.uk/",
+    "operator.logo": "kontakt_16.png",
     "plan": "PAYG",
     "plan.url": "http://www.kontaktmobile.co.uk/rates",
     "min_same": "9p",
@@ -528,6 +531,7 @@
   {
     "operator": "Lebara",
     "operator.url": "http://www.lebara-mobile.co.uk/en/",
+    "operator.logo": "lebara_16.png",
     "plan": "Saver",
     "plan.url": "http://www.lebara-mobile.co.uk/prepay/rates",
     "min_same": "Free",
@@ -549,6 +553,7 @@
   {
     "operator": "Lomo Mobile",
     "operator.url": "http://www.lomomobile.com/",
+    "operator.logo": "lomo_16.png",
     "plan": "PAYG",
     "plan.url": "http://www.lomomobile.com/rate/roamingrates/",
     "min_same": "Free",
@@ -570,6 +575,7 @@
   {
     "operator": "Lycamobile",
     "operator.url": "http://www.lycamobile.co.uk",
+    "operator.logo": "lyca_16.png",
     "plan": "PAYG",
     "plan.url": "http://www.lycamobile.co.uk/en/national-rates",
     "min_same": "Free",
@@ -591,6 +597,7 @@
   {
     "operator": "Now Mobile",
     "operator.url": "http://www.nowmobile.co.uk/home.jsp",
+    "operator.logo": "now_16.png",
     "plan": "PAYG",
     "plan.url": "http://secure.nowmobile.co.uk/nowmobile/rates.jsp",
     "min_same": 5,
@@ -612,6 +619,7 @@
   {
     "operator": "SMART UK",
     "operator.url": "https://www.smartsimuk.com/",
+    "operator.logo": "smart_16.png",
     "plan": "PAYG",
     "plan.url": "https://www.smartsimuk.com/smartuk-rates/",
     "min_same": 3,
@@ -633,6 +641,7 @@
   {
     "operator": "Talk Home",
     "operator.url": "http://www.talkhomemobile.com/",
+    "operator.logo": "talkhome_16.png",
     "plan": "PAYG",
     "plan.url": "http://www2.talkhomemobile.com/rates",
     "min_same": "Free",
@@ -654,6 +663,7 @@
   {
     "operator": "Vectone",
     "operator.url": "http://www.vectonemobile.co.uk/",
+    "operator.logo": "vectone_16.png",
     "operator.grade": "poor",
     "plan": "Mobile",
     "plan.url": "http://www.vectonemobile.co.uk/pay-as-you-go/vm-rates/standard/national-rates.aspx",
@@ -676,6 +686,7 @@
   {
     "operator": "White Mobile",
     "operator.url": "http://www.whitemobile.com/",
+    "operator.logo": "white_16.png",
     "plan": "PAYG",
     "plan.url": "http://www.whitemobile.com/cheap-calls-to/united-kingdom/",
     "min_same": "Free",
@@ -697,6 +708,7 @@
   {
     "operator": "Aether",
     "operator.url": "http://www.aether-mobile.com/",
+    "operator.logo": "aether_16.png",
     "plan": "Mobile",
     "plan.url": "http://www.aether-mobile.com/ratecheck.php",
     "min_same": 10,
@@ -718,6 +730,7 @@
   {
     "operator": "Auracall",
     "operator.url": "https://www.traveltalksim.com/auracall/home",
+    "operator.logo": "auracall_16.png",
     "plan": "Traveltalk",
     "plan.url": "https://www.traveltalksim.com/auracall/rates",
     "min_same": 15,
@@ -739,6 +752,7 @@
   {
     "operator": "GO-SIM",
     "operator.url": "http://www.gosim.com/",
+    "operator.logo": "go_16.png",
     "plan": "Europe",
     "plan.url": "http://www.gosim.com/europe-sim-card.html",
     "min_same": 16,
@@ -760,6 +774,7 @@
   {
     "operator": "GO-SIM",
     "operator.url": "http://www.gosim.com/",
+    "operator.logo": "go_16.png",
     "plan": "International",
     "plan.url": "http://www.gosim.com/gosim-international-sim-card.html",
     "min_same": 22,
@@ -781,6 +796,7 @@
   {
     "operator": "Maxroam",
     "operator.url": "http://www.maxroam.com/Home.aspx?cur=GBP",
+    "operator.logo": "maxroam_16.png",
     "plan": "Global SIM + UK",
     "plan.url": "http://www.maxroam.com/Info/RatesCoverage.aspx?cur=GBP",
     "min_same": 9,
@@ -802,6 +818,7 @@
   {
     "operator": "Pebble",
     "operator.url": "http://the.pebble.network/",
+    "operator.logo": "pebble_16.png",
     "plan": "PAYG",
     "plan.url": "http://the.pebble.network/payasyougo.html",
     "min_same": 25,
@@ -823,6 +840,7 @@
   {
     "operator": "toggle",
     "operator.url": "http://www.togglemobile.co.uk/home/en",
+    "operator.logo": "toggle_16.png",
     "plan": "mobile",
     "plan.url": "http://www.togglemobile.co.uk/tariffs/en",
     "min_same": 7,
@@ -844,6 +862,7 @@
   {
     "operator": "Truphone",
     "operator.url": "http://www.truphone.com/uk/",
+    "operator.logo": "truphone_16.png",
     "plan": "PAYG",
     "plan.url": "http://www.truphone.com/uk/lp/Rate-checker/",
     "min_same": 6,
