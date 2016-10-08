@@ -18,10 +18,9 @@
     {%- if r.get(c + '.grade') %} class="{{ r.get(c + '.grade') }}"
     {%- endif %} sorttable_customkey="{{ r.get(c + '.key') }}">
     {%- if r.get(c + '.url') -%}
-      <a href="{{ r.get(c + '.url') }}">
-      {%- if r.get(c + '.logo') -%}
-        <img width="16" height="16" src="/static/logos/{{ r.get(c + '.logo') }}" alt="{{ r.get(c) }}"/> {% endif -%}
-      {{ r.get(c) }}</a>
+            <a
+      {%- if r.get(c + '.logo') %} class="logo" style="background-position: 0px {{ r.get(c + '.logo_pos') }}px"
+      {%- endif %} href="{{ r.get(c + '.url') }}">{{ r.get(c) }}</a>
     {%- else -%}
       {{ pence(r.get(c)) }}
     {%- endif -%}
@@ -127,7 +126,7 @@ to the service charge.
 always free. See notes.">08x / min</th>
           <th title="Picture message">MMS</th>
           <th title="4G">4G</th>
-          <th title="Tethering">Tether</th>
+          <th title="Tethering allowed">Tether</th>
           <th title="Data">Internet</th>
           <th title="Use this to assess coverage">Network</th>
           <th title="Date this operator last checked">Checked</th>
@@ -449,7 +448,7 @@ always free. See notes.">08x / min</th>
     <p class="modified">
 <!-- Created: 2008-02-07T13:09:42+00:00 -->
 <!-- hhmts start -->
-Last modified: 2016-10-08T11:13:04+01:00
+Last modified: 2016-10-08T18:25:13+01:00
 <!-- hhmts end -->
     </p>
   </body>

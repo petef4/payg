@@ -4,6 +4,7 @@ from flask import Flask, render_template, request, send_from_directory
 
 from eff_min import add_effective_per_min
 from grader import Grader
+from imaging import Imaging
 
 app = Flask(__name__)
 app.config.from_pyfile('flaskapp.cfg')
@@ -24,6 +25,9 @@ with open('grading.json', encoding='UTF-8') as f:
     grading = load(f)
 grader = Grader(grading)
 grader.grade(data)
+
+img = Imaging()
+img.add_logo_pos(data)
 
 counts = {'operator': len(set(r['operator'] for r in data)),
           'plan': len(data)}

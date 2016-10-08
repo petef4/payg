@@ -2,6 +2,10 @@ from numbers import Number
 
 
 def add_effective_per_min(data, maximum_call):
+    """Update data to add eff_min elements.
+
+    data is modified.
+    """
     #if True: return
     for row in data:
         per_minute = max_minute(row)

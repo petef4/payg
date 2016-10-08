@@ -44,3 +44,9 @@ span.good, span.okay, span.poor, span.bad {
 table.sortable thead th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
     content: " ▴▾"
 }
+a.logo {
+    background-image: url("/static/images/logos16.png");
+    background-repeat: no-repeat;
+    height: 16px;
+    padding-left: 22px;
+}
