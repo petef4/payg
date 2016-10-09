@@ -1,4 +1,4 @@
-@charset: "utf-8";
+@charset "utf-8";
 div.leftplain {
     padding-left: 1em; padding-right: 1em;
 }
@@ -29,17 +29,24 @@ tr.first {
 span.good, span.okay, span.poor, span.bad {
     border: 0.1em solid black;
 }
-.good { background: #80ff80; }
-.okay { background: #ffff80; }
-.poor { background: #ffa500; }
-.bad { background: #ff5050; }
+.good { background: #c2d69b; }
+.okay { background: #ebe08d; }
+.poor { background: #fabf8f; }
+.bad { background: #ea7777; }
 .na { background: #c0c0c0; }
 .bigger {
-    font-size: 18px;
+    color: #365f91;
+    font-size: 22px;
     font-weight: bold;
+}
+.tldr {
+    background: #95b3d7;
 }
 .iffy {
     font-style: italic;
+}
+table {
+    background: #dbe5f1;
 }
 table.sortable thead th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
     content: " ▴▾"

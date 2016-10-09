@@ -1,5 +1,5 @@
 body {
-  background-color: #F5F5DC;
+  background-color: #ffffff;
   font-size: 14px;
   line-height: 1.5;
   /* font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; */
@@ -20,13 +20,13 @@ div.multicolumn {
 }
 
 div.leftcolor {
-  background-color: #FFFFCC;
+  background-color: #95b3d7;
   float: left;
   width: 49%;
 }
 
 div.rightcolor {
-  background-color: #FFFFCC;
+  background-color: #95b3d7;
   float: right;
   width: 49%;
 }
@@ -40,14 +40,14 @@ div.rightplain {
 }
 
 h1 {
-  background-color: #FFFF88;
+  background-color: #0a2f64;
+  color: #ffffff;
   padding-left: 0.3em;
   margin-bottom: 0.3em;
 }
 
 h2 {
-  background-color: #663300;
-  color: #FFFFEE;
+  background-color: #dbe5f1;
   padding-left: 0.3em;
 }
 

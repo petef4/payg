@@ -45,12 +45,11 @@
     <h1>PAYG Tariffs</h1>
 
     <div class="multicolumn">
-      <div class="good leftplain">
+      <div class="tldr leftplain">
         <h3>TL;DR cheapest rates are</h3>
         <ul>
           <li>
-            <a href="http://www.three.co.uk/Store/Pay_As_You_Go_Price_Plans">Three</a> and
-            <a href="http://www.delightmobile.co.uk/view/rates/UKRates.aspx">Delight</a>
+            <a href="http://www.three.co.uk/Store/Pay_As_You_Go_Price_Plans">Three</a>
             — 3p / min, 2p / text, 1p / MB.
           </li>
         </ul>
@@ -86,6 +85,12 @@
             For data (1p / MB) —
             <a href="https://tello.co.uk/rates/pay_as_you_go">Tello</a>
           </li>
+          <li>
+            Restrictive —
+            <a href="http://www.delightmobile.co.uk/view/rates/UKRates.aspx">Delight</a> (3p/2p/1p) and
+            <a href="https://www.1pmobile.com/">1pMobile</a> (1p/1p/1p)
+            are good but top-up credits expire after 90 and 30 days respectively
+          </li>
         </ul>
         <p>
           The plan which I use is
@@ -96,8 +101,7 @@
     <p>
       These are the rates for true pay as you go tariffs only. Some other plans
       are labelled PAYG but require monthly top-ups, etc. Plans which are not
-      open to new customers are also excluded. So Orange and T-Mobile are no
-      longer listed as EE is the only brand available.
+      open to new customers are also excluded.
     </p>
     <table class="sortable">
       <thead>
@@ -105,7 +109,7 @@
           <th title="Company operating the service">Operator</th>
           <th title="Some offer more than one">Plan</th>
           <th title="Calls to the same operator.
-Often only valid 30 days from topup.">Same / min</th>
+Often only valid 30 days from top-up.">Same / min</th>
           <th title="Calls to 07 numbers but not
 070 (personal), 076 (pagers)
 and others which are more
@@ -210,7 +214,7 @@ always free. See notes.">08x / min</th>
         {%- endfor %}
       </tbody>
     </table>
-    <p>
+    <p id="links">
       <span class="bigger">Other sites</span> with information similar to here
       are
     </p>
@@ -260,7 +264,7 @@ always free. See notes.">08x / min</th>
         <a href="http://mobile-networks-uk.weebly.com/payg-30-day-bundles.html">Mobile Networks UK</a> compares bundles
       </li>
     </ul>
-    <p>
+    <p id="discount">
       <span class="bigger">Discounts</span> are often available when
       committing to some usage (aka add-ons or bolt-ons). Many plans give free
       credits when a top-up is made but these tend to be valid for 30 days
@@ -270,12 +274,12 @@ always free. See notes.">08x / min</th>
       <span class="fine-print">plan details</span> links of the operators
       column.
     </p>
-    <p>
+    <p id="landline">
       <span class="bigger">01, 02 and 03</span> prefixed numbers are billed as
       landlines. Although 03 does not correspond to a geographic area it is
       guaranteed to be charged the same as 01 and 02.
     </p>
-    <p>
+    <p id="mobile">
       <span class="bigger">Numbers starting 07</span> are mostly UK mobile and
       will be charged at the rate shown in the same or other column depending on
       whether the number shares your operator. There is no way of knowing that
@@ -294,7 +298,7 @@ always free. See notes.">08x / min</th>
       There may be other exceptions for niche services. The exceptions are not
       standard, you have to look in the fine print of each operator to see
       exactly which prefixes are excluded.
-    <p>
+    <p id="nongeo">
       <span class="bigger">Non-geographic numbers</span> are now regulated by
       Ofcom. Numbers starting 0800, 0808 and 116 are free from mobiles, as they
       always have been from landlines. For numbers starting 084, 087, 09 and 118
@@ -308,7 +312,7 @@ always free. See notes.">08x / min</th>
       minute and the service charge is £2.75 to connect the call plus £2.99 per
       minute. So if your call is less than a minute it will cost £6.18.
     </p>
-    <p>
+    <p id="mno">
       <span class="bigger">The four main networks</span> are EE, O2, Vodafone
       and 3. EE also runs the Orange and T-Mobile brands for old accounts. 3 and
       EE have a joint venture <a href="http://www.mbnl.co.uk/">MBNL</a> to
@@ -317,7 +321,7 @@ always free. See notes.">08x / min</th>
       two coverage maps to consider rather than four or five. BT have taken over
       EE. 3 tried to merge with O2 but the regulators did not approve.
     </p>
-    <p>
+    <p id="mvno">
       <span class="bigger">MVNOs</span> are operators who do not run their own
       network. The ones who target UK usage are allpay Mobile, Asda, C4C Mobile,
       Call&amp;Give, co-operative mobile, Delight Mobile, giffgaff, Mobile by
@@ -340,7 +344,7 @@ always free. See notes.">08x / min</th>
       <a href="http://www.telecompaper.com/research/mvno-list/united-kingdom">Telecompaper</a>
       listed 54, though not all offer PAYG.
     </p>
-    <p>
+    <p id="coverage">
       <span class="bigger">Coverage maps</span> are available on the main
       network sites:
       <a href="http://ee.co.uk/ee-and-me/network/4gee/coverage-checker">EE</a>,
@@ -352,7 +356,7 @@ always free. See notes.">08x / min</th>
       have coverage maps for most of the 2G, 3G and 4G networks. Several MVNOs
       do not provide access to 4G.
     </p>
-    <p>
+    <p id="bonus">
       <span class="bigger">Free credit</span> is given by many plans on each
       top-up. It generally lasts for 30 days, though often restricted to their
       own numbers. The footnotes show exceptions. Best is
@@ -360,7 +364,7 @@ always free. See notes.">08x / min</th>
       offers triple credit. Tesco has a minimum top-up of £10 and the bonus
       credit expires after 1 month.
     </p>
-    <p>
+    <p id="minimum">
       <span class="bigger">Minimum call charges</span> are generally one minute.
       The exceptions are Co-op and Virgin who have no minimum charge and time by
       one second intervals. After the first minute some operators round up call
@@ -368,7 +372,7 @@ always free. See notes.">08x / min</th>
       former effectively have higher charges than at first glance. See the Bill
       Per column.
     </p>
-    <p>
+    <p id="inactivity">
       <span class="bigger">Inactivity</span> will cause your account to be
       terminated and unused credit lost. To avoid that you must make a
       chargeable call, text or data access, or top up within a period set out in
@@ -379,15 +383,17 @@ always free. See notes.">08x / min</th>
     <p>
       Regular credit is never lost if the activity criteria are met, except for
       <span class="poor">Delight and Vectone whose call credits expire after 90
-      days</span>. (Other operators’ free or bonus credit tends to expire after
-      30 days.)
+      days</span>. 1pMobile is even more restrictive with credit expiring after
+      30 days; for that reason this site does not consider it PAYG. (Other
+      operators’ <a href="#bonus">free or bonus credit</a> tends to expire after
+      30 days but their top-ups last indefinitely, subject to inactivity.)
     </p>
-    <p>
+    <p id="tether">
       <span class="bigger">Tethering</span> (aka hotspots) is using your phone
       to provide mobile internet access to other devices such as laptops. Not
       all operators allow this.
     </p>
-    <p>
+    <p id="defunct">
       <span class="bigger">Defunct</span> operators or those that no longer
       accept new customers include Alpha Mobile, Banana Mobile, Boy Better Know,
       C Mobile, Dalya Mobile, DiDa Mobile, Dialog Vizz, DobryTel, Donate Mobile,
@@ -398,8 +404,9 @@ always free. See notes.">08x / min</th>
       Simfiniti, SimpleCall, Soccertel, T-Mobile (now EE), Utility Warehouse,
       Victory Mobile, Wolves Mobile and WWF Wildlife Mobile.
     </p>
-    <p>
+    <p id="nonpayg">
       <span class="bigger">Contract only</span> operators or those with minimum spends include
+      <a href="https://www.1pmobile.com/">1pMobile</a> (“PAYG” but minimum monthly),
       <a href="http://anywheresim.com">anywhere sim</a> (“PAYG” but minimum monthly),
       <a href="http://axisforbusiness.co.uk/mobile/mobile-options">Axis</a>,
       <a href="http://www.bemilo.com/what-does-it-cost">Bemilo</a> (PAYG + parental control),
@@ -411,7 +418,7 @@ always free. See notes.">08x / min</th>
       <a href="http://www.rokmobile.co.uk/">ROK Mobile</a> (music bundled) and
       <a href="http://mobile.talktalk.co.uk/">TalkTalk</a>.
     </p>
-    <p>
+    <p id="footnote">
       <span class="bigger">Footnotes</span>
     </p>
     <p id="footnote1">
@@ -420,7 +427,7 @@ always free. See notes.">08x / min</th>
     </p>
     <p id="footnote2">
       <sup>2</sup> giffgaff free calls and texts to giffgaff numbers lasts for 3
-      months from each top up.
+      months from each top-up.
     </p>
     <p id="footnote3">
       <sup>3</sup> Talkmobile Happy Hour has a flat 10p connection charge but
@@ -429,7 +436,7 @@ always free. See notes.">08x / min</th>
     </p>
     <p id="footnote4">
       <sup>4</sup> <a href="https://www.kontaktmobile.co.uk/shop">Kontakt</a>
-      Top Up doubles up the credit with the bonus lasting two months, Flex
+      Top-up doubles up the credit with the bonus lasting two months, Flex
       Package quadruples it with the bonus lasting one month. The bundles also
       include free internet of 250 MB and 500 MB respectively.
     </p>
@@ -448,7 +455,7 @@ always free. See notes.">08x / min</th>
     <p class="modified">
 <!-- Created: 2008-02-07T13:09:42+00:00 -->
 <!-- hhmts start -->
-Last modified: 2016-10-08T18:25:13+01:00
+Last modified: 2016-10-09T22:54:08+01:00
 <!-- hhmts end -->
     </p>
   </body>
