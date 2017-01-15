@@ -64,7 +64,8 @@ class Grader:
                     continue
                 col = col_score[:-6]
                 if row[col] in ('?', 'n/a') or (
-                        col == 'data' and row[col].startswith('Add-ons')):
+                        col == 'data' and (row[col].startswith('Add-ons') or
+                                           row[col].startswith('Bundles'))):
                     grades[col + '.grade'] = 'na'
                 else:
                     for g in self.grading:
@@ -190,7 +191,7 @@ def dip_per_MB_capped(MB_per_day, data):
 
 def dip_addons_only(MB_per_day, data):
     match = re.match(
-        'Add-ons start from ' + MONEY + ' / ' + FLOAT + ' MB', data)
+        '(?:Add-on|Bundle)s start from ' + MONEY + ' / ' + FLOAT + ' MB', data)
     if match:
         if MB_per_day == 0:
             return 0
