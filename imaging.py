@@ -21,4 +21,4 @@ class Imaging:
         for row in data:
             if 'operator.logo' in row:
                 index = self.logo.index(row['operator.logo'])
-                row['operator.logo_pos'] = index * -16
+                row['operator.logo_pos'] = index * -24 - 4
