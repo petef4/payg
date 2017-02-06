@@ -135,6 +135,7 @@ def yes_no_score(yes_no):
 _FLT = r'\d+\.?\d*'
 FLOAT = '(' + _FLT + ')'
 MONEY = '(' + _FLT + 'p|£' + _FLT + ')'
+DAY_PER_MONTH = 30  # month tends to be shorthand for 30 days, not calendar
 
 
 def dip_per_MB(MB_per_day, data):
@@ -171,11 +172,21 @@ def dip_per_day(MB_per_day, data):
     return price + extra * decipence(match.group(3))
 
 
-def dip_per_MB_some_free(MB_per_day, data):
+def dip_per_MB_some_free_per_day(MB_per_day, data):
     match = re.match(FLOAT + ' MB / day free then ' + MONEY + ' / MB', data)
     if not match:
         return None
     free = float(match.group(1))
+    if MB_per_day < free:
+        return 0
+    return (MB_per_day - free) * decipence(match.group(2))
+
+
+def dip_per_MB_some_free_per_month(MB_per_day, data):
+    match = re.match(FLOAT + ' MB / month free then ' + MONEY + ' / MB', data)
+    if not match:
+        return None
+    free = float(match.group(1)) / DAY_PER_MONTH
     if MB_per_day < free:
         return 0
     return (MB_per_day - free) * decipence(match.group(2))
@@ -200,7 +211,8 @@ def dip_addons_only(MB_per_day, data):
     return None
 
 data_scorers = [
-    dip_per_MB_some_free,
+    dip_per_MB_some_free_per_day,
+    dip_per_MB_some_free_per_month,
     dip_per_MB_capped,
     dip_per_MB,  # must come later than dip_per_MB_capped
     dip_per_day,

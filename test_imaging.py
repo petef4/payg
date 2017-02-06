@@ -14,5 +14,5 @@ def test_add_logo_pos():
         {'operator': 'Aether', 'operator.logo': 'aether_16.png'}]
     img = imaging.Imaging()
     img.add_logo_pos(data)
-    assert data[0]['operator.logo_pos'] == 0
-    assert data[1]['operator.logo_pos'] == -16
+    assert data[0]['operator.logo_pos'] == -4
+    assert data[1]['operator.logo_pos'] == -28
