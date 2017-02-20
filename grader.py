@@ -104,9 +104,9 @@ def decipence(pence):
 
 def bill_per_score(bill_per):
     if bill_per == 'sec':
-        return 1
+        return 100
     elif bill_per in ('min', '[min]'):
-        return 2
+        return 200
     else:
         raise ValueError('String format not handled: ' + bill_per)
 
@@ -119,9 +119,10 @@ def voicemail_score(voicemail):
     return decipence(pence)
 
 YES_NO = {
-    'Yes': 1,
-    'No': 2,
-    '[No]': 2,
+    'Yes': 100,
+    'Soon': 150,
+    'No': 200,
+    '[No]': 200,
     'n/a': None,
     '?': None}
 
@@ -129,7 +130,7 @@ YES_NO = {
 def yes_no_score(yes_no):
     try:
         return YES_NO[yes_no]
-    except IndexError:
+    except KeyError:
         raise ValueError('String format not handled: ' + yes_no)
 
 _FLT = r'\d+\.?\d*'

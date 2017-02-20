@@ -20,9 +20,9 @@ def test_pence():
 
 
 def test_bill_per_score():
-    assert G.bill_per_score('sec') == 1
-    assert G.bill_per_score('min') == 2
-    assert G.bill_per_score('[min]') == 2
+    assert G.bill_per_score('sec') == 100
+    assert G.bill_per_score('min') == 200
+    assert G.bill_per_score('[min]') == 200
     with pytest.raises(ValueError) as excinfo:
         G.bill_per_score('foo')
     assert str(excinfo.value) == 'String format not handled: foo'
@@ -35,6 +35,16 @@ def test_voicemail_score():
     assert G.voicemail_score('8p / call') == 80
     with pytest.raises(ValueError) as excinfo:
         G.voicemail_score('foo')
+    assert str(excinfo.value) == 'String format not handled: foo'
+
+
+def test_yes_no_score():
+    assert G.yes_no_score('Yes') == 100
+    assert G.yes_no_score('Soon') == 150
+    assert G.yes_no_score('No') == 200
+    assert G.yes_no_score('[No]') == 200
+    with pytest.raises(ValueError) as excinfo:
+        G.yes_no_score('foo')
     assert str(excinfo.value) == 'String format not handled: foo'
 
 
@@ -74,15 +84,15 @@ def test_dip_per_day():
         assert G.dip_per_day(10, other) is None
 
 
-def test_dip_per_MB_some_free():
-    assert G.dip_per_MB_some_free(10, '1 MB / day free then 19p / MB') == 1710
-    assert G.dip_per_MB_some_free(0, '1 MB / day free then 19p / MB') == 0
-    assert G.dip_per_MB_some_free(1, '1 MB / day free then 19p / MB') == 0
+def test_dip_per_MB_some_free_per_day():
+    assert G.dip_per_MB_some_free_per_day(10, '1 MB / day free then 19p / MB') == 1710
+    assert G.dip_per_MB_some_free_per_day(0, '1 MB / day free then 19p / MB') == 0
+    assert G.dip_per_MB_some_free_per_day(1, '1 MB / day free then 19p / MB') == 0
     for other in ('2p / MB', '2.5p / MB', '25p / day',
                   '£2 / day for 50 MB then 10p / MB',
                   '£3 / MB capped at £1 / day',
                   'Add-ons start from £1 / 100 MB'):
-        assert G.dip_per_MB_some_free(10, other) is None
+        assert G.dip_per_MB_some_free_per_day(10, other) is None
 
 
 def test_dip_per_MB_capped():

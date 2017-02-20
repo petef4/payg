@@ -18,8 +18,8 @@
         "bad": 200
     },
     "bill_per": {
-        "good": 1,
-        "okay": 2
+        "good": 100,
+        "okay": 200
     },
     "voicemail": {
         "good": 0,
@@ -40,12 +40,14 @@
         "bad": 360
     },
     "4G": {
-        "good": 1,
-        "okay": 2
+        "good": 100,
+        "okay": 150,
+        "poor": 200
     },
     "tether": {
-        "good": 1,
-        "okay": 2
+        "good": 100,
+        "okay": 150,
+        "poor": 200
     },
     "data": {
         "MB / day": 10,
