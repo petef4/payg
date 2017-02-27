@@ -510,6 +510,7 @@
     "operator": "Fonome",
     "operator.url": "https://fonome.com/",
     "operator.logo": "fonome_16.png",
+    "operator.grade": "poor",
     "plan": "PAYG",
     "plan.url": "https://fonome.com/?p=rates",
     "min_same": "Free",
