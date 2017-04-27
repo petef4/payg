@@ -110,6 +110,28 @@
     "checked": "2017-02-06"
   },
   {
+    "operator": "1pMobile",
+    "operator.url": "https://www.1pmobile.com/",
+    "operator.logo": "1pmobile_16.png",
+    "plan": "PAYG",
+    "plan.url": "https://www.1pmobile.com/tariff-and-charges.taf",
+    "min_same": 1,
+    "min_other": 1,
+    "min_land": 1,
+    "charge_min": 1,
+    "bill_per": "min",
+    "sms_same": 1,
+    "sms_other": 1,
+    "voicemail": 1,
+    "08x": 30,
+    "mms": 30,
+    "4G": "Yes",
+    "tether": "Yes",
+    "data": "1p / MB",
+    "network": "EE",
+    "checked": "2017-04-26"
+  },
+  {
     "operator": "Asda",
     "operator.url": "https://mobile.asda.com/",
     "operator.logo": "asda_16.png",
@@ -125,11 +147,11 @@
     "voicemail": 8,
     "08x": 8,
     "mms": 25,
-    "4G": "Soon",
+    "4G": "Yes",
     "tether": "Yes",
     "data": "5p / MB",
     "network": "EE",
-    "checked": "2017-02-20"
+    "checked": "2017-04-26"
   },
   {
     "operator": "C4C Mobile",
