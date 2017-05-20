@@ -933,13 +933,13 @@
     "operator.logo": "toggle_16.png",
     "plan": "mobile",
     "plan.url": "http://www.togglemobile.co.uk/tariffs/en",
-    "min_same": 7,
-    "min_other": 7,
-    "min_land": 7,
-    "charge_min": 7,
+    "min_same": 3,
+    "min_other": 3,
+    "min_land": 3,
+    "charge_min": 3,
     "bill_per": "[min]",
     "sms_same": 5,
-    "sms_other": 5,
+    "sms_other": 9,
     "voicemail": "Free",
     "08x": 23,
     "mms": "?",
@@ -947,7 +947,7 @@
     "tether": "[No]",
     "data": "18p / MB",
     "network": "O2",
-    "checked": "2017-01-15"
+    "checked": "2017-05-20"
   },
   {
     "operator": "Truphone",
