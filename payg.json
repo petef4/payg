@@ -53,17 +53,17 @@
     "min_other": 30,
     "min_land": 30,
     "charge_min": 30,
-    "bill_per": "min",
+    "bill_per": "sec",
     "sms_same": 14,
     "sms_other": 14,
     "voicemail": 30,
     "08x": 45,
-    "mms": 36,
+    "mms": 45,
     "4G": "Yes",
     "tether": "Yes",
     "data": "£2 / day for 50 MB then 10p / MB",
     "network": "Vodafone",
-    "checked": "2017-01-15"
+    "checked": "2017-06-25"
   },
   {
     "operator": "3",
@@ -241,6 +241,28 @@
     "data": "1p / MB",
     "network": "EE",
     "checked": "2017-01-15"
+  },
+  {
+    "operator": "Economy Mobile",
+    "operator.url": "https://www.economymobile.co.uk/",
+    "operator.logo": "economy_16.png",
+    "plan": "PAYG",
+    "plan.url": "https://www.economymobile.co.uk/how-we-compare/standard-uk-rates/",
+    "min_same": 10,
+    "min_other": 10,
+    "min_land": 10,
+    "charge_min": "[1 min]",
+    "bill_per": "[min]",
+    "sms_same": 10,
+    "sms_other": 10,
+    "voicemail": 10,
+    "08x": 10,
+    "mms": 25,
+    "4G": "[No]",
+    "tether": "Yes",
+    "data": "10p / MB",
+    "network": "EE",
+    "checked": "2017-06-25"
   },
   {
     "operator": "giffgaff",
@@ -969,6 +991,6 @@
     "tether": "[No]",
     "data": "6p / MB",
     "network": "Vodafone",
-    "checked": "2017-01-15"
+    "checked": "2017-06-25"
   }
 ]

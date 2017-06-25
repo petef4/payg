@@ -108,6 +108,9 @@ class Map:
         for i, entry in enumerate(data):
             self.payg_index[(entry['operator'], entry['plan'])] = i
         self.active_mnc2payg = {}
+        self.defunct = []
         for k, v in self.mnc2payg.items():
-            if v is not None:
+            if v is None:
+                self.defunct.append(k)
+            else:
                 self.active_mnc2payg[k] = self.payg_index[tuple(v)]
