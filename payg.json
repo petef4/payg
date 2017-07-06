@@ -199,10 +199,10 @@
   },
   {
     "operator": "The co-operative mobile",
-    "operator.url": "https://payg.thephone.coop/",
+    "operator.url": "https://www.thephone.coop/",
     "operator.logo": "coop_16.png",
     "plan": "PAYG",
-    "plan.url": "https://payg.thephone.coop/our-prices/",
+    "plan.url": "https://www.thephone.coop/personal/sim-only/pay-as-you-go/",
     "min_same": 4,
     "min_other": 8,
     "min_land": 8,
@@ -217,7 +217,7 @@
     "tether": "Yes",
     "data": "10p / MB",
     "network": "EE",
-    "checked": "2017-01-15"
+    "checked": "2017-07-06"
   },
   {
     "operator": "Delight Mobile",
@@ -814,28 +814,6 @@
     "tether": "[No]",
     "data": "2.5p / MB",
     "network": "EE",
-    "checked": "2017-01-15"
-  },
-  {
-    "operator": "Aether",
-    "operator.url": "http://www.aether-mobile.com/",
-    "operator.logo": "aether_16.png",
-    "plan": "Mobile",
-    "plan.url": "http://www.aether-mobile.com/ratecheck.php",
-    "min_same": 6.6,
-    "min_other": 6.6,
-    "min_land": 6.6,
-    "charge_min": 6.6,
-    "bill_per": "[min]",
-    "sms_same": 3.3,
-    "sms_other": 3.3,
-    "voicemail": "?",
-    "08x": "n/a",
-    "mms": "?",
-    "4G": "[No]",
-    "tether": "[No]",
-    "data": "3.3p / MB",
-    "network": "EE and O2",
     "checked": "2017-01-15"
   },
   {
