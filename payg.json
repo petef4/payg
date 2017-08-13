@@ -684,28 +684,6 @@
     "checked": "2017-01-15"
   },
   {
-    "operator": "Smart World UK",
-    "operator.url": "https://www.smartsimuk.com/",
-    "operator.logo": "smart_16.png",
-    "plan": "PAYG",
-    "plan.url": "https://www.smartsimuk.com/smartuk-rates/",
-    "min_same": 3,
-    "min_other": 6,
-    "min_land": 6,
-    "charge_min": "[1 min]",
-    "bill_per": "[min]",
-    "sms_same": 8,
-    "sms_other": 10,
-    "voicemail": "?",
-    "08x": "n/a",
-    "mms": "?",
-    "4G": "[No]",
-    "tether": "[No]",
-    "data": "5p / MB",
-    "network": "EE",
-    "checked": "2017-01-15"
-  },
-  {
     "operator": "Talk Home",
     "operator.url": "http://www.talkhomemobile.com/",
     "operator.logo": "talkhome_16.png",
