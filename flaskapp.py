@@ -45,8 +45,8 @@ else:
 @app.route('/')
 def payg():
     http = (
-        request.environ.get('wsgi.url_scheme') or  # PythonAnywhere, localhost
         request.environ.get('HTTP_X_FORWARDED_PROTO') or  # OpenShift
+        request.environ.get('wsgi.url_scheme') or  # PythonAnywhere, localhost
         'http')
     return render_template(
         'payg.html', http=http, data=data, cols=cols, grading=grading,
