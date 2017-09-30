@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, send_from_directory
 
 from eff_min import add_effective_per_min
 from grader import Grader
-from imaging import Imaging
+from imaging import Imaging, open_here
 
 app = Flask(__name__)
 app.config.from_pyfile('flaskapp.cfg')
@@ -16,12 +16,12 @@ def gnu_terry_pratchett(resp):
     return resp
 
 
-with open('payg.json', encoding='UTF-8') as f:
+with open_here('payg.json') as f:
     data = load(f)
 if app.config['DO_AVERAGE']:
     add_effective_per_min(data, app.config['MAXIMUM_CALL'])
 
-with open('grading.json', encoding='UTF-8') as f:
+with open_here('grading.json') as f:
     grading = load(f)
 grader = Grader(grading)
 grader.grade(data)
@@ -44,7 +44,10 @@ else:
 
 @app.route('/')
 def payg():
-    http = request.environ.get('HTTP_X_FORWARDED_PROTO', 'http')
+    http = (
+        request.environ.get('wsgi.url_scheme') or  # PythonAnywhere, localhost
+        request.environ.get('HTTP_X_FORWARDED_PROTO') or  # OpenShift
+        'http')
     return render_template(
         'payg.html', http=http, data=data, cols=cols, grading=grading,
         counts=counts, do_average=app.config['DO_AVERAGE'])
@@ -79,6 +82,7 @@ def static_from_root():
 @app.route('/test')
 def test():
     return render_template('test.html', env=request.environ)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
