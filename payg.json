@@ -862,11 +862,11 @@
   },
   {
     "operator": "Maxroam",
-    "operator.url": "http://www.maxroam.com/Home.aspx?cur=GBP",
+    "operator.url": "https://www.maxroam.com/",
     "operator.logo": "maxroam_16.png",
     "operator.grade": "poor",
     "plan": "Global SIM + UK",
-    "plan.url": "http://www.maxroam.com/Info/RatesCoverage.aspx?cur=GBP",
+    "plan.url": "https://www.maxroam.com/Pricing?country=GB",
     "min_same": 11,
     "min_other": 11,
     "min_land": 11,
@@ -877,11 +877,11 @@
     "voicemail": "?",
     "08x": "n/a",
     "mms": "?",
-    "4G": "[No]",
+    "4G": "No",
     "tether": "[No]",
     "data": "9p / MB",
-    "network": "EE and Vodafone",
-    "checked": "2017-01-15"
+    "network": "O2 and Vodafone",
+    "checked": "2017-10-02"
   },
   {
     "operator": "Pebble",
