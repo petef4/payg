@@ -1,6 +1,6 @@
 from json import load
 
-from flask import Flask, render_template, request, send_from_directory
+from flask import Flask, redirect, render_template, request, send_from_directory
 
 from eff_min import add_effective_per_min
 from grader import Grader
@@ -8,6 +8,8 @@ from imaging import Imaging, open_here
 
 app = Flask(__name__)
 app.config.from_pyfile('flaskapp.cfg')
+
+new_host = 'payg.pythonanywhere.com'
 
 
 @app.after_request
@@ -42,33 +44,31 @@ else:
             '08x', 'mms', '4G', 'tether', 'data', 'network', 'checked']
 
 
-@app.route('/')
-def payg():
-    http = (
+def http():
+    return (
         request.environ.get('HTTP_X_FORWARDED_PROTO') or  # OpenShift
         request.environ.get('wsgi.url_scheme') or  # PythonAnywhere, localhost
         'http')
-    return render_template(
-        'payg.html', http=http, data=data, cols=cols, grading=grading,
-        counts=counts, do_average=app.config['DO_AVERAGE'])
+
+
+@app.route('/')
+def payg():
+    return redirect('{0}://{1}/'.format(http(), new_host), code=301)
 
 
 @app.route('/home')
 def home():
-    http = request.environ.get('HTTP_X_FORWARDED_PROTO', 'http')
-    return render_template('home.html', http=http)
+    return redirect('{0}://{1}/home'.format(http(), new_host), code=301)
 
 
 @app.route('/links')
 def links():
-    http = request.environ.get('HTTP_X_FORWARDED_PROTO', 'http')
-    return render_template('links.html', http=http)
+    return redirect('{0}://{1}/links'.format(http(), new_host), code=301)
 
 
 @app.route('/shopping')
 def shopping():
-    http = request.environ.get('HTTP_X_FORWARDED_PROTO', 'http')
-    return render_template('shopping.html', http=http)
+    return redirect('{0}://{1}/shopping'.format(http(), new_host), code=301)
 
 
 @app.route('/robots.txt')
@@ -76,12 +76,12 @@ def shopping():
 @app.route('/google2427ff77d057f518.html')
 @app.route('/BingSiteAuth.xml')
 def static_from_root():
-    return send_from_directory(app.static_folder, request.path[1:])
+    return redirect('{0}://{1}/{2}'.format(http(), new_host, request.path[1:]), code=301)
 
 
 @app.route('/test')
 def test():
-    return render_template('test.html', env=request.environ)
+    return redirect('{0}://{1}/test'.format(http(), new_host), code=301)
 
 
 if __name__ == '__main__':
