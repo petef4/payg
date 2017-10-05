@@ -42,33 +42,33 @@ else:
             '08x', 'mms', '4G', 'tether', 'data', 'network', 'checked']
 
 
-@app.route('/')
-def payg():
-    http = (
+def http():
+    return (
         request.environ.get('HTTP_X_FORWARDED_PROTO') or  # OpenShift
         request.environ.get('wsgi.url_scheme') or  # PythonAnywhere, localhost
         'http')
+
+
+@app.route('/')
+def payg():
     return render_template(
-        'payg.html', http=http, data=data, cols=cols, grading=grading,
+        'payg.html', http=http(), data=data, cols=cols, grading=grading,
         counts=counts, do_average=app.config['DO_AVERAGE'])
 
 
 @app.route('/home')
 def home():
-    http = request.environ.get('HTTP_X_FORWARDED_PROTO', 'http')
-    return render_template('home.html', http=http)
+    return render_template('home.html', http=http())
 
 
 @app.route('/links')
 def links():
-    http = request.environ.get('HTTP_X_FORWARDED_PROTO', 'http')
-    return render_template('links.html', http=http)
+    return render_template('links.html', http=http())
 
 
 @app.route('/shopping')
 def shopping():
-    http = request.environ.get('HTTP_X_FORWARDED_PROTO', 'http')
-    return render_template('shopping.html', http=http)
+    return render_template('shopping.html', http=http())
 
 
 @app.route('/robots.txt')

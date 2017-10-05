@@ -558,10 +558,10 @@
     "plan": "Saver",
     "plan.url": "http://www.lebara-mobile.co.uk/prepay/rates",
     "min_same": "Free",
-    "min_other": 15,
-    "min_land": 9,
-    "charge_min": "[1 min]",
-    "bill_per": "[min]",
+    "min_other": 19,
+    "min_land": 12,
+    "charge_min": "1 min",
+    "bill_per": "min",
     "sms_same": "Free",
     "sms_other": 19,
     "voicemail": 15,
@@ -569,9 +569,9 @@
     "mms": 45,
     "4G": "No",
     "tether": "No",
-    "data": "19p / MB",
+    "data": "9p / MB",
     "network": "Vodafone",
-    "checked": "2017-01-15"
+    "checked": "2017-10-05"
   },
   {
     "operator": "Lomo Mobile",
@@ -861,11 +861,11 @@
     "checked": "2017-01-15"
   },
   {
-    "operator": "Maxroam",
+    "operator": "MAXROAM",
     "operator.url": "https://www.maxroam.com/",
     "operator.logo": "maxroam_16.png",
     "operator.grade": "poor",
-    "plan": "Global SIM + UK",
+    "plan": "Travel SIM",
     "plan.url": "https://www.maxroam.com/Pricing?country=GB",
     "min_same": 11,
     "min_other": 11,
