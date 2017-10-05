@@ -560,7 +560,7 @@
     "min_same": "Free",
     "min_other": 19,
     "min_land": 12,
-    "charge_min": "1 min",
+    "charge_min": "[1 min]",
     "bill_per": "min",
     "sms_same": "Free",
     "sms_other": 19,
