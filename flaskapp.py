@@ -12,7 +12,7 @@ app.config.from_pyfile('flaskapp.cfg')
 
 @app.after_request
 def gnu_terry_pratchett(resp):
-    resp.headers.add("X-Clacks-Overhead", "GNU Terry Pratchett")
+    resp.headers['X-Clacks-Overhead'] = 'GNU Terry Pratchett'
     return resp
 
 

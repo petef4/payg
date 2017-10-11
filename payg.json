@@ -574,28 +574,6 @@
     "checked": "2017-10-05"
   },
   {
-    "operator": "Lomo Mobile",
-    "operator.url": "http://www.lomomobile.com/",
-    "operator.logo": "lomo_16.png",
-    "plan": "PAYG",
-    "plan.url": "http://www.lomomobile.com/rate/roamingrates/",
-    "min_same": "Free",
-    "min_other": 7,
-    "min_land": 7,
-    "charge_min": "[1 min]",
-    "bill_per": "[min]",
-    "sms_same": "Free",
-    "sms_other": 5,
-    "voicemail": "Free",
-    "08x": "n/a",
-    "mms": 25,
-    "4G": "[No]",
-    "tether": "[No]",
-    "data": "9p / MB",
-    "network": "EE",
-    "checked": "2017-02-06"
-  },
-  {
     "operator": "Lycamobile",
     "operator.url": "http://www.lycamobile.co.uk",
     "operator.logo": "lyca_16.png",
