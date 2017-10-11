@@ -1,6 +1,6 @@
 from json import load
 
-from flask import Flask, redirect, render_template, request, send_from_directory
+from flask import Flask, render_template, request, send_from_directory
 
 from eff_min import add_effective_per_min
 from grader import Grader
@@ -9,12 +9,10 @@ from imaging import Imaging, open_here
 app = Flask(__name__)
 app.config.from_pyfile('flaskapp.cfg')
 
-new_host = 'payg.pythonanywhere.com'
-
 
 @app.after_request
 def gnu_terry_pratchett(resp):
-    resp.headers.add("X-Clacks-Overhead", "GNU Terry Pratchett")
+    resp.headers['X-Clacks-Overhead'] = 'GNU Terry Pratchett'
     return resp
 
 
@@ -53,22 +51,24 @@ def http():
 
 @app.route('/')
 def payg():
-    return redirect('{0}://{1}/'.format(http(), new_host), code=301)
+    return render_template(
+        'payg.html', http=http(), data=data, cols=cols, grading=grading,
+        counts=counts, do_average=app.config['DO_AVERAGE'])
 
 
 @app.route('/home')
 def home():
-    return redirect('{0}://{1}/home'.format(http(), new_host), code=301)
+    return render_template('home.html', http=http())
 
 
 @app.route('/links')
 def links():
-    return redirect('{0}://{1}/links'.format(http(), new_host), code=301)
+    return render_template('links.html', http=http())
 
 
 @app.route('/shopping')
 def shopping():
-    return redirect('{0}://{1}/shopping'.format(http(), new_host), code=301)
+    return render_template('shopping.html', http=http())
 
 
 @app.route('/robots.txt')
@@ -76,12 +76,12 @@ def shopping():
 @app.route('/google2427ff77d057f518.html')
 @app.route('/BingSiteAuth.xml')
 def static_from_root():
-    return redirect('{0}://{1}/{2}'.format(http(), new_host, request.path[1:]), code=301)
+    return send_from_directory(app.static_folder, request.path[1:])
 
 
 @app.route('/test')
 def test():
-    return redirect('{0}://{1}/test'.format(http(), new_host), code=301)
+    return render_template('test.html', env=request.environ)
 
 
 if __name__ == '__main__':
