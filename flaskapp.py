@@ -12,7 +12,7 @@ app.config.from_pyfile('flaskapp.cfg')
 
 @app.after_request
 def gnu_terry_pratchett(resp):
-    if not resp.headers.has_key('X-Clacks-Overhead'):
+    if 'liveweb' not in request.environ.get('uwsgi.node', ''):
         # PythonAnywhere already has this header
         resp.headers.add('X-Clacks-Overhead', 'GNU Terry Pratchett')
     return resp
