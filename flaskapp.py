@@ -3,6 +3,7 @@ from json import load
 from flask import Flask, render_template, request, send_from_directory
 
 from eff_min import add_effective_per_min
+from footnote import definitions
 from grader import Grader
 from imaging import Imaging, open_here
 
@@ -20,19 +21,22 @@ def gnu_terry_pratchett(resp):
 
 with open_here('payg.json') as f:
     data = load(f)
+active = data['active']
+defunct = data['defunct']
+footnotes, fn_index = definitions(data['footnotes'])
 if app.config['DO_AVERAGE']:
-    add_effective_per_min(data, app.config['MAXIMUM_CALL'])
+    add_effective_per_min(active, app.config['MAXIMUM_CALL'])
 
 with open_here('grading.json') as f:
     grading = load(f)
 grader = Grader(grading)
-grader.grade(data)
+grader.grade(active)
 
 img = Imaging()
-img.add_logo_pos(data)
+img.add_logo_pos(active)
 
-counts = {'operator': len(set(r['operator'] for r in data)),
-          'plan': len(data)}
+counts = {'operator': len(set(r['operator'] for r in active)),
+          'plan': len(active)}
 if app.config['DO_AVERAGE']:
     cols = ['operator', 'plan', 'min_same', 'min_other', 'min_land',
             'charge_min', 'bill_per', 'eff_min', 'sms_same', 'sms_other',
@@ -54,8 +58,9 @@ def http():
 @app.route('/')
 def payg():
     return render_template(
-        'payg.html', http=http(), data=data, cols=cols, grading=grading,
-        counts=counts, do_average=app.config['DO_AVERAGE'])
+        'payg.html', http=http(), active=active, cols=cols, grading=grading,
+        footnotes=footnotes, fn_index=fn_index, counts=counts,
+        do_average=app.config['DO_AVERAGE'])
 
 
 @app.route('/home')

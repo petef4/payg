@@ -137,12 +137,19 @@ _FLT = r'\d+\.?\d*'
 FLOAT = '(' + _FLT + ')'
 MONEY = '(' + _FLT + 'p|£' + _FLT + ')'
 DAY_PER_MONTH = 30  # month tends to be shorthand for 30 days, not calendar
-
+N_MB = '(' + _FLT + ')MB'
 
 def dip_per_MB(MB_per_day, data):
     match = re.match(MONEY + ' / MB', data)
     if match:
         return MB_per_day * decipence(match.group(1))
+    return None
+
+
+def dip_per_nMB(MB_per_day, data):
+    match = re.match(MONEY + ' / ' + N_MB, data)
+    if match:
+        return MB_per_day * decipence(match.group(1)) / float(match.group(2))
     return None
 
 
@@ -216,6 +223,7 @@ data_scorers = [
     dip_per_MB_some_free_per_month,
     dip_per_MB_capped,
     dip_per_MB,  # must come later than dip_per_MB_capped
+    dip_per_nMB,
     dip_per_day,
     dip_addons_only]
 

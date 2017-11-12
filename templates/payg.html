@@ -24,7 +24,27 @@
     {%- else -%}
       {{ pence(r.get(c)) }}
     {%- endif -%}
+    {%- if r.get(c + '.footnotes') -%}
+      {{ fn_refs(r.get(c + '.footnotes')) }}
+    {%- endif -%}
   </td>
+{%- endmacro -%}
+
+{%- macro fn_refs(footnote_ids) -%}
+{%- for fn_id in footnote_ids -%}
+  {%- set footnote = footnotes[fn_index[fn_id]] %} <a href="#{{ footnote.id  }}" title="{{ footnote.tooltip }}"><sup>{{ footnote.number }}</sup><a>
+  {%- endfor -%}
+{%- endmacro -%}
+
+{%- macro fn_def(footnote) %}
+    <p id="{{ footnote.id }}">
+      <sup>{{ footnote.number }}</sup>
+      {%- for line in footnote.richtext -%}
+        {%- if line is string %} {{ line }}
+        {%- else %} <span class="{{ line[0] }}">{{ line[1] }}</span>
+        {%- endif -%}
+      {%- endfor %}
+    </p>
 {%- endmacro -%}
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
@@ -49,7 +69,7 @@
         <h3>TL;DR cheapest rate is</h3>
         <ul>
           <li>
-            <a href="https://www.1pmobile.com/">1pMobile</a> — 1p / min, 1p / text, 1p / MB
+            <span class="poor"><a href="https://www.1pmobile.com/">1pMobile</a></span>{{ fn_refs(["1pmobile_subs"]) }} — 1p / min, 1p / text, 1p / MB
           </li>
         </ul>
         <h3>Other cheap rates are</h3>
@@ -201,7 +221,7 @@ always free. See notes.">08x / min</th>
         </tr>
       </tfoot>
       <tbody>
-        {%- for row in data %}
+        {%- for row in active %}
         <tr>
           {%- for col in cols -%}
           {{ td(row, col) }}
@@ -441,29 +461,9 @@ always free. See notes.">08x / min</th>
     <p id="footnote">
       <span class="bigger">Footnotes</span>
     </p>
-    <p id="footnote1">
-      <sup>1</sup> giffgaff free calls and texts to giffgaff numbers lasts for 3
-      months from each top-up.
-    </p>
-    <p id="footnote2">
-      <sup>2</sup> <span class="poor">Both of Fonome’s contact telephone numbers
-        are currently unavailable.</span>
-    </p>
-    <p id="footnote3">
-      <sup>3</sup> Auracall and GO-SIM have mobile numbers issued in the
-      Isle of Man or Jersey. Those are not UK 07 numbers and most other
-      operators charge extra to call them, the calls are not in most inclusive
-      plans or contracts.
-    </p>
-    <p id="footnote4">
-      <sup>4</sup> GO-SIM publish their rates in USD. You can buy
-      credit in GBP but the effective call rates depend on the exchange rate.
-      The same applies to MAXROAM who set their rates in euros.
-    </p>
-    <p id="footnote5">
-      <sup>5</sup> <span class="poor">MAXROAM charges 4p / min for incoming
-      calls.</span> Incoming texts are free.
-    </p>
+    {%- for footnote in footnotes -%}
+      {{ fn_def(footnote) }}
+    {%- endfor -%}
     <hr>
     <address class="vcard">
       <span class="fn">Pete Forman</span>
@@ -473,7 +473,7 @@ always free. See notes.">08x / min</th>
     <p class="modified">
 <!-- Created: 2008-02-07T13:09:42+00:00 -->
 <!-- hhmts start -->
-Last modified: 2017-10-11T20:35:23+01:00
+Last modified: 2017-11-12T21:13:09+00:00
 <!-- hhmts end -->
     </p>
   </body>

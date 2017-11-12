@@ -63,6 +63,13 @@ def test_dip_per_MB():
         assert G.dip_per_MB(10, other) is None
 
 
+def test_dip_per_nMB():
+    assert G.dip_per_nMB(10, '20p / 5MB') == 400
+    assert G.dip_per_nMB(1, '2p / 5MB') == 4
+    assert G.dip_per_nMB(0, '20p / 5MB') == 0
+    assert G.dip_per_nMB(0, '2p / 5MB') == 0
+
+
 def test_dip_per_day():
     assert G.dip_per_day(10, '25p / day for 25 MB then 10p / MB') == 250
     assert G.dip_per_day(10, '£2 / day for 50 MB then 10p / MB') == 2000
