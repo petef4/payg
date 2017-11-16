@@ -28,6 +28,7 @@ tr.first {
 }
 span.good, span.okay, span.poor, span.bad {
     border: 0.1em solid black;
+    padding: 0.1em;
 }
 .good { background: #c2d69b; }
 .okay { background: #ebe08d; }

@@ -589,10 +589,10 @@
     },
     {
       "operator": "Lebara",
-      "operator.url": "http://www.lebara-mobile.co.uk/en/",
+      "operator.url": "https://mobile.lebara.com/gb/en/",
       "operator.logo": "lebara_16.png",
-      "plan": "Saver",
-      "plan.url": "http://www.lebara-mobile.co.uk/prepay/rates",
+      "plan": "PAYG",
+      "plan.url": "https://mobile.lebara.com/gb/en/international-call-rates",
       "min_same": "Free",
       "min_other": 19,
       "min_land": 12,
@@ -600,14 +600,14 @@
       "bill_per": "min",
       "sms_same": "Free",
       "sms_other": 19,
-      "voicemail": 15,
+      "voicemail": 12,
       "08x": 45,
       "mms": 45,
       "4G": "No",
       "tether": "No",
       "data": "9p / MB",
       "network": "Vodafone",
-      "checked": "2017-10-05"
+      "checked": "2017-11-16"
     },
     {
       "operator": "Lycamobile",
