@@ -48,7 +48,7 @@
       "operator": "Vodafone",
       "operator.url": "http://www.vodafone.co.uk",
       "operator.logo": "vodafone_16.png",
-      "plan": "PAYG",
+      "plan": "Simply",
       "plan.url": "http://www.vodafone.co.uk/explore/costs/call-charges/index.htm#tab_0_1",
       "min_same": 30,
       "min_other": 30,
