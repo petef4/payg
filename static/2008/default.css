@@ -1,0 +1,58 @@
+body {
+  background-color: #F5F5DC;
+}
+
+/* float handling: http://www.quirksmode.org/index.html?/css/clearing.html */
+
+div.multicolumn {
+  overflow: hidden;
+  width: 100%;
+}
+
+div.leftcolor {
+  background-color: #FFFFCC;
+  float: left;
+  width: 49%;
+}
+
+div.rightcolor {
+  background-color: #FFFFCC;
+  float: right;
+  width: 49%;
+}
+
+div.leftplain {
+  float: left;
+}
+
+div.rightplain {
+  float: right;
+}
+
+h1 {
+  background-color: #FFFF88;
+  margin-bottom: 0.3em;
+}
+
+h2 {
+  background-color: #663300;
+  color: #FFFFEE;
+}
+
+ul ul li {
+  list-style-type: circle;
+}
+
+img {
+  border: 0px;
+}
+
+address a {
+  padding-left: 1em;
+}
+
+p.modified {
+  margin: 0.1em;
+  font-size: 0.75em;
+  font-style: italic;
+}

@@ -32,7 +32,7 @@
 
 {%- macro fn_refs(footnote_ids) -%}
 {%- for fn_id in footnote_ids -%}
-  {%- set footnote = footnotes[fn_index[fn_id]] %} <a href="#{{ footnote.id  }}" title="{{ footnote.tooltip }}"><sup>{{ footnote.number }}</sup><a>
+  {%- set footnote = footnotes[fn_index[fn_id]] %} <a href="#{{ footnote.id  }}" title="{{ footnote.tooltip }}"><sup>{{ footnote.number }}</sup></a>
   {%- endfor -%}
 {%- endmacro -%}
 
@@ -114,6 +114,20 @@
           but I am constrained by local coverage.
         </p>
       </div>
+    </div>
+    <div class="notice">
+      <p>
+        This page has been going for 10 years, since 2008-02-07. Back then there
+        were 15 plans available from 5 main operators and 5 MVNOs.
+        <a href="/2008/payg.html">Here is my first snapshot</a>. Others can be
+        seen on the Wayback Machine.
+      </p>
+      <p>
+        2008 | <a href="https://web.archive.org/web/*/http://petef.22web.net/payg.html">petef.22web.net</a>
+        | 2012 | <a href="https://web.archive.org/web/*/http://petef.22web.org/payg.html">petef.22web.org</a>
+        | 2015 | <a href="https://web.archive.org/web/*/https://payg-petef.rhcloud.com/">payg-petef.rhcloud.com</a>
+        | 2017 | <a href="https://web.archive.org/web/*/https://payg.pythonanywhere.com">payg.pythonanywhere.com</a>
+      </p>
     </div>
     <p>
       These are the rates for true pay as you go tariffs only. Some other plans
@@ -474,7 +488,7 @@ always free. See notes.">08x / min</th>
     <p class="modified">
 <!-- Created: 2008-02-07T13:09:42+00:00 -->
 <!-- hhmts start -->
-Last modified: 2018-01-19T16:54:45+00:00
+Last modified: 2018-02-05T22:17:04+00:00
 <!-- hhmts end -->
     </p>
   </body>

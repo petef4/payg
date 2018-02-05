@@ -58,3 +58,10 @@ a.logo {
     height: 16px;
     padding-left: 22px;
 }
+.notice {
+    background: #ffffff;
+    font-size: 21px;
+    border: 0.5em solid #ffa500;
+    margin: 10px;
+    padding: 10px;
+}

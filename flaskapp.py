@@ -82,6 +82,8 @@ def shopping():
 @app.route('/favicon.ico')
 @app.route('/google2427ff77d057f518.html')
 @app.route('/BingSiteAuth.xml')
+@app.route('/2008/payg.html')
+@app.route('/2008/default.css')
 def static_from_root():
     return send_from_directory(app.static_folder, request.path[1:])
 
