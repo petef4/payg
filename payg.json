@@ -156,13 +156,13 @@
       "sms_same": 1,
       "sms_other": 1,
       "voicemail": 1,
-      "08x": 30,
+      "08x": 20,
       "mms": 30,
       "4G": "Yes",
       "tether": "Yes",
       "data": "1p / MB",
       "network": "EE",
-      "checked": "2017-04-26"
+      "checked": "2018-07-23"
     },
     {
       "operator": "Asda",
@@ -251,29 +251,6 @@
       "data": "10p / MB",
       "network": "EE",
       "checked": "2017-07-06"
-    },
-    {
-      "operator": "Delight Mobile",
-      "operator.url": "https://www.delightmobile.co.uk/",
-      "operator.logo": "delight_16.png",
-      "operator.grade": "poor",
-      "plan": "1 2 3",
-      "plan.url": "https://www.delightmobile.co.uk/national-rates",
-      "min_same": "Free",
-      "min_other": 3,
-      "min_land": 3,
-      "charge_min": "[1 min]",
-      "bill_per": "[min]",
-      "sms_same": "Free",
-      "sms_other": 2,
-      "voicemail": 5,
-      "08x": "n/a",
-      "mms": 25,
-      "4G": "[No]",
-      "tether": "No",
-      "data": "1p / MB",
-      "network": "EE",
-      "checked": "2017-01-15"
     },
     {
       "operator": "Economy Mobile",
@@ -449,9 +426,9 @@
       "mms": 30,
       "4G": "No",
       "tether": "No",
-      "data": "£1 / day for 100 MB then £1 / 100 MB",
+      "data": "£2 / day for 200 MB then £2 / 200 MB",
       "network": "EE",
-      "checked": "2017-01-15"
+      "checked": "2018-07-23"
     },
     {
       "operator": "Virgin Mobile",
@@ -471,9 +448,9 @@
       "mms": 30,
       "4G": "No",
       "tether": "No",
-      "data": "£1 / day for 100 MB then £1 / 100 MB",
+      "data": "£2 / day for 200 MB then £2 / 200 MB",
       "network": "EE",
-      "checked": "2017-01-15"
+      "checked": "2018-07-23"
     },
     {
       "operator": "Virgin Mobile",
@@ -493,9 +470,9 @@
       "mms": 30,
       "4G": "No",
       "tether": "No",
-      "data": "£1 / day for 100 MB then £1 / 100 MB",
+      "data": "£2 / day for 200 MB then £2 / 200 MB",
       "network": "EE",
-      "checked": "2017-01-15"
+      "checked": "2018-07-23"
     },
     {
       "operator": "AfriMobile",
@@ -784,7 +761,7 @@
       "tether": "No",
       "data": "9p / MB",
       "network": "EE",
-      "checked": "2017-01-15"
+      "checked": "2018-07-23"
     },
     {
       "operator": "White Mobile",
