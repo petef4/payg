@@ -519,6 +519,28 @@
       "checked": "2018-11-19"
     },
     {
+      "operator": "CMLink",
+      "operator.url": "https://mobile.cmlink.com/uk/en",
+      "operator.logo": "cmlink_16.png",
+      "plan": "PAYG",
+      "plan.url": "https://mobile.cmlink.com/uk/en/tariffs",
+      "min_same": "Free",
+      "min_other": 8,
+      "min_land": 8,
+      "charge_min": "[1 min]",
+      "bill_per": "[min]",
+      "sms_same": "Free",
+      "sms_other": 8,
+      "voicemail": "?",
+      "08x": 8,
+      "mms": "?",
+      "4G": "Yes",
+      "tether": "Yes",
+      "data": "5p / MB",
+      "network": "EE",
+      "checked": "2018-12-30"
+    },
+    {
       "operator": "CTExcel",
       "operator.url": "http://www.ctexcel.com/international.jspx?language=en",
       "operator.logo": "ctexcel_16.png",
