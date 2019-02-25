@@ -321,28 +321,6 @@
       "checked": "2018-11-19"
     },
     {
-      "operator": "The People’s Operator",
-      "operator.url": "https://www.thepeoplesoperator.com/",
-      "operator.logo": "tpo_16.png",
-      "plan": "PAYG",
-      "plan.url": "https://www.thepeoplesoperator.com/tpo_payg_rates",
-      "min_same": 4,
-      "min_other": 4,
-      "min_land": 4,
-      "charge_min": "[1 min]",
-      "bill_per": "min",
-      "sms_same": 3,
-      "sms_other": 3,
-      "voicemail": 4,
-      "08x": 5,
-      "mms": "n/a",
-      "4G": "Yes",
-      "tether": "No",
-      "data": "2p / MB",
-      "network": "3",
-      "checked": "2018-11-19"
-    },
-    {
       "operator": "RWG",
       "operator.url": "https://www.rwgmobile.wales/",
       "operator.logo": "rwg_16.png",
