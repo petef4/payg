@@ -768,28 +768,6 @@
       "checked": "2018-11-19"
     },
     {
-      "operator": "toggle",
-      "operator.url": "http://www.togglemobile.co.uk/home/en",
-      "operator.logo": "toggle_16.png",
-      "plan": "mobile",
-      "plan.url": "http://www.togglemobile.co.uk/tariffs/en",
-      "min_same": 3,
-      "min_other": 3,
-      "min_land": 3,
-      "charge_min": 3,
-      "bill_per": "[min]",
-      "sms_same": 5,
-      "sms_other": 9,
-      "voicemail": "Free",
-      "08x": 23,
-      "mms": "?",
-      "4G": "[No]",
-      "tether": "[No]",
-      "data": "18p / MB",
-      "network": "O2",
-      "checked": "2018-11-19"
-    },
-    {
       "operator": "Truphone",
       "operator.url": "http://www.truphone.com/uk/",
       "operator.logo": "truphone_16.png",
