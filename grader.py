@@ -107,6 +107,8 @@ def bill_per_score(bill_per):
         return 100
     elif bill_per in ('min', '[min]'):
         return 200
+    if bill_per == 'day':
+        return 400
     else:
         raise ValueError('String format not handled: ' + bill_per)
 
@@ -210,7 +212,7 @@ def dip_per_MB_capped(MB_per_day, data):
 
 def dip_addons_only(MB_per_day, data):
     match = re.match(
-        '(?:Add-on|Bundle)s start from ' + MONEY + ' / ' + FLOAT + ' MB', data)
+        '(?:Add-on|Bundle)s start from ' + MONEY + ' / ' + FLOAT + ' (?:GB|MB)', data)
     if match:
         if MB_per_day == 0:
             return 0

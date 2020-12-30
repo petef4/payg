@@ -5,7 +5,7 @@
 # provided (cherrypi, gevent), but this file may be altered to run
 # whatever framework is desired - or a completely customized service.
 #
-import imp
+import importlib
 import os
 import sys
 
@@ -34,7 +34,7 @@ except IOError:
 #  main():
 #
 if __name__ == '__main__':
-    application = imp.load_source('app', 'flaskapp.py')
+    application = importlib.machinery.SourceFileLoader('app', 'flaskapp.py').load_module()
     port = application.app.config['PORT']
     ip = application.app.config['IP']
     app_name = application.app.config['APP_NAME']
@@ -43,7 +43,7 @@ if __name__ == '__main__':
     fwtype = "wsgiref"
     for fw in ("gevent", "cherrypy", "flask"):
         try:
-            imp.find_module(fw)
+            importlib.util.find_spec(fw)
             fwtype = fw
         except ImportError:
             pass

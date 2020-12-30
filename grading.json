@@ -19,7 +19,8 @@
     },
     "bill_per": {
         "good": 100,
-        "okay": 200
+        "okay": 200,
+        "poor": 400
     },
     "voicemail": {
         "good": 0,
