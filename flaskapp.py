@@ -1,6 +1,6 @@
-from json import load
-
+import datetime
 from flask import Flask, render_template, request, send_from_directory
+from json import load
 
 from eff_min import add_effective_per_min
 from footnote import definitions
@@ -76,6 +76,17 @@ def links():
 @app.route('/shopping')
 def shopping():
     return render_template('shopping.html', http=http())
+
+
+@app.route('/times')
+def times():
+    start = max(1, int(request.args.get('start', 71)))
+    count = max(1, int(request.args.get('count', 10)))
+    # 001 is 2016-04-17
+    date0 = datetime.date(2016, 4, 10)
+    dates = [(date0 + datetime.timedelta(weeks=w)).isoformat()
+             for w in range(start, start + count)]
+    return render_template('times.html', http=http(), start=start, dates=dates)
 
 
 @app.route('/robots.txt')
