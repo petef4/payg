@@ -132,7 +132,7 @@
       "tether": "Yes",
       "data": "1p / MB",
       "network": "EE",
-      "checked": "2020-12-30"
+      "checked": "2021-09-06"
     },
     {
       "operator": "Asda",
@@ -216,16 +216,15 @@
       "bill_per": "sec",
       "sms_same": "Free",
       "sms_same.footnotes": ["giffgaff_free"],
-      "sms_other": 5,
+      "sms_other": 10,
       "voicemail": "8p / call",
       "08x": 25,
       "mms": 30,
       "4G": "Yes",
       "tether": "Yes",
-      "data": "5p / MB",
-      "data.footnotes": ["giffgaff_data"],
+      "data": "10p / MB",
       "network": "O2",
-      "checked": "2021-01-26"
+      "checked": "2021-09-06"
     },
     {
       "operator": "iD",
@@ -772,11 +771,10 @@
      "If you do not use your phone (outgoing) in a day then you pay nothing."],
     ["1pmobile_subs",
      "1pMobile requires you to top up a minimum of £10 every 120 days.",
-     "That is similar to a £2.50 per month contract but your credit does not expire."],
+     "That is similar to a £2.50 per month contract but your credit does not expire.",
+     "Customers who signed up before 2021 will however pay a minimum of £2.50 / month."],
     ["asda_network",
      "Asda Mobile moved to Vodafone from EE in March 2021."],
-    ["giffgaff_data",
-     "giffgaff data rates will double to 10p / MB on 2021-02-23."],
     ["giffgaff_free",
      "giffgaff free calls and SMSs to giffgaff numbers lasts for 3 months from each top-up.",
      "Most other operators limit free credit to 30 days."],
