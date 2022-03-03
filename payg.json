@@ -181,28 +181,6 @@
       "checked": "2020-12-30"
     },
     {
-      "operator": "The co-operative mobile",
-      "operator.url": "https://www.thephone.coop/",
-      "operator.logo": "coop_16.png",
-      "plan": "PAYG",
-      "plan.url": "https://www.thephone.coop/personal/sim-only/pay-as-you-go/",
-      "min_same": 4,
-      "min_other": 8,
-      "min_land": 8,
-      "charge_min": 1,
-      "bill_per": "sec",
-      "sms_same": 2,
-      "sms_other": 4,
-      "voicemail": 4,
-      "08x": 21,
-      "mms": 25,
-      "4G": "Yes",
-      "tether": "Yes",
-      "data": "10p / MB",
-      "network": "EE",
-      "checked": "2020-12-30"
-    },
-    {
       "operator": "giffgaff",
       "operator.url": "https://giffgaff.com/",
       "operator.logo": "gg_16.png",
