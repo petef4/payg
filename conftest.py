@@ -1,9 +1,9 @@
 import pytest
 
-import flaskapp
+import flask_app
 
 
 @pytest.fixture
 def app():
-    app = flaskapp.app
+    app = flask_app.app
     return app

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel=stylesheet href="/static/site.css" type="text/css">
+    <link href="/static/papertape.ico" type="image/x-icon" rel="shortcut icon">
+    <title>Sunday Times Jumbo GK Crossword</title>
+  </head>
+
+  <body>
+
+    <h1>Sunday Times Jumbo GK Crossword</h1>
+
+    <p>
+      <a href="?start={{ start - dates | length }}&count={{ dates | length }}"
+         title="Show previous {{dates | length}} issues"><<</a>
+      <a href="?start={{ start }}&count=10" title="Show 10 issues">10</a>
+      <a href="?start={{ start }}&count=25" title="Show 25 issues">25</a>
+      <a href="?start={{ start }}&count=50" title="Show 50 issues">50</a>
+      <a href="?start={{ start + dates | length }}&count={{ dates | length }}"
+         title="Show next {{dates | length}} issues">>></a>
+    </p>
+    <ol start="{{ start }}">
+      {% for date in dates -%}
+      <li><a href="https://www.thetimes.co.uk/past-six-days/{{ date }}/puzzles">{{ date }}</a></li>
+      {% endfor -%}
+    </ol>
+    <p>
+      <a href="?start={{ start - dates | length }}&count={{ dates | length }}"
+         title="Show previous {{dates | length}} issues"><<</a>
+      <a href="?start={{ start }}&count=10" title="Show 10 issues">10</a>
+      <a href="?start={{ start }}&count=25" title="Show 25 issues">25</a>
+      <a href="?start={{ start }}&count=50" title="Show 50 issues">50</a>
+      <a href="?start={{ start + dates | length }}&count={{ dates | length }}"
+         title="Show next {{dates | length}} issues">>></a>
+    </p>
+    <p>
+      These links will take you to the puzzles page for the issue of The Sunday
+      Times. You may need to click on Show More to see the Jumbo GK Crossword.
+    </p>
+    <p>
+      A link will have a different appearance if you have visited it before. It
+      will not show whether or not you actually did the puzzle. However when you
+      reach the puzzle itself it will remember your last visit and indicate if
+      it was completed.
+    </p>
+    <hr>
+    <address class="vcard"><span class="fn">Pete Forman</span>
+      <a class="email" href="mailto:petef4+web@gmail.com">Mail</a>
+      <a class="url" href="/home">Home</a>
+      <a href="/links">Links</a>
+    </address>
+    <p class="modified">
+<!-- Created: Fri Jun 30 10:34:35 BST 2000 -->
+<!-- hhmts start -->
+Last modified: 2021-01-27T22:23:25+00:00
+<!-- hhmts end -->
+    </p>
+  </body>
+</html>
