@@ -102,6 +102,17 @@ def test_dip_per_MB_some_free_per_day():
         assert G.dip_per_MB_some_free_per_day(10, other) is None
 
 
+def test_dip_per_MB_some_free_per_month():
+    assert G.dip_per_MB_some_free_per_month(10, '200 MB / month free then 1p / MB') == 33
+    assert G.dip_per_MB_some_free_per_month(0, '200 MB / month free then 1p / MB') == 0
+    assert G.dip_per_MB_some_free_per_month(1, '200 MB / month free then 1p / MB') == 0
+    for other in ('2p / MB', '2.5p / MB', '25p / day',
+                  '£2 / day for 50 MB then 10p / MB',
+                  '£3 / MB capped at £1 / day',
+                  'Add-ons start from £1 / 100 MB'):
+        assert G.dip_per_MB_some_free_per_month(10, other) is None
+
+
 def test_dip_per_MB_capped():
     assert G.dip_per_MB_capped(10, '£3 / MB capped at £1 / day') == 1000
     assert G.dip_per_MB_capped(0, '£3 / MB capped at £1 / day') == 0
@@ -113,9 +124,12 @@ def test_dip_per_MB_capped():
 
 
 def test_dip_addons_only():
-    assert G.dip_addons_only(10, 'Add-ons start from £1 / 100 MB') == 1000
-    assert G.dip_addons_only(1, 'Add-ons start from £1 / 100 MB') == 1000
+    assert G.dip_addons_only(10, 'Add-ons start from £1 / 100 MB') == 100
+    assert G.dip_addons_only(1, 'Add-ons start from £1 / 100 MB') == 10
     assert G.dip_addons_only(0, 'Add-ons start from £1 / 100 MB') == 0
+    assert G.dip_addons_only(10, 'Add-ons start from £10 / 8 GB') == 12
+    assert G.dip_addons_only(10, 'Add-ons start from £3 / 1.5 GB') == 20
+    assert G.dip_addons_only(10, 'Bundles start from £1 / 100 MB') == 100
     for other in ('2p / MB', '2.5p / MB', '25p / day',
                   '£2 / day for 50 MB then 10p / MB',
                   '1 MB / day free then 19p / MB',
@@ -131,7 +145,7 @@ def test_data_score():
     assert G.data_score(10, '£1 / day for 100 MB then £1 / 100 MB') == 1000
     assert G.data_score(10, '1 MB / day free then 19p / MB') == 1710
     assert G.data_score(10, '£3 / MB capped at £1 / day') == 1000
-    assert G.data_score(10, 'Add-ons start from £1 / 100 MB') == 1000
+    assert G.data_score(10, 'Add-ons start from £1 / 100 MB') == 100
     with pytest.raises(ValueError) as excinfo:
         G.data_score(10, 'foo')
     assert str(excinfo.value) == 'String format not handled: foo'

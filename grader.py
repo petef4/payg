@@ -140,6 +140,10 @@ FLOAT = '(' + _FLT + ')'
 MONEY = '(' + _FLT + 'p|£' + _FLT + ')'
 DAY_PER_MONTH = 30  # month tends to be shorthand for 30 days, not calendar
 N_MB = '(' + _FLT + ')MB'
+TO_MB = {
+    'MB': 1,
+    'GB': 1000,
+}
 
 def dip_per_MB(MB_per_day, data):
     match = re.match(MONEY + ' / MB', data)
@@ -151,7 +155,8 @@ def dip_per_MB(MB_per_day, data):
 def dip_per_nMB(MB_per_day, data):
     match = re.match(MONEY + ' / ' + N_MB, data)
     if match:
-        return MB_per_day * decipence(match.group(1)) / float(match.group(2))
+        return int(round(MB_per_day * decipence(match.group(1)) /
+                         float(match.group(2))))
     return None
 
 
@@ -199,7 +204,7 @@ def dip_per_MB_some_free_per_month(MB_per_day, data):
     free = float(match.group(1)) / DAY_PER_MONTH
     if MB_per_day < free:
         return 0
-    return (MB_per_day - free) * decipence(match.group(2))
+    return int(round((MB_per_day - free) * decipence(match.group(2))))
 
 
 def dip_per_MB_capped(MB_per_day, data):
@@ -212,12 +217,10 @@ def dip_per_MB_capped(MB_per_day, data):
 
 def dip_addons_only(MB_per_day, data):
     match = re.match(
-        '(?:Add-on|Bundle)s start from ' + MONEY + ' / ' + FLOAT + ' (?:GB|MB)', data)
+        '(?:Add-on|Bundle)s start from ' + MONEY + ' / ' + FLOAT + ' (GB|MB)', data)
     if match:
-        if MB_per_day == 0:
-            return 0
-        else:
-            return decipence(match.group(1))
+        return int(round(MB_per_day * decipence(match.group(1)) / (
+            float(match.group(2)) * TO_MB[match.group(3)])))
     return None
 
 data_scorers = [
