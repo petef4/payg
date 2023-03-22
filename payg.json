@@ -6,10 +6,10 @@
       "operator.logo": "ee_16.png",
       "plan": "PAYG",
       "plan.url": "https://ee.co.uk/help/add-ons-benefits-and-plans/price-plans-and-costs/ee-pay-as-you-go-price-plans",
-      "min_same": 35,
-      "min_other": 35,
-      "min_land": 35,
-      "charge_min": 35,
+      "min_same": 40,
+      "min_other": 40,
+      "min_land": 40,
+      "charge_min": 40,
       "bill_per": "min",
       "sms_same": 15,
       "sms_other": 15,
@@ -18,9 +18,9 @@
       "mms": 40,
       "4G": "Yes",
       "tether": "Yes",
-      "data": "Add-ons start from £1 / 100 MB",
+      "data": "Add-ons start from £10 / 8 GB",
       "network": "EE",
-      "checked": "2020-12-30"
+      "checked": "2023-03-21"
     },
     {
       "operator": "Vodafone",
