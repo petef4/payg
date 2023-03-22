@@ -184,7 +184,7 @@ def dip_per_day(MB_per_day, data):
     extra, part = divmod(MB_per_day - allowance, chunk)
     if part > 0:
         extra += 1
-    return price + extra * decipence(match.group(3))
+    return int(round(price + extra * decipence(match.group(3))))
 
 
 def dip_per_MB_some_free_per_day(MB_per_day, data):
@@ -194,7 +194,7 @@ def dip_per_MB_some_free_per_day(MB_per_day, data):
     free = float(match.group(1))
     if MB_per_day < free:
         return 0
-    return (MB_per_day - free) * decipence(match.group(2))
+    return int(round((MB_per_day - free) * decipence(match.group(2))))
 
 
 def dip_per_MB_some_free_per_month(MB_per_day, data):
