@@ -90,28 +90,6 @@
       "checked": "2024-04-12"
     },
     {
-      "operator": "3",
-      "operator.url": "https://www.three.co.uk/",
-      "operator.logo": "3_16.png",
-      "plan": "Data Reward",
-      "plan.url": "https://www.three.co.uk/Support/pay_as_you_go/Mobile_broadband_tariff",
-      "min_same": 3,
-      "min_other": 3,
-      "min_land": 3,
-      "charge_min": 3,
-      "bill_per": "min",
-      "sms_same": 2,
-      "sms_other": 2,
-      "voicemail": 3,
-      "08x": 45,
-      "mms": 55,
-      "4G": "Yes",
-      "tether": "No",
-      "data": "200 MB / month free then 1p / MB",
-      "network": "3",
-      "checked": "2020-12-30"
-    },
-    {
       "operator": "1pMobile",
       "operator.url": "https://www.1pmobile.com/",
       "operator.logo": "1pmobile_16.png",
