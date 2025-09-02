@@ -11,38 +11,16 @@
       "min_land": 40,
       "charge_min": 40,
       "bill_per": "min",
-      "sms_same": 15,
-      "sms_other": 15,
-      "voicemail": 35,
+      "sms_same": 20,
+      "sms_other": 20,
+      "voicemail": 40,
       "08x": 44,
       "mms": 40,
       "4G": "Yes",
       "tether": "Yes",
-      "data": "Add-ons start from £10 / 8 GB",
+      "data": "Add-ons start from £3 / 1 GB / 1 day",
       "network": "EE",
-      "checked": "2023-03-21"
-    },
-    {
-      "operator": "Vodafone",
-      "operator.url": "https://www.vodafone.co.uk",
-      "operator.logo": "vodafone_16.png",
-      "plan": "Simply",
-      "plan.url": "https://www.vodafone.co.uk/explore/costs/call-charges/index.htm#tab_0_1",
-      "min_same": 35,
-      "min_other": 35,
-      "min_land": 35,
-      "charge_min": 35,
-      "bill_per": "sec",
-      "sms_same": 20,
-      "sms_other": 20,
-      "voicemail": 35,
-      "08x": 45,
-      "mms": 45,
-      "4G": "Yes",
-      "tether": "Yes",
-      "data": "£2 / day for 50 MB then 10p / MB",
-      "network": "Vodafone",
-      "checked": "2022-04-04"
+      "checked": "2025-09-02"
     },
     {
       "operator": "Vodafone",
@@ -51,21 +29,21 @@
       "plan": "PAYG 1",
       "plan.url": "https://www.vodafone.co.uk/shop/bundles-and-sims/pay-as-you-go-plans/pay-as-you-go1/",
       "plan.footnotes": ["voda_payg1"],
-      "min_same": 100,
-      "min_other": 100,
-      "min_land": 100,
-      "charge_min": 100,
+      "min_same": 200,
+      "min_other": 200,
+      "min_land": 200,
+      "charge_min": 200,
       "bill_per": "day",
-      "sms_same": 100,
-      "sms_other": 100,
-      "voicemail": 100,
-      "08x": 55,
-      "mms": 100,
+      "sms_same": 200,
+      "sms_other": 200,
+      "voicemail": 200,
+      "08x": 79,
+      "mms": 200,
       "4G": "Yes",
       "tether": "Yes",
-      "data": "£1 / 50MB",
+      "data": "£2 / day includes 50 MB then £1 / 50 MB",
       "network": "Vodafone",
-      "checked": "2021-01-26"
+      "checked": "2025-09-02"
     },
     {
       "operator": "3",
@@ -84,10 +62,10 @@
       "08x": 45,
       "mms": 40,
       "4G": "Yes",
-      "tether": "No",
+      "tether": "Yes",
       "data": "10p / MB",
       "network": "3",
-      "checked": "2024-04-12"
+      "checked": "2025-09-02"
     },
     {
       "operator": "Call&Give",
@@ -109,7 +87,7 @@
       "tether": "[No]",
       "data": "15p / MB",
       "network": "EE",
-      "checked": "2020-12-30"
+      "checked": "2025-08-01"
     },
     {
       "operator": "giffgaff",
@@ -133,7 +111,7 @@
       "tether": "Yes",
       "data": "10p / MB",
       "network": "O2",
-      "checked": "2021-09-06"
+      "checked": "2025-08-01"
     },
     {
       "operator": "iD",
@@ -155,7 +133,7 @@
       "tether": "No",
       "data": "1p / MB",
       "network": "3",
-      "checked": "2020-12-30"
+      "checked": "2025-08-01"
     },
     {
       "operator": "RWG",
@@ -177,7 +155,7 @@
       "tether": "[No]",
       "data": "1p / MB",
       "network": "EE",
-      "checked": "2022-09-27"
+      "checked": "2025-08-01"
     },
     {
       "operator": "Tesco",
@@ -193,13 +171,13 @@
       "sms_same": 10,
       "sms_other": 10,
       "voicemail": 15,
-      "08x": 25,
-      "mms": 25,
+      "08x": 55,
+      "mms": 55,
       "4G": "Yes",
       "tether": "Yes",
       "data": "10p / MB",
       "network": "O2",
-      "checked": "2020-12-30"
+      "checked": "2025-09-02"
     },
     {
       "operator": "Tesco",
@@ -215,20 +193,20 @@
       "sms_same": 4,
       "sms_other": 4,
       "voicemail": 8,
-      "08x": 25,
-      "mms": 25,
+      "08x": 55,
+      "mms": 55,
       "4G": "Yes",
       "tether": "Yes",
       "data": "10p / MB",
       "network": "O2",
-      "checked": "2020-12-30"
+      "checked": "2025-09-02"
     },
     {
       "operator": "CMLink",
-      "operator.url": "https://mobile.cmlink.com/uk/en",
+      "operator.url": "https://www.cmlink.com/uk/en",
       "operator.logo": "cmlink_16.png",
       "plan": "PAYG",
-      "plan.url": "https://mobile.cmlink.com/uk/en/tariffs",
+      "plan.url": "https://www.cmlink.com/uk/en/payasyougo",
       "min_same": "Free",
       "min_other": 8,
       "min_land": 8,
@@ -241,9 +219,9 @@
       "mms": "?",
       "4G": "Yes",
       "tether": "Yes",
-      "data": "Add-ons start from £3 / 1.5 GB",
+      "data": "Add-ons start from £3 / 1 GB",
       "network": "EE",
-      "checked": "2020-12-30"
+      "checked": "2025-09-02"
     },
     {
       "operator": "CTExcel",
@@ -265,7 +243,7 @@
       "tether": "[No]",
       "data": "5p / MB",
       "network": "EE",
-      "checked": "2020-12-30"
+      "checked": "2025-08-01"
     },
     {
       "operator": "Lebara",
@@ -287,29 +265,7 @@
       "tether": "No",
       "data": "9p / MB",
       "network": "Vodafone",
-      "checked": "2024-04-08"
-    },
-    {
-      "operator": "NordTelekom",
-      "operator.url": "https://www.nordtelekom.co.uk/",
-      "operator.logo": "nordtelekom_16.png",
-      "plan": "PAYG",
-      "plan.url": "https://www.nordtelekom.co.uk/rates/",
-      "min_same": 14,
-      "min_other": 14,
-      "min_land": 9,
-      "charge_min": "[1 min]",
-      "bill_per": "[min]",
-      "sms_same": 19,
-      "sms_other": 19,
-      "voicemail": 14,
-      "08x": "n/a",
-      "mms": 45,
-      "4G": "[No]",
-      "tether": "[No]",
-      "data": "8p / MB",
-      "network": "EE",
-      "checked": "2020-12-30"
+      "checked": "2025-08-01"
     },
     {
       "operator": "Now Mobile",
@@ -329,98 +285,9 @@
       "mms": 25,
       "4G": "Yes",
       "tether": "[No]",
-      "data": "15p / MB",
+      "data": "1p / MB",
       "network": "EE",
-      "checked": "2020-12-30"
-    },
-    {
-      "operator": "Talk Home",
-      "operator.url": "https://www.talkhome.co.uk/",
-      "operator.logo": "talkhome_16.png",
-      "plan": "PAYG",
-      "plan.url": "https://talkhome.co.uk/mobile/rates/",
-      "min_same": "Free",
-      "min_other": 15,
-      "min_land": 10,
-      "charge_min": "[1 min]",
-      "bill_per": "[min]",
-      "sms_same": "Free",
-      "sms_other": 5,
-      "voicemail": "Free",
-      "08x": "n/a",
-      "mms": 25,
-      "4G": "Yes",
-      "tether": "[No]",
-      "data": "5p / MB",
-      "network": "EE",
-      "checked": "2020-12-30"
-    },
-    {
-      "operator": "Telefoni",
-      "operator.url": "https://telfoni.com/",
-      "operator.logo": "telefoni_16.png",
-      "plan": "PAYG",
-      "plan.url": "https://telfoni.com/#Rates",
-      "min_same": "Free",
-      "min_other": 4,
-      "min_land": 4,
-      "charge_min": "[1 min]",
-      "bill_per": "[min]",
-      "sms_same": 8,
-      "sms_other": 8,
-      "voicemail": "?",
-      "08x": "n/a",
-      "mms": "?",
-      "4G": "Yes",
-      "tether": "[No]",
-      "data": "7p / MB",
-      "network": "3",
-      "checked": "2018-11-19"
-    },
-    {
-      "operator": "Vectone",
-      "operator.url": "https://www.vectonemobile.co.uk/",
-      "operator.logo": "vectone_16.png",
-      "operator.grade": "poor",
-      "plan": "Mobile",
-      "plan.url": "https://www.vectonemobile.co.uk/call-rates/uk-call-rates",
-      "min_same": 19,
-      "min_other": 19,
-      "min_land": 12,
-      "charge_min": "[1 min]",
-      "bill_per": "[min]",
-      "sms_same": 19,
-      "sms_other": 19,
-      "voicemail": 10,
-      "08x": 19,
-      "mms": 25,
-      "4G": "[No]",
-      "tether": "No",
-      "data": "9p / MB",
-      "network": "EE",
-      "checked": "2020-12-30"
-    },
-    {
-      "operator": "White Mobile",
-      "operator.url": "https://www.whitecalling.com/sim/",
-      "operator.logo": "white_16.png",
-      "plan": "PAYG",
-      "plan.url": "https://www.whitecalling.com/sim/",
-      "min_same": "Free",
-      "min_other": 7,
-      "min_land": 4,
-      "charge_min": "[1 min]",
-      "bill_per": "[min]",
-      "sms_same": "Free",
-      "sms_other": 6,
-      "voicemail": "Free",
-      "08x": 8,
-      "mms": "?",
-      "4G": "[No]",
-      "tether": "[No]",
-      "data": "2.5p / MB",
-      "network": "EE",
-      "checked": "2020-12-30"
+      "checked": "2025-09-02"
     },
     {
       "operator": "Auracall",
@@ -443,7 +310,7 @@
       "tether": "[No]",
       "data": "20p / MB",
       "network": "EE, O2, Vodafone, 3",
-      "checked": "2020-12-30"
+      "checked": "2025-08-01"
     },
     {
       "operator": "GO-SIM",
@@ -466,7 +333,7 @@
       "tether": "[No]",
       "data": "18p / MB",
       "network": "EE, O2, Vodafone, 3",
-      "checked": "2020-12-30"
+      "checked": "2025-08-01"
     },
     {
       "operator": "GO-SIM",
@@ -489,7 +356,7 @@
       "tether": "[No]",
       "data": "18p / MB",
       "network": "EE, O2, Vodafone, 3",
-      "checked": "2020-12-30"
+      "checked": "2025-08-01"
     },
     {
       "operator": "OneSimCard",
@@ -512,7 +379,7 @@
       "tether": "[No]",
       "data": "15p / MB",
       "network": "O2, EE and Vodafone",
-      "checked": "2020-12-30"
+      "checked": "2025-08-01"
     },
     {
       "operator": "OneSimCard",
@@ -535,7 +402,7 @@
       "tether": "[No]",
       "data": "19p / MB",
       "network": "EE, Vodafone and 3",
-      "checked": "2020-12-30"
+      "checked": "2025-08-01"
     },
     {
       "operator": "OneSimCard",
@@ -558,7 +425,7 @@
       "tether": "[No]",
       "data": "19p / MB",
       "network": "EE, Vodafone and 3",
-      "checked": "2020-12-30"
+      "checked": "2025-08-01"
     },
     {
       "operator": "OneSimCard",
@@ -581,7 +448,7 @@
       "tether": "[No]",
       "data": "4p / MB",
       "network": "O2 and EE",
-      "checked": "2020-12-30"
+      "checked": "2025-08-01"
     },
     {
       "operator": "Pebble",
@@ -603,7 +470,7 @@
       "tether": "[No]",
       "data": "25p / MB",
       "network": "O2 and Vodafone, EE",
-      "checked": "2020-12-30"
+      "checked": "2025-08-01"
     },
     {
       "operator": "Truphone",
@@ -625,7 +492,7 @@
       "tether": "[No]",
       "data": "6p / MB",
       "network": "Vodafone",
-      "checked": "2020-12-30"
+      "checked": "2025-08-01"
     }
   ],
   "defunct": [
@@ -674,9 +541,9 @@
   ],
   "contract_only": [],
   "footnotes": [
-    ["voda_payg1", "Vodafone PAYG 1 since 2021-01-12 has a daily charge of £1.",
+    ["voda_payg1", "Vodafone PAYG 1 has a daily charge of £2.",
      "The rates are different and make little sense in this table.",
-     "Once you make any call or text or use data you pay £1 for that day.",
+     "Once you make any call or text or use data you pay £2 for that day.",
      "It then includes unlimited minutes, SMS and MMS and 50 MB of data.",
      "If you do not use your phone (outgoing) in a day then you pay nothing."],
     ["giffgaff_free",

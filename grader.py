@@ -168,7 +168,7 @@ def dip_per_day(MB_per_day, data):
         chunk = 1
     else:
         match = re.match(
-            MONEY + ' / day for ' + FLOAT + ' MB then ' + MONEY + ' / ' +
+            MONEY + ' / day (?:for|includes) ' + FLOAT + ' MB then ' + MONEY + ' / ' +
             FLOAT + ' MB',
             data)
         if match:

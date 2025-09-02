@@ -86,6 +86,7 @@ def test_dip_per_day():
     assert f"{G.dip_per_day(60, '£2 / day for 50 MB then 10p / MB')}" == "3000"
     assert f"{G.dip_per_day(120, '£1 / day for 100 MB then £1 / 100 MB')}" == "2000"
     assert f"{G.dip_per_day(220, '£1 / day for 100 MB then £1 / 100 MB')}" == "3000"
+    assert f"{G.dip_per_day(50, '£2 / day includes 50 MB then £1 / 50 MB')}" == "2000"
     for other in ('2p / MB', '2.5p / MB',
                   '1 MB / day free then 19p / MB',
                   '£3 / MB capped at £1 / day',
